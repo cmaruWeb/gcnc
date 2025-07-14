@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('../webfont/Pretendard/Pretendard-Black.woff2') format('woff2'), url('../webfont/Pretendard/Pretendard-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('../webfont/Pretendard/Pretendard-ExtraBold.woff2') format('woff2'), url('../webfont/Pretendard/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('../webfont/Pretendard/Pretendard-Bold.woff2') format('woff2'), url('../webfont/Pretendard/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('../webfont/Pretendard/Pretendard-SemiBold.woff2') format('woff2'), url('../webfont/Pretendard/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('../webfont/Pretendard/Pretendard-Medium.woff2') format('woff2'), url('../webfont/Pretendard/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('../webfont/Pretendard/Pretendard-Regular.woff2') format('woff2'), url('../webfont/Pretendard/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('../webfont/Pretendard/Pretendard-Light.woff2') format('woff2'), url('../webfont/Pretendard/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('../webfont/Pretendard/Pretendard-ExtraLight.woff2') format('woff2'), url('../webfont/Pretendard/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('../webfont/Pretendard/Pretendard-Thin.woff2') format('woff2'), url('../webfont/Pretendard/Pretendard-Thin.woff') format('woff');
+}
+
+
+
+/*폰트변경*/
+@font-face {
+    font-family: Paperlogy;
+    src: url("../webfont/Paperlogy/Paperlogy-1Thin.woff") format("woff");
+    font-style: normal;
+    font-weight: 100;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: Paperlogy;
+    src: url("../webfont/Paperlogy/Paperlogy-2ExtraLight.woff") format("woff");
+    font-style: normal;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: Paperlogy;
+    src: url("../webfont/Paperlogy/Paperlogy-3Light.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: Paperlogy;
+    src: url("../webfont/Paperlogy/Paperlogy-4Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: Paperlogy;
+    src: url("../webfont/Paperlogy/Paperlogy-5Medium.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: Paperlogy;
+    src: url("../webfont/Paperlogy/Paperlogy-6SemiBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: Paperlogy;
+    src: url("../webfont/Paperlogy/Paperlogy-7Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: Paperlogy;
+    src: url("../webfont/Paperlogy/Paperlogy-8ExtraBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 800;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: Paperlogy;
+    src: url("../webfont/Paperlogy/Paperlogy-9Black.woff") format("woff");
+    font-style: normal;
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+}
+
