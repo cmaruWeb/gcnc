@@ -7,6 +7,123 @@ $popcnt = 0;
 $m1 = 0;
 $m2 = 0;
 $m3 = 0;
+
+$n_date = mktime(0, 0, 0, $monthx, $dayx, $yearx);
+$youle = date("D", $n_date);
+
+$mycount = $_SESSION["mycount"];
+///////// count
+if (!$mycount) {
+	$_SESSION["mycount"] = $REMOTE_ADDR;
+	$os_ver = $_SERVER['HTTP_USER_AGENT'];
+	$fr_loc = urlencode($_SERVER['HTTP_REFERER']);
+	$os_ver = get_os_ver($os_ver);
+	$gubun_1 = isMobile();
+	if ($gubun_1 == false) {
+		$gubun9 = "PC";
+	} else $gubun9 = "Mobile";
+	MyResult("insert into tb_count set year='$yearx', datex='$date06', datexx='$date05', youle='$youle', ip='$REMOTE_ADDR', from_location='$fr_loc', timex='$timex', pccheck='$gubun9', os_ver='$os_ver' ", $connect);
+}
+
+//팝업
+$mobile_check = "N";
+$mobileKeyWords = array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'Windows CE;', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Mobile', 'Symbian', 'Opera Mobi', 'Opera Mini', 'IEmobile');
+for ($i = 0; $i < count($mobileKeyWords); $i++) {
+	if (strpos($_SERVER['HTTP_USER_AGENT'], $mobileKeyWords[$i]) == true) {
+		$mobile_check = "Y";
+	}
+}
+$popResult = MyResult("select * from tb_popup where strdat <= '$date05' and enddat >= '$date05' 
+ORDER BY CAST(col1 AS UNSIGNED), registerDay DESC", $connect); //현재 진행중인
+$numrowsx  = sql_num_rows($popResult); //총 레코드수..
+$popcnt  = $numrowsx;
+
+for ($i = 0; $i < $popcnt; $i++) {
+	$co_rowx = sql_fetch_array($popResult);
+	$pop[$i] = MyEncrypt("idx=" . $co_rowx['idx']);
+	$popi[$i] = $co_rowx['content'];
+	$p_size = explode("|", $co_rowx['size']);
+	if ($mobile_check == "Y") {
+		$pop_width[$i]  = $p_size[0] - 150;
+		$pop_height[$i] = $p_size[1] - 150;
+		$pop_left[$i] = 10;
+		if ($i > 0) {
+			$pop_top[$i] = $co_rowx['address'] - 90;
+			if ($pop_top[$i] < 10) $pop_top[$i] = 10;
+		} else {
+			$pop_top[$i] = $co_rowx['address'];
+		}
+	} else {
+		$pop_width[$i]  = $p_size[0] + 2;
+		$pop_height[$i] = $p_size[1];
+		$pop_left[$i] = $co_rowx['telnum'];
+		$pop_top[$i] = $co_rowx['address'];
+	}
+	$pop_file[$i] = $co_rowx['file1'];
+	$pop_url[$i] = $co_rowx['go_url'];
+	$pop_new[$i] = $co_rowx['go_new'];
+}
+
+include("./popup_set.php");
+
+// 팝업존 불러오기
+$mainPopupList = array();
+$mainPopupCnt = 0;
+$mainPopupTxt = $mainPopup_pc_warp = $mainPopup_mobile_warp = "";
+if (USE_MAIN_POPUP) {
+	$sql = "SELECT * FROM tb_main_popup WHERE status = 0 ORDER BY order_num asc, idx asc";
+	$result = sql_query($sql);
+	$mainPopupCnt = sql_num_rows($result);
+	while ($row = sql_fetch_array($result)) {
+		$mainPopupList[] = $row;
+	}
+
+	if ($mainPopupCnt > 0) {
+		foreach ($mainPopupList as $key => $val) {
+			$mainPopupTxt .= "<div class=\"swiper-slide\">";
+			$val['link1'] == "" ? $href = "javascript: void(0);" : $href = $val['link1'];
+			$val['newWin'] == "Y" ? $target = "_blank" : $target = "";
+
+			$slideNumber = sprintf('%02d', $key + 1);
+			$mainPopup_a_warp_open = "<a href=\"$href\" target=\"$target\">";
+			$mainPopup_pc_warp = "<img src=\"/bbsDown/main_popup/" . $val['file1'] . "\" alt=\"" . $val['title'] . "\" class=\"pc\">";
+			$mainPopup_mobile_warp = "<img src=\"/bbsDown/main_popup/" . $val['file2'] . "\" alt=\"" . $val['title'] . "\" class=\"mo\">";
+			$mainPopupTxt .= $mainPopup_a_warp_open;
+			$mainPopupTxt .= $mainPopup_mobile_warp . $mainPopup_pc_warp;
+			$mainPopup_a_warp_close = "</a>";
+			$mainPopupTxt .= $mainPopup_a_warp_close;
+			$mainPopupTxt .= "</div>";
+		}
+	}
+}
+
+// 배너존 불러오기
+$mainBannerList = array();
+$mainBannerCnt = 0;
+$mainBannerTxt =  "";
+
+if (USE_MAIN_BANNER) {
+	$sql = "SELECT * FROM tb_main_banner WHERE status = 0 ORDER BY order_num asc, idx asc";
+	$result = sql_query($sql);
+	$mainBannerCnt = sql_num_rows($result);
+	while ($row = sql_fetch_array($result)) {
+		$mainBannerList[] = $row;
+	}
+
+	if ($mainBannerCnt > 0) {
+		foreach ($mainBannerList as $key => $val) {
+			$val['link1'] == "" ? $href = "javascript: void(0);" : $href = $val['link1'];
+			$val['newWin'] == "Y" ? $target = "_blank" : $target = "";
+
+			$mainBannerTxt .= "
+            <div class=\"swiper-slide\">
+                <a href=\"$href\" target=\"$target\">
+                    <img src=\"/bbsDown/main_banner/" . $val['file1'] . "\" alt=\"" . $val['title'] . "\">
+                </a>
+            </div>";
+		}
+	}
+}
 ?>
 
 <main id="main">
@@ -1012,61 +1129,7 @@ $m3 = 0;
                         <div class="news-slider-box">
                             <div class="swiper news-slider">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <span class="tag tag01">
-                                                공지
-                                            </span>
-                                            <span class="date">25.05.06</span>
-                                            <strong class="tlt">경상남도 탄소중립지원센터 홈페이지가 오픈했습니다.</strong>
-                                            <i class="line"></i>
-                                            <em class="txt">센터 홈페이지가 오픈했습니다. 많은 관심부탁드리겠습니다.</em>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <span class="tag tag02">
-                                                보도
-                                            </span>
-                                            <span class="date">25.05.06</span>
-                                            <strong class="tlt">경상남도 탄소중립지원센터 홈페이지가 오픈했습니다.</strong>
-                                            <i class="line"></i>
-                                            <em class="txt">센터 홈페이지가 오픈했습니다. 많은 관심부탁드리겠습니다.</em>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <span class="tag tag03">
-                                                자료
-                                            </span>
-                                            <span class="date">25.05.06</span>
-                                            <strong class="tlt">경상남도 탄소중립지원센터 홈페이지가 오픈했습니다.</strong>
-                                            <i class="line"></i>
-                                            <em class="txt">센터 홈페이지가 오픈했습니다. 많은 관심부탁드리겠습니다.</em>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <span class="tag tag01">
-                                                공지
-                                            </span>
-                                            <span class="date">25.05.06</span>
-                                            <strong class="tlt">경상남도 탄소중립지원센터 홈페이지가 오픈했습니다.</strong>
-                                            <i class="line"></i>
-                                            <em class="txt">센터 홈페이지가 오픈했습니다. 많은 관심부탁드리겠습니다.</em>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <span class="tag tag01">
-                                                공지
-                                            </span>
-                                            <span class="date">25.05.06</span>
-                                            <strong class="tlt">경상남도 탄소중립지원센터 홈페이지가 오픈했습니다.</strong>
-                                            <i class="line"></i>
-                                            <em class="txt">센터 홈페이지가 오픈했습니다. 많은 관심부탁드리겠습니다.</em>
-                                        </a>
-                                    </div>
+                                    <?php echo bbs_latest_union("notice|material|press", 0, 5, "/news/notice.php|/news/material.php|/news/press.php"); // 전체소식 ?>
                                 </div>
                             </div>
                             <div class="button-box">
@@ -1076,47 +1139,97 @@ $m3 = 0;
                         </div>
                     </div>
                     <div id="tab2" class="tab_cont">
-                        2
+                        <div class="news-slider-box">
+                            <div class="swiper news-slider">
+                                <div class="swiper-wrapper">
+                                    <?php echo bbs_latest_union("notice", 0, 5, "/news/notice.php"); // 공지사항 ?>
+                                </div>
+                            </div>
+                            <div class="button-box">
+                                <div class="swiper-button-prev5 btn-de button-de-prev"></div>
+                                <div class="swiper-button-next5 btn-de button-de-next"></div>
+                            </div>
+                        </div>
                     </div>
                     <div id="tab3" class="tab_cont">
-                        3
+                        <div class="news-slider-box">
+                            <div class="swiper news-slider">
+                                <div class="swiper-wrapper">
+                                    <?php echo bbs_latest_union("material", 0, 5, "/news/material.php"); // 탄소중립 자료 ?>
+                                </div>
+                            </div>
+                            <div class="button-box">
+                                <div class="swiper-button-prev5 btn-de button-de-prev"></div>
+                                <div class="swiper-button-next5 btn-de button-de-next"></div>
+                            </div>
+                        </div>
                     </div>
                     <div id="tab4" class="tab_cont">
-                        4
+                        <div class="news-slider-box">
+                            <div class="swiper news-slider">
+                                <div class="swiper-wrapper">
+                                    <?php echo bbs_latest_union("press", 0, 5, "/news/press.php"); // 보도자료 ?>
+                                </div>
+                            </div>
+                            <div class="button-box">
+                                <div class="swiper-button-prev5 btn-de button-de-prev"></div>
+                                <div class="swiper-button-next5 btn-de button-de-next"></div>
+                            </div>
+                        </div>
                     </div>
 
                     <script>
                         $(function () {
                             $('ul.tab_wrap li').click(function () {
-                                var activeTab = $(this).attr('data-tab');
+                                const activeTab = $(this).attr('data-tab');
                                 $('.tab_wrap li').removeClass('active');
                                 $('.tab_cont').removeClass('active');
                                 $(this).addClass('active');
                                 $('#' + activeTab).addClass('active');
-                            })
+                                initSlider(activeTab);
+                            });
+
+                            // 최초 실행
+                            initSlider('tab1');
                         });
                     </script>
 
                     <script>
-                        $(document).ready(function () {
-                            var mySwiper = new Swiper(".news-slider", {
-                                loop: true,
+                        let currentSwiper = null;
+
+                        function initSlider(activeTabId) {
+                            const activeTabElem = document.querySelector(`#${activeTabId}`);
+                            const sliderContainer = activeTabElem.querySelector('.news-slider');
+                            const prevBtn = activeTabElem.querySelector('.swiper-button-prev5');
+                            const nextBtn = activeTabElem.querySelector('.swiper-button-next5');
+                            const slides = sliderContainer.querySelectorAll('.swiper-slide');
+                            const slideCount = slides.length;
+
+                            // 기존 슬라이더 제거
+                            if (currentSwiper) {
+                                currentSwiper.destroy(true, true);
+                                currentSwiper = null;
+                            }
+
+                            // 보여줄 슬라이드 수 결정
+                            const getSlidesPerView = () => {
+                                if (slideCount <= 1) return 1;
+                                if (window.innerWidth >= 1200) return Math.min(3, slideCount);
+                                if (window.innerWidth >= 768) return Math.min(2, slideCount);
+                                return 1;
+                            };
+
+                            currentSwiper = new Swiper(sliderContainer, {
+                                loop: slideCount > 1,
                                 navigation: {
-                                    nextEl: '.swiper-button-next5',
-                                    prevEl: '.swiper-button-prev5'
+                                    nextEl: nextBtn,
+                                    prevEl: prevBtn
                                 },
-                                slidesPerView: 1,
-                                spaceBetween: 20,
-                                breakpoints: {
-                                    768: {
-                                        slidesPerView: 2
-                                    },
-                                    1200: {
-                                        slidesPerView: 3
-                                    }
-                                }
+                                slidesPerView: getSlidesPerView(),
+                                spaceBetween: 20
                             });
-                        });
+                        }
+
                     </script>
                 </div>
 

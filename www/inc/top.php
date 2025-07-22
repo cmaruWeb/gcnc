@@ -1,3 +1,10 @@
+<?php
+session_start();
+include "../board/rootDir.inc";
+$boardDir = $rootDir."/board";  //board 폴더
+include $boardDir."/lib.php";
+include $boardDir."/function.php";
+?>
 <!DOCTYPE html>
 <html lang="ko">
 

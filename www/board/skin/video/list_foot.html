@@ -1,0 +1,30 @@
+		<? if($total>0){?>
+		</ul>
+		<? }?>
+	<!--</div>-->
+</form>
+</div><!--//movie_li-->
+	<!--글쓰기-->
+	<!--게시판하단공통-->
+	<div class="boardButton">
+		<ul>
+			<?  if ($OT_LEVELX=="1") { ?>
+			<li><span><a href="#" onclick="selected_modify();">선택수정</a></span></li>
+			<li><span><a href="#" onclick="selected_delete();">선택삭제</a></span></li>
+			<? } ?>
+			<li><span><a href="<?=$PHP_SELF?>?code=<?=$code?>&amp;bbsData=<?=$mvData?>&amp;mode=list&amp;m2=<?=$m2?>">목록</a></span></li>
+			<? if ((($aWrite >= $OT_LEVELX) AND !empty($OT_ID)) OR ($aWrite == '5') || (intval($OT_LEVELX)==1) ) { ?>
+			<li><span><a href="<?=$PHP_SELF?>?code=<?=$code?>&amp;bbsData=<?=$mvData?>&amp;mode=write&amp;m2=<?=$m2?>">글쓰기</a></span></li>
+			<? } ?>
+		</ul>
+	</div>
+	<div class="pageList">
+		<?
+		    echo pageing_list($page, $totalPage, $pageScale, $_SELF, $post_page, $post_start, $next_page, $next_start, $code, $bbsData);
+		?>
+	</div>
+	<!--//게시판하단공통-->
+
+<!--동영상 e--> 
+
+
