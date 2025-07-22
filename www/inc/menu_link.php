@@ -12,7 +12,7 @@
 		$mTitle[1][3][0] = "조직도"; $mLink[1][3][0] = $noSSlDomain."../center/org.php";
 		$mTitle[1][4][0] = "오시는 길"; $mLink[1][4][0] = $noSSlDomain."../center/location.php";
 		$mTitle[1][5][0] = "주요사업"; $mLink[1][5][0] = $noSSlDomain."../center/business.php";
-		$mTitle[1][6][0] = "기초 탄소중립지원센터 소개 및 현황"; $mLink[1][6][0] = $noSSlDomain."../center/basic_status.php";
+		$mTitle[1][6][0] = "경남기초탄소중립지원센터"; $mLink[1][6][0] = $noSSlDomain."../center/basic_status.php";
 
 	$mTitle[2][0][0] = "탄소중립이란"; $mLink[2][0][0] = $noSSlDomain."";
 		$mTitle[2][1][0] = "탄소중립"; $mLink[2][1][0] = $noSSlDomain."../carbon/definition.php";
