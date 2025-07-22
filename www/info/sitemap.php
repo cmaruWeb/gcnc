@@ -15,7 +15,22 @@
         <div class="subtop">
             <h3><?=$mTitle[$m1][$m2][0]?></h3>
         </div>
-		내용이 들어갈자리
+		
+        <div class="sub_sitemap">
+            <ul>
+                <?php
+                foreach ($menuCount as $mainIdx => $subCount) {
+                    echo "<li class='d{$mainIdx}'><a href='#'>{$mTitle[$mainIdx][0][0]}</a>\n";
+                    echo "<div class='sub'><dl>\n";
+                    for ($i = 1; $i <= $subCount; $i++) {
+                        echo "<dd><a href='{$mLink[$mainIdx][$i][0]}'>{$mTitle[$mainIdx][$i][0]}</a></dd>\n";
+                    }
+                    echo "</dl></div></li>\n";
+                }
+                ?>
+            </ul>
+        </div>
+
     </div>
 </div>
 <!--subcon-->

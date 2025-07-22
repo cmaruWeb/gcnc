@@ -35,19 +35,19 @@
                     <?php } else if ($m1 == 2) { ?> 
                         <ul>
                             <?php for ($i = 1; $i <= 4; $i++) { ?>
-                                <li><a href="<?=$mLink[2][$i][0]?>"><?=$mTitle[6][$i][0]?></a></li>
+                                <li><a href="<?=$mLink[2][$i][0]?>"><?=$mTitle[2][$i][0]?></a></li>
                             <?php } ?>
                         </ul>
                     <?php } else if ($m1 == 3) { ?> 
                         <ul>
                             <?php for ($i = 1; $i <= 5; $i++) { ?>
-                                <li><a href="<?=$mLink[3][$i][0]?>"><?=$mTitle[6][$i][0]?></a></li>
+                                <li><a href="<?=$mLink[3][$i][0]?>"><?=$mTitle[3][$i][0]?></a></li>
                             <?php } ?>
                         </ul>
                     <?php } else if ($m1 == 4) { ?> 
                         <ul>
                             <?php for ($i = 1; $i <= 4; $i++) { ?>
-                                <li><a href="<?=$mLink[4][$i][0]?>"><?=$mTitle[6][$i][0]?></a></li>
+                                <li><a href="<?=$mLink[4][$i][0]?>"><?=$mTitle[4][$i][0]?></a></li>
                             <?php } ?>
                         </ul>
                     <?php } else if ($m1 == 10) { ?> <!-- 홈페이지 안내 -->

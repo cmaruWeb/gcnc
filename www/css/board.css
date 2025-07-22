@@ -819,7 +819,7 @@ font-weight:500; }
 .bbPageList span.btn_next a:before{/* content:'\f101'; */}
 
 
-.bbPageList span a.on{background: #00af7c;color: #fff;/* border-bottom: 2px solid; *//* border-radius: 50%; */border: navajowhite;}
+.bbPageList span a.on{background: var(--main-color);color: #fff;/* border-bottom: 2px solid; *//* border-radius: 50%; */border: navajowhite;}
 .bbPageList span a:hover{}
 .bbPageList span a{width:25px;line-height:25px;text-align:center;border: 1px solid #dedede;}
 .bbPageList span a:first-child, 
@@ -833,13 +833,13 @@ font-weight:500; }
 @media all and (min-width:768px) {
 .bbPageList{margin-bottom:30px;}
     .bbPageList a img{
-    height: 34px;
+    height: 32px;
 }
 .bbPageList a:first-child, 
 .bbPageList a:last-child{display:inline-block;}
 
-.bbPageList span a{width: 40px;height: 40px;line-height: 40px;font-size: 15px;}
-.bbPageList span.btn a{width: 40px;line-height: 40px;background: #fff;display:flex;align-items: center;justify-content: center;}
+.bbPageList span a{width: 35px;height: 35px;line-height: 35px;font-size: 15px;}
+.bbPageList span.btn a{width: 35px;line-height: 35px;background: #fff;display:flex;align-items: center;justify-content: center;}
 
 }
 
@@ -1235,4 +1235,152 @@ font-weight:500; }
     gap: 30px;
   }
   
+}
+
+
+
+
+
+/*탄소중립용어사전*/
+
+.dictionary {
+}
+
+
+.dictionary .search-box {
+  margin-bottom: 20px;
+  text-align: center;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.dictionary .search-box input {
+  padding: 10px;
+  width: 70%;
+  max-width: 400px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+}
+
+.dictionary .search-box button {
+  /* padding: 10px 20px; */
+  font-size: 1rem;
+  border: 0px;
+  background-color: var(--point-color);
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.dictionary .search-box button:hover {
+  background-color: #0056b3;
+}
+.dictionary table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  /* border-top: 2px solid var(--main-color); */
+}
+
+.dictionary th,
+.dictionary td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-weight: 400;
+  /* border-right: 1px solid #dedede; */
+}
+.dictionary td:last-child{border:0px;color: #444;}
+
+.dictionary th {
+  background: #f8f8f8;
+  font-weight: bold;
+  text-align: center;
+  border-top: 2px solid var(--main-color);
+}
+
+/* 반응형: 1200px 이하 */
+@media (max-width: 1200px) {
+
+  .dictionary th,
+  .dictionary td {
+    padding: 12px;
+  }
+}
+
+/* 반응형: 768px 이하 */
+@media (max-width: 768px) {
+  .dictionary .search-box input {
+    width: 95%;
+  }
+
+  .dictionary table,
+  .dictionary thead,
+  .dictionary tbody,
+  .dictionary th,
+  .dictionary td,
+  .dictionary tr {
+    display: block;
+  }
+
+  .dictionary thead {
+    display: none;
+  }
+
+  .dictionary tr {
+    margin-bottom: 20px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .dictionary td {
+    padding: 10px;
+    text-align: left;
+    position: relative;
+  }
+
+  .dictionary td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--main-color);
+  }
+}
+
+
+
+@media (min-width: 769px) {
+.dictionary td{
+    vertical-align: middle;
+}
+	.dictionary th{border-right: 1px solid #ddd;}
+	.dictionary td:last-child{
+    border-bottom: 1px solid #ddd;
+}
+	.dictionary th:last-child{
+    border-right:none;
+}
+	.dictionary td:nth-child(1){text-align:center;font-weight: 500;color: #222;border-right: 1px solid #ddd;}
+	.dictionary .search-box{
+    padding: 30px;
+    margin-bottom: 35px;
+}
+	.dictionary .search-box input{
+    padding: 25px;
+    border-radius: 10px 0 0 10px;
+}
+	.dictionary .search-box button{
+    height: 52px;
+    width: 100px;
+    border-radius: 0 10px 10px 0;
+}
+	.dictionary th, .dictionary td{padding:15px 20px;}
 }

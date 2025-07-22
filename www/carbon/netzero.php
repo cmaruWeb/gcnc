@@ -15,7 +15,7 @@
         <div class="subtop">
             <h3><?=$mTitle[$m1][$m2][0]?></h3>
         </div>
-		내용이 들어갈자리
+		내용이 들어갈자리 <!--pdf 게시판-->
     </div>
 </div>
 <!--subcon-->
