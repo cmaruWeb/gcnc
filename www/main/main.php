@@ -1,6 +1,7 @@
 <?php
 $is_main = true;
 include("../inc/top.php");
+include("../inc/map_info.php");
 
 $popcnt = 0;
 $m1 = 0;
@@ -45,6 +46,7 @@ $m3 = 0;
                 </li>
             </ul>
         </nav>
+
 
         <section class="section section1" id="intro">
             <div class="swiper mainSlider">
@@ -93,28 +95,10 @@ $m3 = 0;
                             </div>
                         </div>
                     </div>
-                    <!--div class="swiper-slide m3">
-                        <div class="pdinner">
-                            <div class="text">
-                                <p class="t1">
-                                    <span>
-                                        <em class="tn1">
-                                            경상남도
-                                            <i class="c1">탄소중립</i>
-                                            <i class="c2">지원센터</i>
-                                        </em>
-                                    </span>
-                                </p>
-                                <p class="t2">
-                                    <span>
-                                        <em class="tn2">
-                                            도민과 함께 지속가능한 미래를 만들어가겠습니다.
-                                        </em>
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div-->
+                    <!--div class="swiper-slide m3"> <div class="pdinner"> <div class="text"> <p
+                    class="t1"> <span> <em class="tn1"> 경상남도 <i class="c1">탄소중립</i> <i
+                    class="c2">지원센터</i> </em> </span> </p> <p class="t2"> <span> <em class="tn2">
+                    도민과 함께 지속가능한 미래를 만들어가겠습니다. </em> </span> </p> </div> </div> </div-->
                 </div>
                 <script>
                     $(document).ready(function () {
@@ -595,7 +579,7 @@ $m3 = 0;
                                 <div class="popup-total">
                                     <span>합계</span><span id="total">-</span>
                                 </div>
-                                <a class="popup-button" id="detailLink" href="#" target="_blank">상세보기<i></i>
+                                <a class="popup-button litebox" id="detailLink" href="#" target="_blank">상세보기<i></i>
                                 </a>
                             </div>
                         </div>
@@ -608,133 +592,133 @@ $m3 = 0;
                                     emission: 19991.33,
                                     absorption: 4106.10,
                                     total: 15885.22,
-                                    link: "#"
+                                    link: "#gn"
                                 },
                                 changwon: {
                                     name: "창원",
                                     emission: 5906.70,
                                     absorption: 364.65,
                                     total: 5542.05,
-                                    link: "#"
+                                    link: "#cw"
                                 },
                                 jinju: {
                                     name: "진주",
                                     emission: 2338.81,
                                     absorption: 283.69,
                                     total: 2055.12,
-                                    link: "#"
+                                    link: "#jj"
                                 },
                                 tongyeong: {
                                     name: "통영",
                                     emission: 1095.68,
                                     absorption: 113.53,
                                     total: 982.16,
-                                    link: "#"
+                                    link: "#ty"
                                 },
                                 sacheon: {
                                     name: "사천",
                                     emission: 758.23,
                                     absorption: 45.51,
                                     total: 712.72,
-                                    link: "#"
+                                    link: "#sc"
                                 },
                                 gimhae: {
                                     name: "김해",
                                     emission: 2860.79,
                                     absorption: 131.31,
                                     total: 2729.48,
-                                    link: "#"
+                                    link: "#gh"
                                 },
                                 miryang: {
                                     name: "밀양",
                                     emission: 847.65,
                                     absorption: 396.43,
                                     total: 451.22,
-                                    link: "#"
+                                    link: "#my"
                                 },
                                 geoje: {
                                     name: "거제",
                                     emission: 960.66,
                                     absorption: 117.13,
                                     total: 843.53,
-                                    link: "#"
+                                    link: "#gj"
                                 },
                                 yangsan: {
                                     name: "양산",
                                     emission: 2163.30,
                                     absorption: 325.76,
                                     total: 1837.54,
-                                    link: "#"
+                                    link: "#ys"
                                 },
                                 uiryeong: {
                                     name: "의령",
                                     emission: 295.38,
                                     absorption: 218.97,
                                     total: 76.41,
-                                    link: "#"
+                                    link: "#ur"
                                 },
                                 haman: {
                                     name: "함안",
                                     emission: 681.12,
                                     absorption: 111.88,
                                     total: 569.24,
-                                    link: "#"
+                                    link: "#ha"
                                 },
                                 changnyeong: {
                                     name: "창녕",
                                     emission: 590.61,
                                     absorption: 77.28,
                                     total: 513.33,
-                                    link: "#"
+                                    link: "#cn"
                                 },
                                 goseong: {
                                     name: "고성",
                                     emission: 510.67,
                                     absorption: 265.00,
                                     total: 245.67,
-                                    link: "#"
+                                    link: "#gs"
                                 },
                                 namhae: {
                                     name: "남해",
                                     emission: 303.53,
                                     absorption: 145.48,
                                     total: 158.05,
-                                    link: "#"
+                                    link: "#nh"
                                 },
                                 hadong: {
                                     name: "하동",
                                     emission: 459.73,
                                     absorption: 339.55,
                                     total: 120.18,
-                                    link: "#"
+                                    link: "#hd"
                                 },
                                 sancheong: {
                                     name: "산청",
                                     emission: 332.82,
                                     absorption: 247.71,
                                     total: 85.11,
-                                    link: "#"
+                                    link: "#cc"
                                 },
                                 hamyang: {
                                     name: "함양",
                                     emission: 326.06,
                                     absorption: 125.59,
                                     total: 200.47,
-                                    link: "#"
+                                    link: "#hy"
                                 },
                                 geochang: {
                                     name: "거창",
                                     emission: 501.62,
                                     absorption: 364.58,
                                     total: 137.04,
-                                    link: "#"
+                                    link: "#gc"
                                 },
                                 hapcheon: {
                                     name: "합천",
                                     emission: 479.76,
                                     absorption: 431.07,
                                     total: 48.69,
-                                    link: "#"
+                                    link: "#hc"
                                 }
                             };
 
