@@ -484,9 +484,9 @@ nav.gnb ul li a.active:after{
     background: var(--main-color); width:30px !important;
 }
 .swiper-pagination1 .swiper-pagination-bullet{background:#fff;}
-@media (min-width: 364px) {
+@media (min-width: 354px) {
 #intro{
-    padding-top: 204px;
+    padding-top: 200px;
 }
 }
 
@@ -1944,3 +1944,113 @@ nav.gnb ul li a.active:after{
 }
 }
 
+
+
+/*popup*/
+
+.map-info{
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+.map-info .tlt{
+    background: var(--main-color);
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.map-info .tlt2{
+    background: var(--point-color);
+}
+.map-info span{
+    font-size: 14px;
+    opacity: 0.77;
+}
+.pop-table{
+    min-width: 768px;
+    width: 100%;
+    border-top: 2px solid var(--main-color);
+}
+.pop-table2{
+    border-top: 2px solid var(--point-color);
+}
+.pop-table th{
+    padding: 10px 0px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #dedede;
+    text-align: center;
+    border-right: 1px solid #dedede;
+}
+.pop-table td{
+    padding: 10px;
+    border-bottom: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    text-align: center;
+}
+.pop-table th:last-child{border-right:0px;}
+.pop-table td:last-child{border-right:0px;}
+.pop-table td.category{}
+.pop-table td.sub-category{}
+.scroll-box{
+    overflow-x: auto;
+}
+.pop-table td.b{font-weight: bold; text-align: left;}
+
+
+@media (min-width: 768px) {
+  .map-info{}
+.map-info .tlt{}
+.map-info span{}
+.pop-table{}
+.pop-table th{}
+.pop-table td{}
+.pop-table td.category{}
+.pop-table td.sub-category{}  
+.scroll-box{}
+}
+
+
+@media (min-width: 1200px) {
+  .map-info{
+    padding: 35px;
+}
+.map-info .tlt{
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.map-info span{
+    font-size: 16px;
+}
+.pop-table{}
+.pop-table th{
+    padding: 15px 0;
+}
+.pop-table td{
+    padding: 15px;
+    text-align: center;
+}
+.pop-table td.category{}
+.pop-table td.sub-category{}  
+.scroll-box{}
+}
+
+
+
+#ghgChart{width:100%;}
+
+
+
+@media (min-width: 1200px) {
+.sub_graph{padding: 0 60px 0 0}
+}
+
+
+.tb-bg{background: #f1fdf2;}

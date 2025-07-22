@@ -1,7 +1,7 @@
 <? include("../inc/menu_link.php"); ?>
 <?php
 $menuCount = [
-    1 => 5, 
+    1 => 6, 
     2 => 4, 
     3 => 5, 
     4 => 4  
