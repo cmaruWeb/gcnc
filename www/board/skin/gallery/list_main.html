@@ -1,0 +1,24 @@
+			<li>
+				<?php if (!empty($OT_ID) && $OT_LEVELX <= '2')  { ?>
+				<span class="select_btn"><label for="idx<?=$idx?>" class="all-hidden">º±≈√</label><input type="checkbox" name="<?=$idx?>" id="idx<?=$idx?>" value="Y"></span>
+				<? } ?>
+				<a href="<?=$PHP_SELF?>?code=<?=$code?>&page=<?=$page?>&bbsData=<?=$bbsData?>&mode=view&m2=<?=$m2?>">
+					<div class="photo">
+						<? if(!empty($tmp_image1)){?>
+							<? if(!empty($file1) && ($file1_ext=="jpg" || $file1_ext=="gif" || $file1_ext=="png")){?>
+								<img src="<?=$s_img?>" alt="<?=$title?>" />
+							<? }else{?>
+								<img src="/bbsDown/editor_up/<?=$s_img?>" alt="<?=$title?>" />
+							<? }?>
+						<? }else{?>
+						<img src="<?=$s_img?>" alt="<?=$title?>"/>
+						<? }?>
+					</div>
+					<div class="txt">
+						<dl>
+							<dt><span class="tit"><?=$show_title?></dt>
+							<dd class="date"><?=$registerDay?></dd>
+						</dl>
+					</div>
+				</a>
+			</li>

@@ -1,0 +1,85 @@
+<script type="text/javascript">
+function check_s_gubun(obj) {
+	var sel_idx = $(obj).data('val');
+	document.forms.bbs_search_form.gubunx.value = sel_idx;
+	document.forms.bbs_search_form.submit();
+}
+
+</script>
+
+<!--검색-->
+<form name="bbs_search_form" id="bbs_search_form" method="GET" action="<?=$PHP_SELF?>" onsubmit="return bbsSearchSendit();">
+<input type="hidden" name="code" id="code" value="<? echo $code; ?>" />
+<!--<input type="hidden" name="gubunx" id="gubunx" value="<? echo $s_gubunx ?>" />-->
+<div class="boardSearch">
+	<fieldset class="divide-con-4">
+		<span class="width_12">
+			<select title="검색항목 선택" name="gubunx">
+				<option value="" <? if($s_gubunx=="") echo "selected"; ?> data-val="">전체</option>
+				<?
+				if(!empty($buncodxx)) {
+					if(strstr($buncodxx,"|")) {
+						$buncod_exp = explode("|",$buncodxx);
+						$buncod_mx = sizeof($buncod_exp);
+					} else {
+						$buncod_exp[0] = $buncodxx;
+						$buncod_mx = 1;
+					}
+				?>
+				<? for($j=0;$j < $buncod_mx;$j++) { $jx++; ?>
+				<option <? if($buncod_exp[$j]==$s_gubunx) echo "selected"; ?>  data-val="<?=$buncod_exp[$j]?>"><?=$buncod_exp[$j]?></option>
+				<? }?>
+				<?
+				}
+				?>
+			</select>
+		</span>
+		
+		<span class="width_12">
+			<select title="검색어 분류" id="where" name="search">
+				<option value="title" <? if($search=="title") echo "selected"; ?>>제목</option>	
+			<option value="content" <? if($search=="content") echo "selected"; ?>>내용</option>	
+			</select>
+		</span>
+
+		<span class="width_35">
+			<label for="keyword" class="blind">검색어입력</label>
+			<input type="search" placeholder="검색어를 입력하세요." id="keyword" name="searchstring" value="<?=$searchstring?>">
+		</span>
+		<span class="width_8">
+			<label for="searchBtn" class="blind">검색버튼</label>
+			<input type="submit" onclick="document.bbs_search_form.submit();" id="searchBtn" value="검색">
+		</span>
+	</fieldset>							
+</div>
+</form>
+
+<!--검색e--> 
+
+<!--리스트-->
+<div class="board">
+	<div class="report-board">
+	<form name="bbs_form" id="bbs_form" method="post" action="<?=$boardURL?>/bbs_del.php">
+	<input type="hidden" name="Act" id="Act" value="selectDel" />
+	<input type="hidden" name="doc_url" id="doc_url" value="<? echo $PHP_SELF; ?>" />
+	<input type="hidden" name="code" id="code" value="<? echo $code; ?>" />
+	<input type="hidden" name="m2" id="m2" value="<?=$m2?>" />
+
+	<? if($total==0){?>
+	<div class="tac pdbox mb">
+			게시물이 없습니다.
+	</div>
+	<? }else{?>
+
+	<ul>
+		<!--<li class="item">
+			<span class="select_btn"><? if (!empty($OT_ID) && $OT_LEVELX <= '2')  { ?><label for="checkAll" class="all-hidden">선택</label><input type="checkbox" name=checkAll id="checkAll" onclick="chkAll()"><? } ?></span>		
+			<div class="board_h5">					
+				<span class="title">제목</span>
+			</div>
+			<div class="boardInfo">
+				<span class="name">작성자</span>
+				<span class="date">날짜</span>
+			</div>
+		</li>-->
+	<? }?>

@@ -1,0 +1,159 @@
+<link rel="stylesheet" type="text/css" href="/board/<?=$skinDir?>/css/style.css">
+<!--<script src="/board/<?=$skinDir?>/pdf_js/build/pdf.js"></script>
+<script src="/board/<?=$skinDir?>/pdf_js/web/viewer.js"></script>--> 
+<!--<script src="/board/<?=$skinDir?>/js/pdfobject.js"></script>-->
+<!-- 글읽기 -->
+<div class="board">
+	<div class="pdinner">
+
+		<div class="report-board">
+			<div class="item report-view">
+				<div class="report-con">
+					<div class="report_thumb">
+
+					<div class="report_img">
+						
+						<div class="thumbnail-wrap">
+							<div class="thumbnail">
+								<div class="centered">
+									<? if(!empty($file1)||!empty($file2)||!empty($file3)||!empty($file4)||!empty($file5)||!empty($file6)||!empty($file7)){ ?>
+										<?=$show_Image1?><?=$show_Image2?><?=$show_Image3?><?=$show_Image4?><?=$show_Image5?><?=$show_Image6?><?=$show_Image7?>
+									<? }?>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					</div>
+					<div class="report_content">
+						<h4 class="subject">
+							 <?=$title?>
+						</h4>
+						<div class="info">
+							<ul>
+								<?php if(!empty($gubunx)){?>
+								<li>
+									<strong>분류</strong>
+									<?php echo $gubunx; ?>
+								</li>
+								<?php }?>
+								<!-- <li>
+									<strong>연구책임자</strong>
+									<?=$name?>
+								</li>
+								<li>
+									<strong>발행일</strong>
+									<?=$strdat?>
+								</li>
+								<li>
+									<strong>분량/크기</strong>
+									<?=$area?>
+								</li> -->
+								<li>
+									<strong>조회</strong>
+									<?=$readCnt?>
+								</li>
+							</ul>
+						</div>
+						<? if(!empty($file2)){?>
+						<div class="action">
+							<? $down_page_url = "$boardURL/bbs_download.php?code=$code&no=$idx&sd=/bbsDown/$code&dn=1"; ?>
+							<a href="/bbsDown/<?=$code?>/<?=$file2?>" title="PDF형식의 파일 미리보기" class="pdfview_btn" target="_blank">PDF 바로보기</a>
+							<a href="<?=$down_page_url?>&amp;fn=2" title="PDF형식의 파일 다운로드" class="down_btn">PDF 다운로드</a>
+						</div>
+						<? }?>
+					</div>
+				</div>
+				<div class="editor_view">
+				<?
+			//PDF만 추출
+			for($i=1; $i<=7; $i++){
+				if(pathinfo($file_url."/".${'file'.$i}, PATHINFO_EXTENSION) == "pdf"){ //pdf만 추출
+					//echo '<object data="http://'.$file_url."/".${'file'.$i}.'" type="application/pdf" width="100%" height="1000px"></object>';
+			?>
+			<div id="results" style="display: none;"></div>
+			<div class="pdf_viewer"></div>
+			<script src="/board/<?=$skinDir?>/js/pdfobject.js"></script>
+			<script>
+			var skinDir = "<?=$skinDir?>";
+			var agent = navigator.userAgent.toLowerCase();
+
+			if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) { //ie
+				var options = {
+					pdfOpenParams: {
+						navpanes: 0,
+						toolbar: 0,
+						statusbar: 0,
+						view: "FitV",
+						pagemode: "thumbs"
+					},
+					PDFJS_URL: "/board/"+skinDir+"/js/web/viewer.html"
+				};
+			}else{
+				var options = {
+					pdfOpenParams: {
+						navpanes: 0,
+						toolbar: 0,
+						statusbar: 0,
+						view: "FitV",
+						pagemode: "thumbs",
+						page: 1
+					},
+					forcePDFJS: true,
+					PDFJS_URL: "/board/"+skinDir+"/js/web/viewer.html"
+				};
+			}
+			var pdf_file = "//<?=$file_url?>/<?=${'file'.$i}?>";
+			var myPDF = PDFObject.embed(pdf_file, ".pdf_viewer", options);
+
+			var el = document.querySelector("#results");
+			el.setAttribute("class", (myPDF) ?"success" :"fail");
+			el.innerHTML = (myPDF) ?"PDFObject was successful!" :"Uh-oh, the embed didn't work.";
+			</script>
+			<?
+				}
+			}
+			?>
+				<?=$content?>
+				</div>
+			</div>
+
+			<div class="boardButton">
+				<ul>
+					<? if( (($aWrite >= $OT_LEVELX) && !empty($OT_ID)) || ($aWrite == '5') || (intval($OT_LEVELX)==1) ) { ?>
+					<li><span><a href="<?=$PHP_SELF?>?code=<?=$code?>&amp;bbsData=<?=$mvData?>&amp;mode=check&amp;modex=d&m2=<?=$m2?>">삭제</a></span></li>
+					<li><span><a href="<?=$PHP_SELF?>?code=<?=$code?>&amp;bbsData=<?=$mvData?>&amp;mode=check&amp;modex=e&m2=<?=$m2?>">수정</a></span></li>
+					<? }?>
+					<li><span><a href="<?=$PHP_SELF?>?code=<?=$code?>&amp;bbsData=<?=$mvData?>&amp;mode=list&m2=<?=$m2?>">목록</a></span></li>
+				</ul>
+			</div>
+
+			<div class="view_link">
+				<dl class="pretext">
+					<dt class="tit">이전글 </dt> 
+					<dd class="data">
+						<?
+						$page = $page;
+						echo view_prev_list($postRow, $_SELF, $page, 48);
+						?>
+					</dd>
+				</dl>
+				<dl class="nexttext">
+					<dt class="tit">다음글</dt> 
+					<dd class="data">
+						<?
+						$page = $page;
+						echo view_next_list($nextRow, $_SELF, $page, 48);
+						?>
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+	
+
+<!--글읽기 e-->

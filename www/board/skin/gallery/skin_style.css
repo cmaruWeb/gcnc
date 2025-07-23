@@ -1,0 +1,323 @@
+@charset "utf-8"; 
+/* NHN > UIT Center > Open UI Platform Team > Jeong Chan Myeong(dece24@nhncorp.com) */
+
+#su_board { margin:0 auto; }
+/*.displayNone{ margin:0 15px 0 10px; padding:0;}*/
+
+
+.displayNone{ display:none;}
+.boardInformation{ position:relative; padding:10px 0; font-size:.75em; font-family:Sans-serif; line-height:normal; *zoom:1;}
+.boardInformation *{ margin:0; padding:0;}
+.boardInformation:after{ content:""; display:block; float:none; clear:both;}
+.boardInformation ul{ position:relative; overflow:hidden;}
+.boardInformation li{ list-style:none; position:relative; left:-1px; display:inline; padding-left:5px; background:url(/image/board//lineVr11.gif) no-repeat left center;}
+.boardInformation em,
+.boardInformation strong{ color:#ff6600;}
+.boardInformation strong{ font:bold 11px Tahoma;}
+.boardInformation a{ text-decoration:none; color:#000;} 
+.boardInformation a:hover,
+.boardInformation a:active,
+.boardInformation a:focus{ text-decoration:underline;}
+.boardInformation .infoLeft{ float:left;}
+.boardInformation .infoRight{ float:right;}
+
+.boardInformation .infoRight  fieldset{ border:0; position:relative; clear:both; text-align:center; float:right;}
+.boardInformation .infoRight  fieldset:after{ content:""; display:block; float:none; clear:both;}
+.boardInformation .infoRight  fieldset *{ vertical-align:middle;}
+.boardInformation .infoRight  legend{ position:absolute; width:0; height:0; overflow:hidden; font:0/0 Sans-serif; visibility:hidden;}
+.boardInformation .infoRight  select{ font-size:12px; height:23px;}
+.boardInformation .infoRight .inputText{ border:1px solid #ccc; width:140px; height:13px; padding:4px 4px 2px 4px; font-size:12px; *margin:-1px 0;}
+
+.boardListForm{ margin:0; font-size:.75em; font-family:Sans-serif; line-height:normal;}
+.boardListForm *{ margin:0; padding:0;}
+.boardListForm fieldset{ border:0; position:relative; clear:both;}
+.boardListForm fieldset:after{ content:""; display:block; float:none; clear:both;}
+.boardListForm legend{ position:absolute; width:0; height:0; overflow:hidden; font:0/0 Sans-serif; visibility:hidden;}
+.boardListForm em,
+.boardListForm strong{ font-style:normal; color:#ff6600;}
+.boardListForm a{ text-decoration:none; color:#000;} 
+.boardListForm a:hover,
+.boardListForm a:active,
+.boardListForm a:focus{ text-decoration:underline;}
+
+.boardList{ border:0; border-top:1px solid #ccc; border-bottom:1px solid #ccc; width:100%; font-family:Sans-serif;}
+.boardList .inputCheck{ width:13px; height:13px;}
+.boardList .jumpTo{ margin:-3px 0;}
+.boardList .jumpTo *{ vertical-align:middle; *vertical-align:top;}
+.boardList .jumpTo select{ font-size:1em; *margin-right:5px;}
+.boardList .jumpTo button{ border:0; padding:0; margin:0; width:22px; height:20px; text-align:center; background:url(/image/board/buttonBg2byte.gif) no-repeat; font-size:11px; letter-spacing:-1px; cursor:pointer; line-height:20px;}
+.boardList tr.notice{ background:#f8f8f8;}
+.boardList tr.bg1{ background:#fff;}
+.boardList tr.bg2{ background:#fbfbfb;}
+.boardList th{ border:0; border-bottom:1px solid #ccc; padding:7px; white-space:nowrap; text-align:center; font:bold 1em "맑은 고딕"; color:#333; background:#fff url(/image/board/bgThDefault.gif) repeat-x left bottom; line-height:normal;}
+
+.boardList td{ border:0; border-top:1px solid #ddd; padding:6px; white-space:nowrap; text-align:center; color:#666; line-height:normal;}
+.boardList td.num{ font:11px Tahoma;}
+.boardList td.check{ font:11px Tahoma;}
+.boardList td.category{}
+.boardList td.title{ width:100%; white-space:normal; text-align:left;}
+.boardList td.title .replyNum{ font:11px Tahoma; color:#ccc;}
+.boardList td.author{}
+.boardList td.author2{text-align:left;}
+.boardList td.vCount{ text-align:right; font:11px Tahoma;}
+.boardList td.rCount{ text-align:right; font:11px Tahoma;}
+.boardList td.date{ font:11px Tahoma;}
+
+.boardNavigation{ position:relative; padding:10px 0; *zoom:1; text-align:center;}
+.boardNavigation:after{ content:""; display:block; float:none; clear:both;}
+.boardNavigation .pagination{ padding:5px 0;}
+.boardNavigation .buttonLeft{ float:left; text-align:left;}
+.boardNavigation .buttonRight{ float:right; text-align:right;}
+
+
+
+.boardRead{ font-family:Sans-serif;}
+
+.boardReadHeader{ margin-bottom:5px; *zoom:1; font-family:Sans-serif;}
+.boardReadHeader:after{ content:""; display:block; float:none; clear:both;}
+.boardReadHeader *{ margin:0; padding:0;}
+.boardReadHeader .title{font:normal bold 1.3em "맑은 고딕"; float:left;}
+.boardReadHeader em{ float:right; font:normal bold 1em "맑은 고딕", MalgunGothic, AppleGothic, "돋움", Dotum, "굴림", Gulim, Sans-serif;}
+.boardReadHeader a{ text-decoration:none; color:#000; font:bold 1em "맑은 고딕", MalgunGothic, AppleGothic, "돋움", Dotum, "굴림", Gulim, Sans-serif;}
+.boardReadHeader a:hover,
+.boardReadHeader a:active,
+.boardReadHeader a:focus{ text-decoration:underline;}
+
+.boardReadBody{ padding:15px 10px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; line-height:19px; }
+
+.boardReadFooter{ padding:10px 0; *zoom:1; color:#666; line-height:1em; font:11px Tahoma;}
+.boardReadFooter:after{ content:""; display:block; float:none; clear:both;}
+.boardReadFooter *{ margin:0; padding:0;}
+.boardReadFooter a{ color:#666;}
+.boardReadFooter .footerLeft{ float:left;}
+.boardReadFooter .footerRight{ float:right;}
+.boardReadFooter dl{ clear:both; white-space:nowrap;}
+.boardReadFooter dt{ display:inline; font-weight:bold;}
+.boardReadFooter dd{ display:inline;}
+.boardReadFooter .footerRight dl{ float:right;}
+.boardReadFooter .footerRight dl.noBr{ position:relative; left:5px; float:right; overflow:hidden; white-space:nowrap;}
+.boardReadFooter .footerRight dl.noBr dt{ position:relative; left:-1px; padding-left:10px; background:url(/image/board//lineVr11.gif) no-repeat left center;}
+.boardReadFooter .footerRight dl.noBr dd{ margin-right:5px;}
+
+.boardRead .boardNavigation{ border-top:1px solid #ccc;}
+
+.feedbackList{ position:relative; overflow:hidden; font-size:.75em; font-family:Sans-serif; padding-top:15px; margin-bottom:10px; color:#666;}
+.feedbackList *{ margin:0; padding:0;}
+.feedbackList .title{ position:relative; font:bold 1.5em "맑은 고딕", MalgunGothic, AppleGothic, "돋움", Dotum, "굴림", Gulim, Sans-serif; color:#000; margin-bottom:10px;}
+.feedbackList .title strong{ color:#ff6600;}
+.feedbackList dl{ position:relative; padding-top:3px; margin-bottom:3px; border-top:1px dashed #ddd;}
+.feedbackList dt{ font:bold 1.25em "맑은 고딕", MalgunGothic, AppleGothic, "돋움", Dotum, "굴림", Gulim, Sans-serif; margin-bottom:5px; color:#333;}
+.feedbackList dd{ line-height:1.5em;}
+.feedbackList dd.trackbackTitle{ font-weight:bold;}
+.feedbackList dd.text{}
+.feedbackList dd.time{ position:absolute; top:5px; right:20px; font:11px Tahoma;}
+.feedbackList dd a.delete{ font-weight:bold; color:#ff6600;}
+.feedbackList a{ text-decoration:none;} 
+.feedbackList a:hover,
+.feedbackList a:active,
+.feedbackList a:focus{ text-decoration:underline;}
+
+.replyForm{ padding:10px 20px 15px 20px; font-size:.75em; font-family:Sans-serif; color:#666; margin-bottom:20px; background:#f4f4f4; -moz-border-radius:10px; -webkit-border-radius:10px;}
+.replyForm *{ margin:0; padding:0;}
+.replyForm fieldset{ border:0; position:relative;}
+.replyForm fieldset:after{ content:""; display:block; float:none; clear:both;}
+.replyForm legend{ position:absolute; width:0; height:0; overflow:hidden; font:0/0 Sans-serif; visibility:hidden;}
+.replyForm .title{ font:bold 1.5em "맑은 고딕", MalgunGothic, AppleGothic, "돋움", Dotum, "굴림", Gulim, Sans-serif; color:#000; margin-bottom:10px;}
+.replyForm textarea{ position:relative; width:95%; height:50px; border:1px solid #ccc; font-size:1em; overflow:auto; padding:10px; margin-bottom:10px;}
+.replyForm .inputText{ border:1px solid #ccc; padding:2px 4px 4px 4px; width:150px; height:13px; vertical-align:middle; *margin:-1px 0;}
+.replyForm dl{ margin-bottom:10px;}
+.replyForm dt{ width:80px; float:left; padding-top:6px; font-weight:bold;}
+.replyForm dd{ margin-bottom:5px;}
+
+.boardWrite{ font-size:.75em; font-family:Sans-serif;}
+.boardWrite *{ margin:0; padding:0;}
+.boardWrite li{ list-style:none;}
+.boardWrite fieldset{ border:0; position:relative;}
+.boardWrite legend{ position:absolute; width:0; height:0; overflow:hidden; font:0/0 Sans-serif; visibility:hidden;}
+.boardWrite dl:after{ content:""; display:block; float:none; clear:both;}
+.boardWrite dt{ float:left; width:50px; margin-right:-50px; font-weight:bold; clear:left; padding-top:6px;}
+.boardWrite dd{ margin-left:50px; clear:right;}
+.boardWrite .boardWriteHeader .inputText{ width:96%; border:1px solid #ccc; padding:2px 4px 4px 4px; height:15px; *margin:-1px 0;}
+.boardWrite .boardWriteHeader{ margin-bottom:10px;}
+.boardWrite .boardWriteBody{ margin-bottom:10px;}
+.boardWrite .boardWriteBody dt{ padding-top:30px;}
+.boardWrite .boardWriteBody dd{ _zoom:1;}
+.boardWrite .boardWriteBody .styleText,
+.boardWrite .boardWriteBody .plainText,
+.boardWrite .boardWriteBody .htmlText{ display:none;}
+.boardWrite .boardWriteBody iframe,
+.boardWrite .boardWriteBody textarea{ width:95%; height:300px; border:1px solid #ccc; padding:10px; overflow:auto; font-size:1em; margin-bottom:10px;}
+.boardWrite .boardWriteBody .plainText textarea{ *margin:-1px 0;}
+.boardWrite .boardWriteBody .active{ display:block;}
+.boardWrite .boardWriteBody ul{ float:right; position:relative; right:4%;}
+.boardWrite .boardWriteBody li{ float:left; background:#eee; -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; -webkit-border-radius-topleft:5px; -webkit-border-radius-topright:5px; margin-left:5px;}
+.boardWrite .boardWriteBody li a{ display:block; float:left; text-decoration:none; color:#000; height:20px; padding:7px 15px 0 15px; letter-spacing:-1px;}
+.boardWrite .boardWriteBody li.active a{ font-weight:bold;}
+.boardWrite .boardWriteFooter .inputFile{ width:97%; border:1px solid #ccc; padding:2px 4px 4px 4px; height:23px;}
+.boardWrite .boardNavigation{ padding:10px 0; clear:both;}
+
+
+
+
+
+
+
+/*----- 게시판 write ------*/
+table.board04_write {
+	clear:both;
+	width:100%;
+	border-top:2px solid #698dc7;
+	border-bottom:2px solid #698dc7;
+	table-layout:fixed;
+}
+	table.board04_write th,
+	table.board04_write td {
+		padding:5px 0 5px;
+		border-bottom:1px solid #b3c3e1;
+	}
+	table.board04_write td td {padding:0; border:none;}
+	table.board04_write th {
+		text-align:left;
+		padding-left:14px;
+		background:#f0f5fd;
+		color:#5278b7;
+	}
+		table.board04_write th span {
+			padding-right:4px;
+			color:#7399d8;
+		}
+	table.board04_write td {
+		padding-left:10px;
+	}
+		table.board04_write td.input {
+			padding:3px 14px 3px 10px;
+		}
+			table.board04_write td.input input {
+				margin:0 0 3px;
+				border:#CCC solid 1px;
+			}
+		table.board04_write td img {
+			margin-top:-1px;
+			vertical-align:middle;
+		}			
+		table.board04_write input, table.board04_write select {
+			vertical-align:middle;
+		}
+		table.board04_write td span {
+			color:#7399d8;
+			margin-right:5px;
+		}
+		table.board04_write td textarea {
+			width:100%;
+			border:#CCC solid 1px;
+
+		}
+table.board04_write col.th {
+	width:124px;
+	_width:110px;
+}
+		table.4_write ul.selectBox {float:left; width:auto; margin:0;}
+			table.4_write ul.selectBox li {float:left; width:auto; margin:0; height:auto;}
+			table.4_write ul.selectBox li.selBox {margin:2px 3px 0 0; width:auto; height:auto;}
+			table.4_write ul.selectBox li img {margin-top:2px;}
+
+
+
+*+html table.board04_write col.th {
+	width:110px;
+}
+
+input.post {width:50px;}
+input.address {width:245px;}
+input.tel, select.tel {width:50px;}
+input.file {width:295px;}
+input.pass {width:120px;}
+
+
+@charset "utf-8"; 
+/* Jeong Chan Myeong(dece24[@]gmail.com) */
+
+/* Anchor Button */
+a.button,
+a.button span { position:relative; display:inline-block; text-decoration:none !important; background:url(/image/board/buttonWhite.gif) no-repeat; cursor:pointer; white-space:nowrap; vertical-align:middle; *vertical-align:top;}
+a.button { padding:0; background-position:left top; overflow:visible;}
+a.button span { left:2px; padding:6px 10px 5px 8px; color:#000; font:12px/12px Sans-serif; background-position:right top;}
+a.button, x:-moz-any-link { font:0/23px Sans-serif; padding:12px 0; top:1px;} /* Firefox 2 Fix */
+a.button, x:-moz-any-link, x:default { padding:0; top:0;} /* Firefox 2 Fix */
+/* Large Size */
+a.button.large { background-position:left -30px; }
+a.button.large span { padding:7px 10px 6px 8px; font:16px/16px Sans-serif; background-position:right -30px;}
+a.button.large, x:-moz-any-link { font:0/29px Sans-serif; padding:15px 0;} /* Firefox 2 Fix */
+a.button.large, x:-moz-any-link, x:default { padding:0;} /* Firefox 2 Fix */
+/* xLarge Size */
+a.button.xLarge { background-position:left -65px; }
+a.button.xLarge span { padding:8px 10px 7px 8px; font:20px/20px Sans-serif; background-position:right -65px;}
+a.button.xLarge, x:-moz-any-link { font:0/35px Sans-serif; padding:18px 0;} /* Firefox 2 Fix */
+a.button.xLarge, x:-moz-any-link, x:default { padding:0;} /* Firefox 2 Fix */
+/* Small Size */
+a.button.small { background-position:left -107px; }
+a.button.small span { padding:4px 6px 3px 4px; font:11px/11px Sans-serif; background-position:right -107px;}
+a.button.small, x:-moz-any-link { font:0/18px Sans-serif; padding:9px 0;} /* Firefox 2 Fix */
+a.button.small, x:-moz-any-link, x:default { padding:0;} /* Firefox 2 Fix */
+
+/* Control Button + Submit Button */
+span.button,
+span.button button,
+span.button input { position:relative; margin:0; display:inline-block; border:0; font:12px Sans-serif; white-space:nowrap; background:url(/image/board/buttonWhite.gif) no-repeat; vertical-align:middle;}
+span.button { padding:0; background-position:left top;}
+span.button, x:-moz-any-link{ font:0/23px Sans-serif; padding:11px 0;} /* Firefox 2 Fix */
+span.button, x:-moz-any-link, x:default{ padding:0;} /* Firefox 2 Fix */
+span.button button,
+span.button input { height:23px; left:2px; *top:-1px; _top:0; padding:0 10px 0 8px; *padding:0 5px 0 3px; line-height:24px; background-position:right top; cursor:pointer;}
+/* Large Size */
+span.button.large { background-position:left -30px; *top:-1px;}
+span.button.large, x:-moz-any-link{ font:0/29px Sans-serif; padding:15px 0;} /* Firefox 2 Fix */
+span.button.large, x:-moz-any-link, x:default{ padding:0;} /* Firefox 2 Fix */
+span.button.large button,
+span.button.large input { height:30px; *top:0; _top:-1px; padding:0 10px 0 8px; *padding:0 5px 0 3px; font:16px/30px Sans-serif; background-position:right -30px;}
+/* xLarge Size */
+span.button.xLarge { background-position:left -65px;}
+span.button.xLarge, x:-moz-any-link{ font:0/35px Sans-serif; padding:17px 0;} /* Firefox 2 Fix */
+span.button.xLarge, x:-moz-any-link, x:default{ padding:0;} /* Firefox 2 Fix */
+span.button.xLarge button,
+span.button.xLarge input { height:35px; padding:0 10px 0 8px; *padding:0 5px 0 3px; font:20px/36px Sans-serif; background-position:right -65px;}
+/* Small Size */
+span.button.small { background-position:left -107px;}
+span.button.small, x:-moz-any-link{ font:0/18px Sans-serif; padding:9px 0 8px 0;} /* Firefox 2 Fix */
+span.button.small, x:-moz-any-link, x:default{ padding:0;} /* Firefox 2 Fix */
+span.button.small button,
+span.button.small input { height:18px; *top:0; _top:-1px; padding:0 6px 0 4px; *padding:0 3px 0 2px; font:11px/18px Sans-serif; background-position:right -107px;}
+
+/* Strong Button */
+a.button.strong *,
+span.button.strong * { font-weight:bold !important;}
+
+/* Icon Add */
+a.button .icon { position:relative; border:0; vertical-align:middle;}
+span.button .icon { position:relative; left:10px; margin-right:8px; vertical-align:middle;}
+
+/* Color Preset */
+a.button.green,
+a.button.green span,
+span.button.green,
+span.button.green button,
+span.button.green input { background-image:url(/image/board/buttonGreen.gif); color:#fff;}
+a.button.black,
+a.button.black span,
+span.button.black,
+span.button.black button,
+span.button.black input { background-image:url(/image/board/buttonBlack.gif); color:#fff;}
+a.button.red,
+a.button.red span,
+span.button.red,
+span.button.red button,
+span.button.red input { background-image:url(/image/board/buttonRed.gif); color:#fff;}
+a.button.blue,
+a.button.blue span,
+span.button.blue,
+span.button.blue button,
+span.button.blue input { background-image:url(/image/board/buttonBlue.gif); color:#fff;}
+
+/* Offset Debug */
+a.button,
+span.button{ margin-right:2px;}
