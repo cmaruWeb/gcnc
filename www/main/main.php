@@ -1238,24 +1238,7 @@ if (USE_MAIN_BANNER) {
                     <div class="veideo-slider-box">
                         <div class="swiper video-slider">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <img src="/img/temp2.png" alt="홍보영상1" class="video-slide-img"/>
-                                        <i class="play-button"></i>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <img src="/img/temp2.png" alt="홍보영상1" class="video-slide-img"/>
-                                        <i class="play-button"></i>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <img src="/img/temp2.png" alt="홍보영상1" class="video-slide-img"/>
-                                        <i class="play-button"></i>
-                                    </a>
-                                </div>
+                                <?php echo bbs_latest_video("promotion", 0, 3, "/news/promotion.php"); // 홍보자료 ?>
                             </div>
                         </div>
                         <div class="button-box">

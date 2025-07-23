@@ -1989,6 +1989,134 @@ function bbs_latest_photo($code,$min=0,$max,$link){
 	return $latest_txt;
 }
 
+// 영상 최신글
+function bbs_latest_video($code,$min=0,$max,$link){
+	$latest_txt = "";
+	$sql = "SELECT idx,title,registerDay,link1,s_file,content,code, yiframe FROM tb_$code 
+		ORDER BY top desc, registerDay desc, ref desc, re_step, re_level LIMIT $min,$max";
+	$result = sql_query($sql);
+	$cnt = sql_num_rows($result);
+
+	if ($cnt > 0) {
+		while($row = sql_fetch_array($result)){
+			$registerDay = substr($row['registerDay'],0,10);
+			$title=strcut_utf8($row['title'],35,false,'..');
+			$bbsData=MyEncrypt("no=".$row['idx']);
+			$yiframe		= htmlspecialchars_decode($row['yiframe']); //유튜브 iframe 소스
+			$yiframe = str_replace("&#34;","\"",$yiframe);
+			$mode = "&amp;mode=view";
+			$code = $row['code'];
+			$idx = $row['idx'];
+			
+			$s_file = "";
+
+			$href = $link . "?bbsData=" . $bbsData . $mode;
+
+			$s_img = "";
+
+			// 동영상 추출
+			if (!empty($yiframe)) {
+				// 1. 플랫폼 판단
+				$moviePlatform = $y_id = "";
+				if (preg_match('/youtube/', $yiframe, $urlCheckMatchs)) {
+					if (preg_match('/shorts/', $yiframe, $urlCheckMatchs)) {
+						$moviePlatform = "youtube_shorts";
+					} else {
+						$moviePlatform = "youtube";
+					}
+				} else if (preg_match('/tv.naver/', $yiframe, $urlCheckMatchs)) {
+					$moviePlatform = "naver";
+				} else {
+					$moviePlatform = "";
+				}
+
+				// 2. 플랫폼에 따라 s_img 처리
+				switch ($moviePlatform) {
+					case "youtube": 
+						if (preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $yiframe, $y_matches)){
+							$y_id = $y_matches[1]; 
+						}
+						$movieIframeLink = "https://www.youtube.com/embed/";
+						if (!empty($y_id)){
+							$s_img = "https://img.youtube.com/vi/".$y_id."/mqdefault.jpg";
+						}
+						break;
+					case "youtube_shorts": 
+						if (preg_match('/[\\/\\&]shorts([^\\?\\&]+)/', $yiframe, $y_matches)){
+							$y_id = str_replace("/", "", $y_matches[1]); 
+						}
+						
+						$movieIframeLink = "https://www.youtube.com/embed/";
+						if (!empty($y_id)){
+							$s_img = "https://img.youtube.com/vi/".$y_id."/mqdefault.jpg";
+						}
+						break;
+					case "naver":
+						if (preg_match('/[\\/\\&]v([^\\?\\&]+)/', $yiframe, $y_matches)){
+							$y_id = str_replace("/", "", $y_matches[1]); 
+						}
+						$movieIframeLink = "https://tv.naver.com/embed/";
+						if (!empty($y_id)){
+							$s_img = getNaverTV_thumbImg_url($y_id);
+						}
+						break;
+					default: 
+						$y_id = "";
+						$s_img = "/img/no_img.jpg";
+				}
+
+				$movieIframeLink = $movieIframeLink.$y_id;
+				if (empty($y_id)) $s_img = "/img/no_img.jpg";
+			} else {
+				if($row['s_file']) {
+					$s_file = $row['s_file'];
+					$s_img  = "../bbsDown/".$code."/".$s_file;
+				} else {
+					$content = $row['content'];
+					preg_match_all("/<img[^>]*src=[\"']?([^>\"']+)[\"']?[^>]*>/i", $content, $out5);
+					$tmp_image1 = $out5[0][0];
+					$tmp_img = $tmp_image1;
+					$tmp_img = str_replace("/file","file",$tmp_img);
+					$tmp_img = str_replace("&#34;","",$tmp_img);
+					$tmp_img = str_replace(" alt=image","",$tmp_img);
+					if($tmp_img) {
+						//$s_img = "../bbsDown/editor_up/".$tmp_img;
+						$s_img = "".$tmp_img;
+						//에디터 이미지 따로 썸네일
+						preg_match_all("/<img[^>]*src=[\"']?([^>\"']+)[\"']?[^>]*>/i", $s_img, $matches);
+						$s_img = $matches[1];
+						$s_img = explode(" ",$s_img[0]); //타이틀을 제외한 
+						$s_img = $s_img[0];
+						$s_img = explode("/",$s_img);
+						$s_img = $s_img[3]; //파일명
+						$s_img2 = preg_replace("/\.[^\.]+$/i", "", $s_img); // 확장자제거
+						$s_img2 = $s_img2.'_s';
+						$s_img_ext = pathinfo($s_img, PATHINFO_EXTENSION); // 확장자만 출력
+						$s_img = $s_img2.".".$s_img_ext;
+						$s_img = "/bbsDown/editor_up/".$s_img;
+
+						if (!file_exists($_SERVER['DOCUMENT_ROOT'].$s_img)) $s_img = "";
+					}
+				}
+
+				if ($s_img == "") $s_img = "/img/no_img.jpg";
+			}
+
+			$latest_txt.= "
+				<div class=\"swiper-slide\">
+					<a href=\"$href\">
+						<img src=\"$s_img\" alt=\"$title\" class=\"video-slide-img\"/>
+						<i class=\"play-button\"></i>
+					</a>
+				</div>";
+		}
+	}else{
+		$latest_txt.= "<li class=\"none\"><a href=''>등록된 글이 없습니다.</a></li>";
+	}
+
+	return $latest_txt;
+}
+
 
 //최신글(교육홍보자료)
 function bbs_latest_promotion($code,$min=0,$max,$link){
