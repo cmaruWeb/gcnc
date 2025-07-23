@@ -1,0 +1,9 @@
+			<tr>
+				<?php if (!empty($OT_ID) && $OT_LEVELX <= '2')  { ?>
+				<td data-label="체크박스">
+					<label for="idx<?=$idx?>" class="all-hidden">선택</label><input type="checkbox" name="<?=$idx?>" id="idx<?=$idx?>" value="Y">
+				</td>
+				<? } ?>
+				<td data-label="용어명"><?php echo $title; ?></td>
+				<td data-label="뜻"><?php echo $contentTxt; ?></td>
+			</tr>

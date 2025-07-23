@@ -157,6 +157,56 @@ function writeSendit() {
 	checkSubmitForm(frm)
 }
 
+function writeSendit_dictionary() {
+	var frm = document.forms.write_form1;
+
+	checkEditorType();
+
+	if (frm.title.value == "") {
+		alert("용어명을 입력해 주십시오.");
+		frm.title.focus();
+		return false;
+	}
+
+	if (frm.buncodxx.value != "") {
+		if (frm.gubunx.value == "") {
+			alert('분류를 선택해주세요.');
+			frm.gubunx[0].focus();
+			return false;
+		}
+	}
+
+	if (frm.name.value == "") {
+		alert("작성자를 입력해 주십시오.");
+		frm.name.focus();
+		return false;
+	}
+
+	if (editorFlag == 'se2') {
+		if (frm.content.value == false) {
+			alert("뜻을 입력해 주십시오.");
+			frm.content.focus();
+			return false;
+		}
+	} else if (editorFlag == 'ckeditor') {
+		if (editor.getData() == '') {
+			alert("뜻을 입력해 주십시오.");
+			return false;
+		}
+		frm.content.value = editor.getData();
+
+	} else if (editorFlag == 'toast') {
+		const editorTxt = editorT.getMarkdown();
+		if(editorTxt.length == 0){
+			alert("뜻을 입력해 주십시오.");
+			return false;
+		}
+		frm.content.value = editorT.getHTML();
+	}
+
+	checkSubmitForm(frm)
+}
+
 function writeSendit_application() {
 	var frm = document.forms.write_form1;
 
