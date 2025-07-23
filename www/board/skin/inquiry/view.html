@@ -1,0 +1,107 @@
+<!-- 글읽기 -->
+<div class="board_view bmb">
+	<div class="board_view_top">
+		<? if($top=="2"){?>
+		<div class="mark_box">
+			<span class="mark">공지</span>
+		</div>	
+		<? }?>
+		<h4 class="tit"><? if($gubunx){?><span class="sort">[<?=$gubunx?>]</span><?}?><?=$title?></h4>
+		
+		<div class="info">
+			<span class="each">작성일 : <?=$registerDay?></span>
+			<span class="each">조회 : <?=$readCnt?></span>
+		</div>
+	</div>
+	<? $down_page_url = "$boardURL/bbs_download.php?code=$code&no=$idx&sd=/bbsDown/$code&dn=1"; ?>
+	<div class="board_view_con">
+		<table class="comm_table">
+			<colgroup>
+				<col width="15%"/>
+				<col width="*"/>
+			</colgroup>
+			<tr><th>성명</th><td><?=$name?></td></tr>
+			<tr><th>회사명</th><td><?=$vebnam?></td></tr>
+			<tr><th>연락처</th><td><?=$telnum?></td></tr>
+			<tr><th>문의분류</th> 
+				<td><?
+				if($pumnam=="1") {
+					echo "제품 문의";
+				} else if($pumnam=="2") {
+					echo "기타 문의";
+				} else{
+					echo "";
+				}
+				?></td></tr>
+			<tr><th>문의내용</th><td><?=$content?></td></tr>
+			<tr><th>첨부파일</th><td>
+				<div class="mb10"><? if(!empty($file1)||!empty($file2)||!empty($file3)||!empty($file4)||!empty($file5)||!empty($file6)||!empty($file7)){ ?>
+					<?=$show_Image1?><?=$show_Image2?><?=$show_Image3?><?=$show_Image4?><?=$show_Image5?><?=$show_Image6?><?=$show_Image7?>
+				<? }?></div>	
+				<? for($i=1; $i<=7; $i++) { ?>
+				<p class="file_each">
+					<input type="hidden" name="fileImageNo<?=$i?>" value="">
+					<? if(${'file'.$i}){?>
+					<a href="<?=$down_page_url?>&amp;fn=<?=$i?>" title="파일 다운받기"><?=${'fileName'.$i}?></a>
+					<? }?>
+				</p>
+				<? }?></td></tr>
+		</table>
+	</div>
+	<? if($comment_ok){ ?>
+		<? include "$boardDir/comment.php"; ?>
+	<? }?>
+	<div class="board_view_link">
+		<p class="tit">관련링크</p>
+		<div class="file_box">
+			<? 
+			for($i=1; $i<=3; $i++){
+			?>
+			<p class="link_each">
+				<?
+				if(${'link'.$i}){
+					echo ${'show_sitelink'.$i};	
+				} else{
+					echo "관련링크가 없습니다.";
+					break;
+				}?>
+			</p>
+			<?
+			}
+			?>
+		</div>
+	</div>
+	<div class="board_view_bottom">
+		<p class="tit"><span class="prev">이전글</span></p>
+		<div class="link">		
+			<?
+			$page = $page;
+			echo view_prev_list($postRow, $_SELF, $page, 48);
+			?>
+		</div>
+	</div>
+	<div class="board_view_bottom right">
+		<p class="tit"><span class="next">다음글</span></p>
+		<div class="link">			
+			<?
+			$page = $page;
+			echo view_next_list($nextRow, $_SELF, $page, 48);
+			?>
+		</div>
+	</div>
+</div>
+	<div class="boardButton">
+		<ul>
+			<? if( (($aWrite >= $OT_LEVELX) && !empty($OT_ID)) || ($aWrite == '5') || (intval($OT_LEVELX)==1) ) { ?>
+			<li><span><a href="<?=$PHP_SELF?>?code=<?=$code?>&amp;bbsData=<?=$mvData?>&amp;mode=check&amp;modex=d&m2=<?=$m2?>">삭제</a></span></li>
+			<li><span><a href="<?=$PHP_SELF?>?code=<?=$code?>&amp;bbsData=<?=$mvData?>&amp;mode=check&amp;modex=e&m2=<?=$m2?>">수정</a></span></li>
+			<li><span><a href="/board/move.php?code=<?=$code?>&amp;sw=copy&amp;bbsData=<?=$mvData?>&amp;modex=e&m2=<?=$m2?>&amp;mode=view" onclick="board_move(this.href); return false;">복사</a></span></li>
+			<? }?>
+			<?php if ((((intval($aReply) >= intval($OT_LEVELX)) && !empty($OT_ID)) OR (intval($aReply) == 5)) ) { ?>
+			<li><span><a href="<?=$PHP_SELF?>?code=<?=$code?>&amp;bbsData=<?=$mvData?>&amp;mode=write&reWrite=1&m2=<?=$m2?>">답글</a> </span> </li>
+			<?php } ?>
+			<li><span><a href="<?=$PHP_SELF?>?code=<?=$code?>&amp;bbsData=<?=$mvData?>&amp;mode=list&m2=<?=$m2?>">목록</a></span></li>
+		</ul>
+	</div>
+
+<!--글읽기 e-->

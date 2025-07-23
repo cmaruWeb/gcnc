@@ -1,0 +1,25 @@
+			<!--<li>
+				<? if (!empty($OT_ID) && $OT_LEVELX <= '2')  { ?>
+				<span class="select_btn"><input type="checkbox" name="<?=$idx?>" value="Y"></span>
+				<? } ?>
+				<a href="<?php echo $show_go; ?>">		
+				<?php echo $not_ico; ?>
+				<span class="title"><?=$level_img?><?php echo $title; ?><?php if($secret==1) echo $secret_ico; ?></span>
+				<span class="name"><?php echo $name; ?></span><span class="date"><?php echo $registerDay; ?></span>
+				</a>
+			</li>-->
+			<li>
+				<?php if (!empty($OT_ID) && $OT_LEVELX <= '2')  { ?>
+				<span class="select_btn"><label for="idx<?=$idx?>" class="all-hidden">º±≈√</label><input type="checkbox" name="<?=$idx?>" id="idx<?=$idx?>" value="Y"></span>
+				<? } ?>
+				<h5>
+					<a href="<?php echo $show_go; ?>">			
+						<?php echo $not_ico; ?>
+						<span class="title"><?=$level_img?><?php echo $title; ?><?php if($secret==1) echo $secret_ico; ?></span>
+					</a>
+				</h5>
+				<div class="boardInfo">
+					<span class="name"><?php echo $name; ?></span>
+					<span class="date"><?php echo $registerDay; ?></span>
+				</div>
+			</li>
