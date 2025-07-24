@@ -211,7 +211,7 @@
 	#d_lnb h2 .close img {max-width:65px;}
 
 	#d_lnb ul {height:100%;overflow:auto;text-align:left;border-top: 1px solid #dedede;}
-	#d_lnb li > a {display:block;padding:15px 30px;font-size: 19px;position:relative;border-bottom:1px solid #e6e6e6;font-weight: 800;color: #444;}
+	#d_lnb li > a {display:block;padding:15px 30px;font-size: 19px;position:relative;border-bottom:1px solid #e6e6e6;font-weight: 800;color: #444;pointer-events: none;}
 	#d_lnb li:last-child {display:none}
 
 	#d_lnb li.on {transition:all .3s ease-in-out}
