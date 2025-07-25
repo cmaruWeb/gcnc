@@ -14,6 +14,8 @@
 <? if($aSecurity != "") {?>
 	<input type="hidden" name="SITE_KEY" value="<?=RECAPTCHA_V3_SITE_KEY?>" />
 <?}?>
+<input type="hidden" name="pumnam" id="pumnam" value="1">
+<input type="hidden" name="vebnam" id="vebnam" value="회사명">
 
 <div class="writeinfo">
 	<p>본 사는 온라인 상담 서비스 제공을 위한
@@ -63,12 +65,12 @@
 				<input type="text" name="name" class="input_txt" id="name" hname="이름" value="<?=$w_name?>" option="" frequired="required" title="이름 입력" />
 			</span>
 		</li>
-		<li>
+		<!-- <li>
 			<span class="fm_list">회사명 <b class="redTxt">*</b></span>
 			<span class="fm_txt">
 				<input type="text" name="vebnam" class="input_txt" id="vebnam" hname="회사명" value="" option="" frequired="required" title="이름 입력" />
 			</span>
-		</li>
+		</li> -->
 		<li>
 			<span class="fm_list">연락처 <b class="redTxt">*</b></span>
 			<span class="fm_txt">
@@ -76,7 +78,7 @@
 				<input type="text" name="telnum" class="input_txt" id="telnum" hname="제목" value="" option="" frequired="required" title="제목 입력" onfocus="OnCheckPhone(this)" onKeyup="OnCheckPhone(this)" oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
 			</span>
 		</li>
-		<li>
+		<!-- <li>
 			<span class="fm_list">문의분류 <b class="redTxt">*</b></span>
 			<span class="fm_txt">
 				<label class="radio-inline">
@@ -86,7 +88,7 @@
 				  <input type="radio" id="pumnam2" value="2" name="pumnam" <? if($pumnam==2) echo "checked";?>> 기타 문의
 				</label>
 			</span>
-		</li>
+		</li> -->
 		<li>
 			<span class="fm_list">글작성 <b class="redTxt">*</b></span>
 			<span class="fm_txt">
