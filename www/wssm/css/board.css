@@ -1,0 +1,307 @@
+/*湲곕낯List*/
+.basicList{border-top:2px solid #303030; margin-bottom:20px;}
+
+.basicList ul li{overflow:hidden; position:relative; padding:20px 10px; overflow:hidden; color:#777777; border-bottom:1px solid #e6e6e6}
+.basicList ul li span{display:block}
+.basicList ul li a{color:#505050; display:block; overflow:hidden}
+.basicList ul li:hover{display:block; width:100%; height:100%; background:rgba(0,0,0,0.03)}
+
+.basicList ul li span{float:left; font-size:0.95em;}
+.basicList ul li span.select_btn{margin-bottom:10px; width:20px;}
+.basicList ul li span.notice{display:inline-block; margin-bottom:10px;  background:#002e4f; font-size:0.8em; font-weight:bold; padding:3px 12px; border-radius:100px; color:#ffffff}
+.basicList ul li span.num{display:none;}
+.basicList ul li span.cate{color:#969696; font-size:0.9em;}
+.basicList ul li span.title{width:100%; font-size:1em; margin-bottom:10px; color:#303030;  text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.basicList ul li span.name{clear:both; margin-right:5%; border-right:1px solid .e6e6e6; padding-right:5%;  text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.basicList ul li span.date{text-align:center;}
+.basicList ul li span.attm{width:30px; text-align:center;}
+.basicList ul li span.attm.in:before{font-family:'FontAwesome'; content:'\f0c7'; font-size:14px; color:#969696}
+
+.basicList ul li.tit_li{display:none}
+@media all and (min-width:768px) {
+
+.basicList{margin-bottom:30px}
+.basicList ul li {padding:20px 0px 20px 15px;}
+.basicList ul li span{margin-right:2%;}
+.basicList ul li span:last-child{margin-right:0%;}
+.basicList ul li span.select_btn{margin:0;}
+.basicList ul li span.cate{width:7%}
+.basicList ul li span.num{display:block; text-align:center; width:7%;}
+.basicList ul li span.notice{width:7%; text-align:center; margin-bottom:0px;}
+.basicList ul li span.none{width:7%; text-align:center; margin-bottom:0px; height:1px}
+.basicList ul li span.title{width:calc(56% - 60px); margin-bottom:0px;}
+.basicList ul li span.name{margin-right:2%; width:15%; padding-right:0%; text-align:center; border-right:0px; clear:none}
+.basicList ul li span.date{width:11%;}
+
+
+.basicList ul li.tit_li{display:block; background:#f5f5f5; color:#323232; text-align:center !important; font-weight:500}
+/*.basicList ul li.tit_li span.date{text-align:center }
+.basicList ul li.tit_li span.title{width:calc(63% - 60px);}*/
+}
+
+@media all and (min-width:1024px) {
+.basicList ul li span.title{width:calc(62% - 60px);}
+.basicList ul li span.name{width:15%;}
+.basicList ul li span.date{width:9%}
+
+/*.basicList ul li.tit_li span.title{width:calc(69% - 60px);}*/
+}
+
+
+/*媛ㅻ윭由� list*/
+.GalleryList{border-top:2px solid #303030; margin-bottom:20px;}
+.GalleryList ul {overflow:hidden; padding-top:20px;}
+.GalleryList ul li{border:1px solid #e6e6e6; margin-bottom:20px; position:relative;}
+.GalleryList ul li span{display:block;}
+.GalleryList ul li .Gimg{width:100%; height:200px; overflow:hidden; position:relative;}
+.GalleryList ul li .Gimg img{display:inline-block; vertical-align:middle; min-height:200px; width:100%;position:absolute; left:0; right:0; bottom:0; top:0; margin: auto;}
+.GalleryList ul li span.select_btn{position:absolute; padding:10px; left:0; top:0px; z-index:10}
+.GalleryList ul li span.title{display:block; padding:10px 10px 0px; font-weight:bold; font-size:1.1em; }
+.GalleryList ul li span.date{padding:10px; text-align:right}
+
+
+@media all and (min-width:640px) {
+.GalleryList ul li{width:47%; float:left; margin: 0 1.5%; margin-bottom:20px;}
+.GalleryList ul li span.title{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+}
+@media all and (min-width:768px) {
+.GalleryList{margin-bottom:30px}
+.GalleryList ul {padding-top:30px;}
+}
+
+@media all and (min-width:1024px) {
+.GalleryList ul li{width:30.33%;}
+
+}
+
+/*寃��됱갹*/
+.searchTop{margin-bottom:10px; overflow:hidden; text-align:right}
+.searchBox select, .searchBox input, .searchBox button {font-size:0.9em; font-family:inherit}
+.searchBox button{background:#505050; border-color:#505050; color:#ffffff}
+
+@media all and (min-width:768px) {
+.searchTop{margin-bottom:20px;}
+.searchBox {width:50%; float:right;}
+}
+
+/*�섏씠吏�*/
+.pageList{text-align:center; vertical-align:top; margin-bottom:20px;}
+.pageList a{display:inline-block; padding: 0 5px;}
+.pageList a:first-child, 
+.pageList a:last-child{display:none;}
+.pageList a img{height:30px;}
+.pageList span{display:inline-block; vertical-align:top}
+.pageList span a.on{border-bottom:2px solid .002e4f; color:#002e4f}
+.pageList span a:hover{color:#002e4f}
+.pageList span a{padding:0 20px; line-height:30px; font-weight:bold}
+.pageList span a:first-child, 
+.pageList span a:last-child{display:inline-block}
+@media all and (min-width:768px) {
+.pageList{margin-bottom:30px;}
+.pageList a:first-child, 
+.pageList a:last-child{display:inline-block;}
+}
+
+/*寃뚯떆�� 踰꾪듉*/
+.boardButton{margin-bottom:20px;text-align:right;}
+.boardButton span a{font-size:0.9em; padding:.548em .786em; display:block; color:#ffffff}
+.boardButton span{display:inline-block; background:#505050; }
+.boardButton span:last-child{background:#002e4f}
+
+@media all and (min-width:768px) {
+.boardButton{margin-bottom:30px;}
+.boardButton span a {padding:10px 20px;}
+}
+
+/*酉�*/
+.viewTop{border-top:2px solid #303030; padding:20px 10px; border-bottom:1px solid #c8c8c8}
+.viewTop h4{font-size:1.2em; font-weight:600; margin-bottom:10px;}
+.viewTop ul{overflow:hidden;}
+.viewTop ul li{float:left; float:left; margin-right:3%; padding-right:3%; border-right:1px solid #e6e6e6; line-height:100%;}
+.viewTop ul li:last-child{margin-right:0; padding-right:0; border-right:0}
+.v_attem{padding:10px 10px; border-bottom:1px solid #c8c8c8}
+.v_attem ul li span { display:inline-block; font-size:0.95em}
+.v_attem ul li span img{width:13px; vertical-align:middle; margin-right:10px}
+.v_attem ul li{line-height:20px; color:#808080}
+.v_contents{padding:10px 10px; border-bottom:1px solid #c8c8c8; min-height:150px}
+.v_bottom{border-bottom:1px solid #c8c8c8; margin-bottom:20px;}
+.v_bottom li{border-bottom:1px solid #e6e6e6; padding:10px 0; font-size:0.9em; padding-left:30px; background:url(../img/board/bg_viewbefore.gif) no-repeat 10px center}
+.v_bottom li span{font-weight:bold; margin-bottom:5px; display:inline-block}
+.v_bottom li:last-child{border-bottom:0px; background:url(../img/board/bg_viewnext.gif) no-repeat 10px center}
+
+@media all and (min-width:768px) {
+.v_contents{padding:20px 20px}
+.v_bottom{margin-bottom:30px; overflow:hidden;}
+.v_attem{padding:15px 10px;}
+.v_bottom li{float:left; width:50%; border-right:1px solid #e6e6e6;  background:url(../img/board/bg_viewbefore2.gif) no-repeat left center; padding:20px 10px 20px 30px; border-bottom:0px;}
+.v_bottom li:last-child{border-right:0; text-align:right;  background:url(../img/board/bg_viewnext2.gif) no-repeat right center; padding:20px 30px 20px 10px}
+}
+
+/*�쇱씠��*/
+#writeWrap{margin-bottom:20px;}
+.writecom{border-top:2px solid #808080; border-bottom:1px solid #c8c8c8}
+.writecom ul li{padding:10px 10px; overflow:hidden;}
+.writecom ul li span{display:block; float:left; line-height:35px}
+.writecom ul li span.w_txt{width:70px;}
+.writecom ul li span.inputTxt{width: calc(100% - 70px)}
+.writeCon{padding:10px 10px; min-height:200px; border-bottom:1px solid #c8c8c8; background:#f5f5f5}
+.writeCon iframe{width:100%}
+.writeBottom{border-top:0px; margin-bottom:20px;}
+.writeBottom ul li{padding:5px 10px !important}
+.writeBottom .attem_btn{padding:0px; width:25px; height:25px; line-height:20px; border-color:#808080;  background:#808080; color:#ffffff; font-weight:bold; font-size:15px}
+@media all and (min-width:768px) {
+.writeBottom{margin-bottom:30px;}
+#writeWrap{margin-bottom:30px;}
+.writecom ul li{padding:15px 10px}
+}
+
+
+
+
+
+
+/*탄소중립용어사전*/
+
+.dictionary {
+}
+
+
+.dictionary .search-box {
+  margin-bottom: 20px;
+  text-align: center;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.dictionary .search-box input {
+  padding: 10px;
+  width: 70%;
+  max-width: 400px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+}
+
+.dictionary .search-box button {
+  /* padding: 10px 20px; */
+  font-size: 1rem;
+  border: 0px;
+  background-color: var(--point-color);
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.dictionary .search-box button:hover {
+  background-color: #0056b3;
+}
+.dictionary table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  /* border-top: 2px solid var(--main-color); */
+}
+
+.dictionary th,
+.dictionary td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-weight: 400;
+  /* border-right: 1px solid #dedede; */
+}
+.dictionary td:last-child{border:0px;color: #444;}
+
+.dictionary th {
+  background: #f8f8f8;
+  font-weight: bold;
+  text-align: center;
+  border-top: 2px solid var(--main-color);
+}
+
+/* 반응형: 1200px 이하 */
+@media (max-width: 1200px) {
+
+  .dictionary th,
+  .dictionary td {
+    padding: 12px;
+  }
+}
+
+/* 반응형: 768px 이하 */
+@media (max-width: 768px) {
+  .dictionary .search-box input {
+    width: 95%;
+  }
+
+  .dictionary table,
+  .dictionary thead,
+  .dictionary tbody,
+  .dictionary th,
+  .dictionary td,
+  .dictionary tr {
+    display: block;
+  }
+
+  .dictionary thead {
+    display: none;
+  }
+
+  .dictionary tr {
+    margin-bottom: 20px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .dictionary td {
+    padding: 10px;
+    text-align: left;
+    position: relative;
+  }
+
+  .dictionary td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--main-color);
+  }
+}
+
+
+
+@media (min-width: 769px) {
+.dictionary td{
+    vertical-align: middle;
+}
+	.dictionary th{border-right: 1px solid #ddd;}
+	.dictionary td:last-child{
+    border-bottom: 1px solid #ddd;
+}
+	.dictionary th:last-child{
+    border-right:none;
+}
+	.dictionary td:nth-child(1){text-align:center;font-weight: 500;color: #222;border-right: 1px solid #ddd;}
+	.dictionary .search-box{
+    padding: 30px;
+    margin-bottom: 35px;
+}
+	.dictionary .search-box input{
+    padding: 25px;
+    border-radius: 10px 0 0 10px;
+}
+	.dictionary .search-box button{
+    height: 52px;
+    width: 100px;
+    border-radius: 0 10px 10px 0;
+}
+	.dictionary th, .dictionary td{padding:15px 20px;border-right: 1px solid #ddd;}
+}
+
+

@@ -1361,6 +1361,7 @@ font-weight:500; }
 .dictionary td{
     vertical-align: middle;
 }
+	.dictionary td.w100{width:200px; text-align:center; font-weight:500;}
 	.dictionary th{border-right: 1px solid #ddd;}
 	.dictionary td:last-child{
     border-bottom: 1px solid #ddd;
