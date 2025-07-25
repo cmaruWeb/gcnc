@@ -37,7 +37,7 @@ $menuCount = [
                 <ul>
                                         <?php
                     foreach ($menuCount as $mainIdx => $subCount) {
-                        echo "<li class='d{$mainIdx}'><a href='#'>{$mTitle[$mainIdx][0][0]}</a>\n";
+                        echo "<li class='d{$mainIdx}'><a href='{$mLink[$mainIdx][0][0]}'>{$mTitle[$mainIdx][0][0]}</a>\n";
                         echo "<div class='sub'><dl>\n";
                         for ($i = 1; $i <= $subCount; $i++) {
                             echo "<dd><a href='{$mLink[$mainIdx][$i][0]}'>{$mTitle[$mainIdx][$i][0]}</a></dd>\n";

@@ -1,7 +1,8 @@
+
+
 <?php
 $is_main = true;
 include("../inc/top.php");
-include("../inc/map_info.php");
 
 $popcnt = 0;
 $m1 = 0;
@@ -1334,3 +1335,5 @@ if (USE_MAIN_BANNER) {
     </div>
 
 </main>
+
+<?php include("../inc/map_info.php");?>
