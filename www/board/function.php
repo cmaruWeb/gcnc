@@ -2318,7 +2318,7 @@ function bbs_latest_union($codes,$min=0,$max,$links){
 			$contentTxt = strip_tags($contentTxt);
 			$contentTxt = strcut_utf8($contentTxt, 100, false, '..');
 
-			$bbsConfigRow = sql_fetch("SELECT bbs_title FROM tb_bbs_list WHERE code = '$code'");
+			$bbsConfigRow = sql_fetch("SELECT bbs_title, folder_path, page_fn FROM tb_bbs_list WHERE code = '$code'");
 			$bbsTitle = $bbsConfigRow['bbs_title'];
 
 			$tagClass = $bbsTitleTxt = "";
@@ -2336,7 +2336,7 @@ function bbs_latest_union($codes,$min=0,$max,$links){
 				$bbsTitleTxt = "";
 			}
 
-			$href = $bbsConfigRow['folder_path'] . $bbsConfigRow['page_fn'] . "?bbsData=" . $bbsData . $mode;
+			$href = "/" . $bbsConfigRow['folder_path'] . "/" . $bbsConfigRow['page_fn'] . "?bbsData=" . $bbsData . $mode;
 
 			$latest_txt.= "
 			<div class=\"swiper-slide\">
