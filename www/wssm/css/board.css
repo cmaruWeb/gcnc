@@ -12,7 +12,7 @@
 .basicList ul li span.num{display:none;}
 .basicList ul li span.cate{color:#969696; font-size:0.9em;}
 .basicList ul li span.title{width:100%; font-size:1em; margin-bottom:10px; color:#303030;  text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
-.basicList ul li span.name{clear:both; margin-right:5%; border-right:1px solid .e6e6e6; padding-right:5%;  text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.basicList ul li span.name{clear:both; margin-right:5%; border-right:1px solid #e6e6e6; padding-right:5%;  text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
 .basicList ul li span.date{text-align:center;}
 .basicList ul li span.attm{width:30px; text-align:center;}
 .basicList ul li span.attm.in:before{font-family:'FontAwesome'; content:'\f0c7'; font-size:14px; color:#969696}

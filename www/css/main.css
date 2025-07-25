@@ -1681,6 +1681,7 @@ nav.gnb ul li a.active:after{
     .section4 .news-slider .swiper-slide{
     padding: 35px 30px;
     height: 315px;
+    max-width: 33.3333333%;
 }
     .video-box .main-tlt2{
     margin-bottom: 19px;

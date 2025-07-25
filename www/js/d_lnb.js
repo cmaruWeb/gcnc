@@ -31,16 +31,40 @@ $(document).ready(function(){
 			//event
 			$li.bind({
 				//pc
-				mouseenter:function(){
-					if(winWidth>=inflection){
-						$body.addClass('lnb_over');
-						$(this).addClass('on');
-                        subHeight=$sub.find('dl').height()+90;
-						$sub.stop().animate({'height':subHeight},speed);
-						$bg.stop().animate({'height':subHeight},speed);
-					}
+				mouseenter: function () {
+	if (winWidth >= inflection) {
+		$body.addClass('lnb_over');
+		$li.removeClass('on');        // 다른 메뉴 비활성화
+		$(this).addClass('on');
 
-				},
+		let $targetSub = $(this).find('.sub');
+		let subHeight = $targetSub.find('dl').outerHeight(true) + 90;
+
+		$sub.stop().animate({'height': 0}, speed);       // 모든 .sub 닫기
+		$targetSub.stop().animate({'height': subHeight}, speed); // 해당 .sub 열기
+
+		$bg.stop().animate({'height': subHeight}, speed); // 배경도 동일하게
+	}
+},
+mouseleave: function () {
+	if (winWidth >= inflection) {
+		$body.removeClass('lnb_over');
+		$(this).removeClass('on');
+
+		$(this).find('.sub').stop().animate({'height': 0}, speed);
+		$bg.stop().animate({'height': 0}, speed);
+	}
+},
+				//mouseenter:function(){
+				//	if(winWidth>=inflection){
+				//		$body.addClass('lnb_over');
+				//		$(this).addClass('on');
+                //        subHeight=$sub.find('dl').height()+90;
+				//		$sub.stop().animate({'height':subHeight},speed);
+				//		$bg.stop().animate({'height':subHeight},speed);
+				//	}
+
+				//},
 				mouseleave:function(){
 					if(winWidth>=inflection){
 						$body.removeClass('lnb_over');

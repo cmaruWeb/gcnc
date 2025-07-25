@@ -30,17 +30,17 @@ $menuCount = [
             </div>
             <h1 class="logo"><a href="../main/main.php">경상남도 탄소중립지원센터</a></h1>
             <div id="d_lnb">
-                <div id="d_lnb_bg">
+                <!--div id="d_lnb_bg">
                     <div class="d_container">
                     </div>
-                </div>
+                </div-->
                 <ul>
                                         <?php
                     foreach ($menuCount as $mainIdx => $subCount) {
-                        echo "<li class='d{$mainIdx}'><a href='{$mLink[$mainIdx][0][0]}'>{$mTitle[$mainIdx][0][0]}</a>\n";
-                        echo "<div class='sub'><dl>\n";
+                        echo "<li class='dd d{$mainIdx}'><a href='{$mLink[$mainIdx][0][0]}'>{$mTitle[$mainIdx][0][0]}</a>\n";
+                        echo "<div class='sub'><div class='tlt-box'><h2>{$mTitle[$mainIdx][0][0]}</h2><p class='txt'>든든한 환경 파트너</p></div><dl>\n";
                         for ($i = 1; $i <= $subCount; $i++) {
-                            echo "<dd><a href='{$mLink[$mainIdx][$i][0]}'>{$mTitle[$mainIdx][$i][0]}</a></dd>\n";
+                            echo "<dd><a href='{$mLink[$mainIdx][$i][0]}'><em>{$mTitle[$mainIdx][$i][0]}</em></a></dd>\n";
                         }
                         echo "</dl></div></li>\n";
                     }
