@@ -901,7 +901,7 @@ if (USE_MAIN_BANNER) {
                         <div class="quick-box">
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="/center/overview.php">
                                         <i class="ic">
                                             <img src="/img/m_ic01.png" alt="">
                                         </i>
@@ -909,7 +909,7 @@ if (USE_MAIN_BANNER) {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="/carbon/idea.php">
                                         <i class="ic">
                                             <img src="/img/m_ic02.png" alt="">
                                         </i>
@@ -917,7 +917,7 @@ if (USE_MAIN_BANNER) {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="/center/location.php">
                                         <i class="ic">
                                             <img src="/img/m_ic03.png" alt="">
                                         </i>
@@ -979,33 +979,57 @@ if (USE_MAIN_BANNER) {
                         <div class="swiper netzero-slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide netzero-slide">
-                                    <a href="#">
-                                        <img src="/img/net.png" alt="다회용기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">다회용기 사용하기</p>
+                                    <a href="/carbon/netzero.php">
+                                        <img src="/img/net01.png" alt="불필요한 조명기구 소등하기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">불필요한 조명기구 소등하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
-                                    <a href="#">
-                                        <img src="/img/net.png" alt="플러그 뽑기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">사용하지 않는 플러그는 뽑아두기</p>
+                                    <a href="/carbon/netzero.php">
+                                        <img src="/img/net02.png" alt="재활용을 위한 분리배출 실천하기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">재활용을 위한 분리배출 실천하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
-                                    <a href="#">
-                                        <img src="/img/net.png" alt="온도 유지하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">적정 실내 온도 유지하기</p>
+                                    <a href="/carbon/netzero.php">
+                                        <img src="/img/net03.png" alt="무공해차 구매하기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">무공해차 구매하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
-                                    <a href="#">
-                                        <img src="/img/net.png" alt="온도 유지하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">적정 실내 온도 유지하기</p>
+                                    <a href="/carbon/netzero.php">
+                                        <img src="/img/net04.png" alt="승강기 격층 운행하고 계단이용하기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">승강기 격층 운행하고 계단이용하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
-                                    <a href="#">
-                                        <img src="/img/net.png" alt="온도 유지하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">적정 실내 온도 유지하기</p>
+                                    <a href="/carbon/netzero.php">
+                                        <img src="/img/net05.png" alt="저탄소·친환경 식단 운영하기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">저탄소·친환경 식단 운영하기</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide netzero-slide">
+                                    <a href="/carbon/netzero.php">
+                                        <img src="/img/net06.png" alt="인쇄시 종이 사용 줄이기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">인쇄시 종이 사용 줄이기</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide netzero-slide">
+                                    <a href="/carbon/netzero.php">
+                                        <img src="/img/net07.png" alt="빈 교실의 조명은 소등한다" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">빈 교실의 조명은 소등한다</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide netzero-slide">
+                                    <a href="/carbon/netzero.php">
+                                        <img src="/img/net08.png" alt="물을 절약한다" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">물을 절약한다</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide netzero-slide">
+                                    <a href="/carbon/netzero.php">
+                                        <img src="/img/net09.png" alt="음식은 먹을 만큼만 담는다" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">음식은 먹을 만큼만 담는다</p>
                                     </a>
                                 </div>
                             </div>
@@ -1018,14 +1042,14 @@ if (USE_MAIN_BANNER) {
 
                     <div class="netzero-info">
                         <div class="netzero-info-box netzero-info-dictionary">
-                            <a href="#">
+                            <a href="/carbon/terms.php">
                                 <h3 class="netzero-info-title">탄소중립 용어 사전</h3>
                                 <p class="netzero-info-desc">탄소중립 실천을 위한 용어들을<br/>이해할 수 있도록 제공</p>
                                 <i class="ic"><img src="/img/t_ic01.png" alt=""></i>
                             </a>
                         </div>
                         <div class="netzero-info-box netzero-info-trend">
-                            <a href="#">
+                            <a href="/carbon/definition.php">
                                 <h3 class="netzero-info-title">탄소중립 국내외 동향</h3>
                                 <p class="netzero-info-desc">추진 중인 탄소중립 정책과<br/>최신 동향을 소개</p>
                                 <i class="ic"><img src="/img/t_ic02.png" alt=""></i>
@@ -1040,6 +1064,10 @@ if (USE_MAIN_BANNER) {
                                 navigation: {
                                     nextEl: '.swiper-button-next2',
                                     prevEl: '.swiper-button-prev2'
+                                },
+                                autoplay: {
+                                    delay: 3000,
+                                    disableOnInteraction: false
                                 },
                                 slidesPerView: 1,
                                 spaceBetween: 20,
@@ -1069,33 +1097,33 @@ if (USE_MAIN_BANNER) {
                 </div>
                 <ul class="n-list">
                     <li>
-                        <a href="#">
+                        <a href="/gyeongnam/emissions.php">
                             <i><img src="/img/j_ic01.png" alt=""></i>
-                            <span class="txt">온실가스 배출량 통계</span>
+                            <span class="txt">온실가스 배출 통계</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/gyeongnam/plan.php">
                             <i><img src="/img/j_ic02.png" alt=""></i>
-                            <span class="txt">녹색성장 대응계획</span>
+                            <span class="txt">탄소중립·녹색성장 기본계획</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/gyeongnam/adaptation.php">
                             <i><img src="/img/j_ic03.png" alt=""></i>
                             <span class="txt">기후위기 적응대책</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/gyeongnam/graph.php">
                             <i><img src="/img/j_ic04.png" alt=""></i>
                             <span class="txt">그래프로 보는 경상남도</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/gyeongnam/inventory.php">
                             <i><img src="/img/j_ic05.png" alt=""></i>
-                            <span class="txt">온실가스인지예산제</span>
+                            <span class="txt">온실가스감축인지 예산제</span>
                         </a>
                     </li>
                 </ul>
