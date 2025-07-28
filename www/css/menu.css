@@ -84,8 +84,9 @@
 }
 	body.scroll #d_lnb li > a,
 	body.lnb_over #d_lnb li > a {color:#444}
-	#d_lnb li .sub {position:absolute;width:100%;height:0;overflow:hidden;z-index:999;border-bottom: 1px solid #dedede90;left: 0px;/* background: red; */padding-left: 400px;padding-right: 100px;background: #fff;max-height: 180px !important;background: #f8f8f8;}
-  #d_lnb li .sub dl {padding:20px 0;position:relative;display: flex;flex-direction: row;flex-wrap: wrap;gap: 10px;}
+	#d_lnb li .sub {position:absolute;width:100%;height:0;overflow:hidden;z-index:999;/* border-bottom: 1px solid #dedede90; */left: 0px;/* background: red; */padding-left: 400px;padding-right: 100px;background: #fff;max-height: 180px !important;background: #f8f8f8;}
+  #d_lnb li.on .sub{border-bottom: 1px solid #dedede90;}
+	#d_lnb li .sub dl {padding:20px 0;position:relative;display: flex;flex-direction: row;flex-wrap: wrap;gap: 10px;}
 	#d_lnb li .sub dl dd{
     width: calc(25% - 10px);
 }

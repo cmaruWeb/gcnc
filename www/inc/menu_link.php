@@ -12,7 +12,7 @@
 		$mTitle[1][3][0] = "조직도"; $mLink[1][3][0] = $noSSlDomain."../center/org.php";
 		$mTitle[1][4][0] = "오시는 길"; $mLink[1][4][0] = $noSSlDomain."../center/location.php";
 		$mTitle[1][5][0] = "주요사업"; $mLink[1][5][0] = $noSSlDomain."../center/business.php";
-		$mTitle[1][6][0] = "경남기초탄소중립지원센터"; $mLink[1][6][0] = $noSSlDomain."../center/basic_status.php";
+		$mTitle[1][6][0] = "경남 기초 탄소중립지원센터"; $mLink[1][6][0] = $noSSlDomain."../center/basic_status.php";
 
 	$mTitle[2][0][0] = "탄소중립이란"; $mLink[2][0][0] = $noSSlDomain."../carbon/definition.php";
 		$mTitle[2][1][0] = "탄소중립"; $mLink[2][1][0] = $noSSlDomain."../carbon/definition.php";
@@ -29,8 +29,8 @@
 
 	$mTitle[4][0][0] = "탄소중립 소식"; $mLink[4][0][0] = $noSSlDomain."../news/notice.php";
 		$mTitle[4][1][0] = "공지사항"; $mLink[4][1][0] = $noSSlDomain."../news/notice.php";
-		$mTitle[4][2][0] = "탄소중립 자료"; $mLink[4][2][0] = $noSSlDomain."../news/material.php";
-		$mTitle[4][3][0] = "홍보 자료"; $mLink[4][3][0] = $noSSlDomain."../news/promotion.php";
+		$mTitle[4][2][0] = "연구자료"; $mLink[4][2][0] = $noSSlDomain."../news/material.php";
+		$mTitle[4][3][0] = "교육·홍보자료"; $mLink[4][3][0] = $noSSlDomain."../news/promotion.php";
 		$mTitle[4][4][0] = "보도자료"; $mLink[4][4][0] = $noSSlDomain."../news/press.php";
 
 

@@ -233,16 +233,19 @@ nav.gnb ul li a.active:after{
     /* z-index: -1 !important; */
 }
 .mainSlider .m1{
-    background: url(/img/main_vidusl_01.png) no-repeat center;
+    background: url(/img/mv01.png) no-repeat center;
 }
 .mainSlider .m2{
-    background: url(/img/main_vidusl_02.png) no-repeat center;
+    background: url(/img/mv02.png) no-repeat center;
 }
 .mainSlider .m3{
-    background: url(/img/main_vidusl_03.png) no-repeat center;
+    background: url(/img/mv03.png) no-repeat center;
 }
 .mainSlider .m4{
-    background: url(/img/main_vidusl_01.png) no-repeat center;
+    background: url(/img/mv04.png) no-repeat center;
+}
+.mainSlider .m5{
+    background: url(/img/mv05.png) no-repeat center;
 }
 .mainSlider .swiper-slide{
     background-size: cover;
@@ -283,10 +286,10 @@ nav.gnb ul li a.active:after{
     /* text-transform: uppercase; */
 }
 .mainSlider .text .t1 .c1{
-    color: var(--main-color);
+    /* color: var(--main-color); */
 }
 .mainSlider .text .t1 .c2{
-    color: var(--point-color);
+    /* color: var(--point-color); */
 }
 
 

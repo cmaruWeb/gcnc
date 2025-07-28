@@ -169,7 +169,7 @@ if (USE_MAIN_BANNER) {
         <section class="section section1" id="intro">
             <div class="swiper mainSlider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide m1">
+                    <div class="swiper-slide m5">
                         <div class="pdinner">
                             <div class="text">
                                 <p class="t1">
@@ -191,7 +191,70 @@ if (USE_MAIN_BANNER) {
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide m2">
+                    <div class="swiper-slide m4">
+                        <div class="pdinner">
+                            <div class="text">
+                                <p class="t1">
+                                    <span>
+                                        <em class="tn1">
+                                            경상남도
+                                            <i class="c1">탄소중립</i>
+                                            <i class="c2">지원센터</i>
+                                        </em>
+                                    </span>
+                                </p>
+                                <p class="t2">
+                                    <span>
+                                        <em class="tn2">
+                                            도민과 함께 지속가능한 미래를 만들어가겠습니다.
+                                        </em>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide m1">
+                        <div class="pdinner">
+                            <div class="text">
+                                <p class="t1">
+                                    <span>
+                                        <em class="tn1">
+                                            경상남도
+                                            <i class="c1">탄소중립</i>
+                                            <i class="c2">지원센터</i>
+                                        </em>
+                                    </span>
+                                </p>
+                                <p class="t2">
+                                    <span>
+                                        <em class="tn2">
+                                            도민과 함께 지속가능한 미래를 만들어가겠습니다.
+                                        </em>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide m2">
+                        <div class="pdinner">
+                            <div class="text">
+                                <p class="t1">
+                                    <span>
+                                        <em class="tn1">
+                                            경상남도
+                                            <i class="c1">탄소중립</i>
+                                            <i class="c2">지원센터</i>
+                                        </em>
+                                    </span>
+                                </p>
+                                <p class="t2">
+                                    <span>
+                                        <em class="tn2">
+                                            도민과 함께 지속가능한 미래를 만들어가겠습니다.
+                                        </em>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide m3">
                         <div class="pdinner">
                             <div class="text">
                                 <p class="t1">
@@ -222,7 +285,7 @@ if (USE_MAIN_BANNER) {
                     $(document).ready(function () {
                         var mySwiper = new Swiper(".mainSlider", {
                             autoplay: {
-                                delay: 10000,
+                                delay: 5000,
                                 disableOnInteraction: false
                             },
                             effect: "fade",
@@ -980,56 +1043,51 @@ if (USE_MAIN_BANNER) {
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/net01.png" alt="불필요한 조명기구 소등하기" class="netzero-slide-img"/>
+                                        <img src="/img/zero_img01.png" alt="1회용 컵 대신 다회용 컵 사용하기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">1회용 컵 대신  
+다회용 컵 사용하기</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide netzero-slide">
+                                    <a href="/carbon/netzero.php">
+                                        <img src="/img/zero_img02.png" alt="불필요한 조명기구 소등하기" class="netzero-slide-img"/>
                                         <p class="netzero-slide-text">불필요한 조명기구 소등하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/net02.png" alt="재활용을 위한 분리배출 실천하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">재활용을 위한 분리배출 실천하기</p>
+                                        <img src="/img/zero_img03.png" alt="난방온도 2℃ 낮추고, 냉방온도 2℃ 높이기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">냉방온도 2℃ 높이기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/net03.png" alt="무공해차 구매하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">무공해차 구매하기</p>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide netzero-slide">
-                                    <a href="/carbon/netzero.php">
-                                        <img src="/img/net04.png" alt="승강기 격층 운행하고 계단이용하기" class="netzero-slide-img"/>
+                                        <img src="/img/zero_img04.png" alt="승강기 격층 운행하고 계단이용하기" class="netzero-slide-img"/>
                                         <p class="netzero-slide-text">승강기 격층 운행하고 계단이용하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/net05.png" alt="저탄소·친환경 식단 운영하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">저탄소·친환경 식단 운영하기</p>
+                                        <img src="/img/zero_img05.png" alt="저탄소·친환경 인증 농축수산물 구매하기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">저탄소·친환경 인증 농축수산물 구매하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/net06.png" alt="인쇄시 종이 사용 줄이기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">인쇄시 종이 사용 줄이기</p>
+                                        <img src="/img/zero_img06.png" alt="가까운 거리는 걷거나 자전거 이용하기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">가까운 거리는 걷거나 자전거 이용하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/net07.png" alt="빈 교실의 조명은 소등한다" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">빈 교실의 조명은 소등한다</p>
+                                        <img src="/img/zero_img07.png" alt="무공해차 구매하기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">무공해차 구매하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/net08.png" alt="물을 절약한다" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">물을 절약한다</p>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide netzero-slide">
-                                    <a href="/carbon/netzero.php">
-                                        <img src="/img/net09.png" alt="음식은 먹을 만큼만 담는다" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">음식은 먹을 만큼만 담는다</p>
+                                        <img src="/img/zero_img08.png" alt="재활용을 위한  분리배출 실천하기" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">재활용을 위한  분리배출 실천하기</p>
                                     </a>
                                 </div>
                             </div>
@@ -1132,7 +1190,7 @@ if (USE_MAIN_BANNER) {
         <section class="section section4" id="field">
             <div class="pdinner">
                 <div class="tltBox">
-                    <h4 class="main-tlt">알림<span>마당</span></h4>
+                    <h4 class="main-tlt">탄소중립<span>소식</span></h4>
                     <p class="main-txt">
                         경상남도 탄소중립지원센터의 주요 소식을 한눈에 확인하세요.
                     </p>
@@ -1147,7 +1205,7 @@ if (USE_MAIN_BANNER) {
                             <a href="javascript:void(0);">공지사항</a>
                         </li>
                         <li data-tab="tab3">
-                            <a href="javascript:void(0);">탄소중립 자료</a>
+                            <a href="javascript:void(0);">연구자료</a>
                         </li>
                         <li data-tab="tab4">
                             <a href="javascript:void(0);">보도자료</a>
@@ -1263,7 +1321,7 @@ if (USE_MAIN_BANNER) {
                 </div>
 
                 <div class="video-box">
-                    <h5 class="main-tlt2">홍보 자료</h5>
+                    <h5 class="main-tlt2">교육·홍보자료</h5>
                     <div class="veideo-slider-box">
                         <div class="swiper video-slider">
                             <div class="swiper-wrapper">
