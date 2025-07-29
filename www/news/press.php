@@ -19,7 +19,7 @@ include $boardDir . "/_header.php";
         <div class="subtop">
             <h3><?= $mTitle[$m1][$m2][0] ?></h3>
         </div>
-        <div class="sub_difi">
+        <div class="sub_difi pdr50">
             <?php
             switch ($mode) {
                 case "view":

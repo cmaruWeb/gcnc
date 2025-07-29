@@ -23,10 +23,14 @@
                 <div class="tit"><p class="h_m">추진 배경 및 기본 목표</p></div>
                 <div class="con">
                     <ul class="info01">
-                        <li><h5>기간</h5><p>2024년부터 2033년까지 <span class="pEnter"></span>10년간 추진</p></li>
-                        <li><h5>2030 목표</h5><p>2018년 배출량 대비 <span class="pEnter"></span>온실가스 40.4% 감축</p></li>
-                        <li><h5>중간 목표</h5><p>2025년 27.3% 감축</p></li>
-                        <li><h5>최종 비전</h5><p>2050년 탄소중립 완성</p></li>
+                        <li><img src="../img/gn/plan_ic0101.png">
+                            <h5>기간</h5><p>2024년부터 2033년까지 <span class="pEnter"></span>10년간 추진</p></li>
+                        <li><img src="../img/gn/plan_ic0102.png">
+                            <h5>2030 목표</h5><p>2018년 배출량 대비 <span class="pEnter"></span>온실가스 40.4% 감축</p></li>
+                        <li><img src="../img/gn/plan_ic0103.png">
+                            <h5>중간 목표</h5><p>2025년 27.3% 감축</p></li>
+                        <li><img src="../img/gn/plan_ic0104.png">
+                            <h5>최종 비전</h5><p>2050년 탄소중립 완성</p></li>
                     </ul>
                 </div>
             </div>

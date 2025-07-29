@@ -169,28 +169,6 @@ if (USE_MAIN_BANNER) {
         <section class="section section1" id="intro">
             <div class="swiper mainSlider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide m5">
-                        <div class="pdinner">
-                            <div class="text">
-                                <p class="t1">
-                                    <span>
-                                        <em class="tn1">
-                                            경상남도
-                                            <i class="c1">탄소중립</i>
-                                            <i class="c2">지원센터</i>
-                                        </em>
-                                    </span>
-                                </p>
-                                <p class="t2">
-                                    <span>
-                                        <em class="tn2">
-                                            도민과 함께 지속가능한 미래를 만들어가겠습니다.
-                                        </em>
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                     <div class="swiper-slide m4">
                         <div class="pdinner">
                             <div class="text">
@@ -212,49 +190,71 @@ if (USE_MAIN_BANNER) {
                                 </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="swiper-slide m8">
+                        <div class="pdinner">
+                            <div class="text">
+                                <p class="t1">
+                                    <span>
+                                        <em class="tn1">
+                                            경상남도
+                                            <i class="c1">탄소중립</i>
+                                            <i class="c2">지원센터</i>
+                                        </em>
+                                    </span>
+                                </p>
+                                <p class="t2">
+                                    <span>
+                                        <em class="tn2">
+                                            도민과 함께 지속가능한 미래를 만들어가겠습니다.
+                                        </em>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide m7">
+                        <div class="pdinner">
+                            <div class="text">
+                                <p class="t1">
+                                    <span>
+                                        <em class="tn1">
+                                            경상남도
+                                            <i class="c1">탄소중립</i>
+                                            <i class="c2">지원센터</i>
+                                        </em>
+                                    </span>
+                                </p>
+                                <p class="t2">
+                                    <span>
+                                        <em class="tn2">
+                                            도민과 함께 지속가능한 미래를 만들어가겠습니다.
+                                        </em>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide m6">
+                        <div class="pdinner">
+                            <div class="text">
+                                <p class="t1">
+                                    <span>
+                                        <em class="tn1">
+                                            경상남도
+                                            <i class="c1">탄소중립</i>
+                                            <i class="c2">지원센터</i>
+                                        </em>
+                                    </span>
+                                </p>
+                                <p class="t2">
+                                    <span>
+                                        <em class="tn2">
+                                            도민과 함께 지속가능한 미래를 만들어가겠습니다.
+                                        </em>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
                     </div><div class="swiper-slide m1">
-                        <div class="pdinner">
-                            <div class="text">
-                                <p class="t1">
-                                    <span>
-                                        <em class="tn1">
-                                            경상남도
-                                            <i class="c1">탄소중립</i>
-                                            <i class="c2">지원센터</i>
-                                        </em>
-                                    </span>
-                                </p>
-                                <p class="t2">
-                                    <span>
-                                        <em class="tn2">
-                                            도민과 함께 지속가능한 미래를 만들어가겠습니다.
-                                        </em>
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="swiper-slide m2">
-                        <div class="pdinner">
-                            <div class="text">
-                                <p class="t1">
-                                    <span>
-                                        <em class="tn1">
-                                            경상남도
-                                            <i class="c1">탄소중립</i>
-                                            <i class="c2">지원센터</i>
-                                        </em>
-                                    </span>
-                                </p>
-                                <p class="t2">
-                                    <span>
-                                        <em class="tn2">
-                                            도민과 함께 지속가능한 미래를 만들어가겠습니다.
-                                        </em>
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="swiper-slide m3">
                         <div class="pdinner">
                             <div class="text">
                                 <p class="t1">
@@ -1350,7 +1350,7 @@ if (USE_MAIN_BANNER) {
             </div>
         </section>
         <section class="section sec04 fp-auto-height" id="footerBox">
-            <div class="banner">
+            <!--div class="banner">
                 <div class="pdinner">
                     <h6>관련사이트</h6>
                     <div class="swiper bannerSwiper">
@@ -1414,7 +1414,7 @@ if (USE_MAIN_BANNER) {
                         });
                     </script>
                 </div>
-            </div>
+            </div-->
             <? include("../inc/footer.php" )?>
         </section>
 

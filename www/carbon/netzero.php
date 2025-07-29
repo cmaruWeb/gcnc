@@ -20,28 +20,40 @@ include $boardDir . "/_header.php";
             <h3><?= $mTitle[$m1][$m2][0] ?></h3>
         </div>
         <div class="sub_difi">
-            <?php
-            switch ($mode) {
-                case "view":
-                    include "$boardDir/view.php";
-                    break;
-                case "write":
-                    include "$boardDir/write.php";
-                    break;
-                case "list":
-                    include "$boardDir/list.php";
-                    break;
-                case "list_dal":
-                    include "$boardDir/list_dal.php";
-                    break;
-                case "edit":
-                    include "$boardDir/edit.php";
-                    break;
-                case "check":   //비공개 게시판 사용시 
-                    include "$boardDir/bbs_check.php";
-                    break;
-            }
-            ?>
+            <div class="netzero lay">
+                <p class="top-txt">가정, 기업, 학교
+                    <b>탄소중립 생활 실천 안내서</b>
+                </p>
+                <ul class="list">
+                    <li>
+                        <a href="/bbsDown/netzero/2025072537857079945.pdf" target="_blank">
+                            <p>
+                                가정의 탄생
+                            </p>
+                            <em>자세히보기</em>
+                            <img src="/bbsDown/netzero/2025072509989056894_s.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/bbsDown/netzero/2025072575535450109.pdf" target="_blank">
+                            <p>
+                                기업의 탄생
+                            </p>
+                            <em>자세히보기</em>
+                            <img src="/bbsDown/netzero/2025072524058013678_s.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/bbsDown/netzero/2025072518375797920.pdf" target="_blank">
+                            <p>
+                                학교의 탄생
+                            </p>
+                            <em>자세히보기</em>
+                            <img src="/bbsDown/netzero/2025072580297796043_s.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

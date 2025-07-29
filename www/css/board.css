@@ -1388,6 +1388,13 @@ font-weight:500; }
 
 
 
+@media (min-width: 1200px) {
+.dictionary{
+    padding-right: 50px;
+}
+}
+
+
 
 
 
@@ -1710,3 +1717,23 @@ div.board .view_link .data a {font-size:1.13em; color:#666;  font-weight:300; li
 	.boardSearch .divide-con-3 span:nth-child(3) {width:25%;}
 
 }
+
+
+
+
+
+/*board style reset*/
+
+.editor-container ul{
+    overflow: unset;
+    border-top: unset;
+}
+.editor-container li{
+    overflow: unset;
+    border-bottom: unset;
+    position: unset;
+    list-style: unset;
+}
+.editor-container li:before{display:none;}
+
+.editor-container i{font-style: italic;}

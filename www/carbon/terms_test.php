@@ -1,12 +1,12 @@
 <?php
-$m1 = 4;
-$m2 = 3;
+$m1 = 2;
+$m2 = 2;
 $m3 = 1;
 
 include("../inc/top.php");
 include("../inc/sub_top.php");
 
-$code = "promotion";
+$code = "dictionary";
 include $boardDir . "/bbs_config.inc.php";
 include $boardDir . "/_header.php";
 ?>
@@ -19,7 +19,8 @@ include $boardDir . "/_header.php";
         <div class="subtop">
             <h3><?= $mTitle[$m1][$m2][0] ?></h3>
         </div>
-        <div class="sub_difi pdr50">
+
+        <div class="dictionary sub_difi">
             <?php
             switch ($mode) {
                 case "view":

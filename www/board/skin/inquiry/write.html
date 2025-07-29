@@ -15,7 +15,9 @@
 	<input type="hidden" name="SITE_KEY" value="<?=RECAPTCHA_V3_SITE_KEY?>" />
 <?}?>
 <input type="hidden" name="pumnam" id="pumnam" value="1">
-<input type="hidden" name="vebnam" id="vebnam" value="회사명">
+<input type="hidden" name="vebnam" id="vebnam" value="센터명">
+<input type="hidden" name="secret" id="secret" value="1">
+<input type="hidden" name="content" id="content" value="내용">
 
 <div class="writeinfo">
 	<p>본 사는 온라인 상담 서비스 제공을 위한
@@ -25,17 +27,45 @@
 <!--글쓰기 -->
 <div class="write_apply">
 	<ul class="mb">
-		<li>
+		<!-- <li>
 			<span class="fm_list">비밀글 <b class="redTxt">*</b></span> 
 			<span class="fm_txt">
 				<input type="checkbox" name="secret" class="input_txt" id="secret" hname="비밀글" value="1" title="비밀글 적용" checked /><label for="secret">비공개</label>
 			</span>
+		</li> -->
+		<li>
+			<span class="fm_list">아이디어명 <b class="redTxt">*</b></span>
+			<span class="fm_txt">
+				<label for="" class="blind">아이디어명</label>
+				<input type="text" name="title" class="input_txt w100" id="title" hname="아이디어명" value="" option="" frequired="required" title="제목 입력" />
+			</span>
 		</li>
 		<li>
-			<span class="fm_list">제목 <b class="redTxt">*</b></span>
+			<span class="fm_list">지역 <b class="redTxt">*</b></span>
 			<span class="fm_txt">
-				<label for="" class="blind">카테고리</label>
-				<input type="text" name="title" class="input_txt w100" id="title" hname="제목" value="" option="" frequired="required" title="제목 입력" />
+				<label for="" class="blind">지역</label>
+				<select name="area" id="area">
+					<option value="">선택해주세요</option>
+					<option value="창원시">창원시</option> 
+					<option value="진해구">진해구</option> 
+					<option value="진주시">진주시</option> 
+					<option value="김해시">김해시</option> 
+					<option value="양산시">양산시</option> 
+					<option value="거제시">거제시</option> 
+					<option value="통영시">통영시</option> 
+					<option value="사천시">사천시</option> 
+					<option value="밀양시">밀양시</option> 
+					<option value="의령군">의령군</option> 
+					<option value="함안군">함안군</option> 
+					<option value="창녕군">창녕군</option> 
+					<option value="고성군">고성군</option> 
+					<option value="남해군">남해군</option> 
+					<option value="하동군">하동군</option> 
+					<option value="산청군">산청군</option> 
+					<option value="함양군">함양군</option> 
+					<option value="거창군">거창군</option> 
+					<option value="합천군">합천군</option> 
+				</select>
 			</span>
 		</li>
 		<?
@@ -65,12 +95,23 @@
 				<input type="text" name="name" class="input_txt" id="name" hname="이름" value="<?=$w_name?>" option="" frequired="required" title="이름 입력" />
 			</span>
 		</li>
-		<!-- <li>
-			<span class="fm_list">회사명 <b class="redTxt">*</b></span>
+		<? if(empty($OT_ID)) { ?>
+		<li>
+			<span class="fm_list">비밀번호 <b class="redTxt">*</b></span> 
 			<span class="fm_txt">
-				<input type="text" name="vebnam" class="input_txt" id="vebnam" hname="회사명" value="" option="" frequired="required" title="이름 입력" />
+				<input type="password" name="pwd" class="input_txt" id="pwd" hname="비밀번호" value="" title="비밀번호 입력" />
 			</span>
-		</li> -->
+		</li>
+		<? } else { ?>
+		<input type="hidden" name="pwd" id="pwd" value="<?php echo create_cmid(); ?>" />
+		<? } ?>
+		<li>
+			<span class="fm_list">이메일 <b class="redTxt">*</b></span>
+			<span class="fm_txt">
+				<label for="" class="blind">이메일</label>
+				<input type="email" name="email" class="input_txt" id="email" hname="이메일" value="" option="" frequired="required" title="이메일 입력" />
+			</span>
+		</li>
 		<li>
 			<span class="fm_list">연락처 <b class="redTxt">*</b></span>
 			<span class="fm_txt">
@@ -90,44 +131,26 @@
 			</span>
 		</li> -->
 		<li>
-			<span class="fm_list">글작성 <b class="redTxt">*</b></span>
+			<span class="fm_list">아이디어 배경 및 필요성 </span>
 			<span class="fm_txt">
-				<div class="editorin">
-<!-------------------------------------- 에디터 --------------------------------------->
-<? $con1 = "content";?>
-	
-	<textarea name="<?=$con1?>" id="<?=$con1?>" style="width:100%; min-width:300px; height:300px; display:none;"></textarea>
-	
-	
-	<?php if($editor == "ckeditor") { ?>
-	<!--ckeditor 전용-->
-	<div class="row">
-		<div class="document-editor__toolbar"></div>
-	</div>
-	<div class="document-editor__toolbar"></div>
-	<div class="editor-container">
-		<div id="c_content"></div> 
-	</div>
-	<!--//ckeditor 전용-->
-	<?php } ?>
-
-	<!--TOAST UI-->
-<?php if($editor == "toast"){?>
-	<div id="editor_toast">
-	</div>
-	<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
-	<script src="https://uicdn.toast.com/editor/latest/i18n/ko-kr.js"></script>
-	<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
-<?}?>
-<!--TOAST UI END-->
-<!--에디터 설정-->
-<script src="https://cdn.ckeditor.com/ckeditor5/41.2.0/super-build/ckeditor.js"></script>
-<script src="https://cdn.ckeditor.com/ckeditor5/41.2.0/super-build/translations/ko.js"></script>
-<script type="text/javascript" src="/board/editorInit.js?v=<?php echo time(); ?>"></script>
-<script type="text/javascript" src="/ckeditor/upload_adapter.js?v=<?php echo time(); ?>"></script>
-<link rel="stylesheet" media="all" href="/ckeditor/css/style.css">
-<!--//에디터설정-->
-<!-------------------------------------- 에디터 --------------------------------------->
+				<div class="">
+					<textarea name="etc_content1" id="etc_content1"></textarea>
+				</div>
+			</span>
+		</li>
+		<li>
+			<span class="fm_list">주요내용 <b class="redTxt">*</b></span>
+			<span class="fm_txt">
+				<div class="">
+					<textarea name="etc_content2" id="etc_content2"></textarea>
+				</div>
+			</span>
+		</li>
+		<li>
+			<span class="fm_list">기대효과 </span>
+			<span class="fm_txt">
+				<div class="">
+					<textarea name="etc_content3" id="etc_content3"></textarea>
 				</div>
 			</span>
 		</li>
@@ -155,38 +178,28 @@
 		<? }?>
 			</span>
 		</li>
-		<? if(empty($OT_ID)) { ?>
-		<li>
-			<span class="fm_list">비밀번호 <b class="redTxt">*</b></span> 
-			<span class="fm_txt">
-				<input type="password" name="pwd" class="input_txt" id="pwd" hname="비밀번호" value="" title="비밀번호 입력" />
-			</span>
-		</li>
-		<? } else { ?>
-		<input type="hidden" name="pwd" id="pwd" value="<?php echo create_cmid(); ?>" />
-		<? } ?>
 
 		<? if($reWrite!=1){?>
 		<div class="write_agree">
-			본 사는  (이하 '회사'는) 고객의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다. 회사는 개인정보취급방침을 통하여 고객께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.<br> 
-			회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.<br>
-			본 방침은 : 2020 년 02 월 10 일부터 시행됩니다.<br><br>
+			본 센터는  (이하 '센터'는) 고객의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다. 센터는 개인정보취급방침을 통하여 고객께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.<br> 
+			센터는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.<br>
+			본 방침은 : 2025 년 07 월 31 일부터 시행됩니다.<br><br>
 			<strong>제1조(개인정보의 이용 목적)</strong><br>
-			회사는 다음의 목적을 위하여 개인정보를 이용합니다. 수집된 개인정보는 다음의 목적 이외의 용도로 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.<br>
+			센터는 다음의 목적을 위하여 개인정보를 이용합니다. 수집된 개인정보는 다음의 목적 이외의 용도로 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.<br>
 			• 문의사항<br>
 			고객의 신원확인, 문의사항 확인, 사실조사를 위한 연락, 통지, 처리결과 통보 등의 목적으로 개인정보를 이용합니다.<br>
 		  <strong>제2조(개인정보 수집 페이지 및 항목)</strong><br>
 			 • 수집페이지: 온라인상담 <br>
 			 • 수집항목: <br>
-			   - 이름, 연락처, 회사명<br>
+			   - 이름, 연락처, 지역, 이메일<br>
 			<strong> 제3조(개인정보의 보유 및 이용기간)</strong><br>
-			회사는 수집된 개인정보를 다음의 기준에 따라 보유합니다. <br>
+			센터는 수집된 개인정보를 다음의 기준에 따라 보유합니다. <br>
 			   • 고객지원 메뉴를 통해 수집된 개인정보 : 1년<br>
 			   • 인터넷 로그기록: 3개월<br>
 			   • 예외 사유: 관계 법령 위반에 따른 수사.조사 등이 진행 중인 경우에는 해당 수사.조사 종료 시까지<br>
 			  <br><br>
 			  <strong>제4조(개인정보 수집에 대한 거부 권리)</strong><br>
-			  (1) 이용자는 회사가 수집하는 개인정보에 대해 동의 절차를 거치고 있으며, 이용자의 동의가 이루어진 경우에만 수집하고 있습니다.<br> 
+			  (1) 이용자는 센터가 수집하는 개인정보에 대해 동의 절차를 거치고 있으며, 이용자의 동의가 이루어진 경우에만 수집하고 있습니다.<br> 
 			  (2) 이용자는 개인정보 수집 동의를 하지 않음으로써 개인정보 수집을 거부할 수 있습니다.<br> <br> 
 
 		</div>
@@ -205,7 +218,7 @@
 </form>
 <div class="btn_li tac bmb">
 	<ul>
-		<li><a class="btn_link" href="#save"  onclick="writeSendit_e6();">글쓰기</a></li>
+		<li><a class="btn_link" href="#save"  onclick="writeSendit_idea();">글쓰기</a></li>
 		<li><a class="btn_link btn_gr" href="<?=$PHP_SELF?>?code=<?=$code?>&amp;bbsData=<?=$mvData?>&amp;mode=list&amp;m2=<?=$m2?>">취소</a></li>
 	</ul>
 </div>
