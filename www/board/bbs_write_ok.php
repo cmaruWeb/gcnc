@@ -263,6 +263,31 @@ $sql.= "status = '$status', ";
 $sql.= "mobile = '$mobile' ";
 $sql.= " , pumnam = '$pumnam' ";
 @sql_query($sql);
+
+$idx = sql_insert_id();
+if (empty($idx)) {
+	MsgView("등록실패", -1);
+	exit;
+}
+
+// 기타 contents 입력
+if ($etc_content1 != "" || $etc_content2 != "" || $etc_content3 != "") {
+	for ($i=1; $i<=3; $i++) {
+		$insertTxt = "";
+		${'etc_content' . $i} = addslashes(${'etc_content' . $i});
+		if (${'etc_content' . $i} != "") {
+			$insertTxt.= ", cont_key = 'etc_content$i', content = '" . ${'etc_content' . $i} . "' ";
+			$sql2 = "INSERT INTO " . TB_BBS_ETC_CONTENT . " SET 
+				bbs_idx = $idx
+				, bbs_code = '$code'
+				$insertTxt
+			";
+			$result2 = sql_query($sql2);
+		}
+	}
+}
+
+
 //echo $sql."<br />";
 sql_close() or die("db종료 실패");
 

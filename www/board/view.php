@@ -202,6 +202,24 @@ if (!empty($yiframe)) {
 	if (empty($y_id)) $s_img = "/img/no_img.jpg";
 }
 
+// 게시판 기타 내용
+$etcContList = array();
+$etcContSql = "SELECT * FROM " . TB_BBS_ETC_CONTENT . " WHERE bbs_idx = $idx AND bbs_code = '$code' ";
+$etcContResult = sql_query($etcContSql);
+while ($etcContRow = sql_fetch_array($etcContResult)) {
+	$etcContList[] = $etcContRow;
+}
+
+$etc_content1 = $etc_content2 = $etc_cotent3 = "";
+foreach ($etcContList as $key=>$val) {
+	if ($val['cont_key'] != "") {
+		${$val['cont_key']} = str_replace("&#34;","\"", $val['content']);
+		${$val['cont_key']} = str_replace("&#39;","'",${$val['cont_key']});
+		${$val['cont_key']} = htmlspecialchars_decode(${$val['cont_key']});
+		${$val['cont_key']} = nl2br(${$val['cont_key']});
+	}
+}
+
 include $boardDir."/".$skinDir."/view.html";
 
 ?>

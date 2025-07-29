@@ -316,4 +316,5 @@ define('RECAPTCHA_V3_SECRET_KEY',$crow['recaptcha_v3_secret_key']); //reCAPTCHA 
 *******************
 */
 define('TB_UPLOAD_FILE_LIST', "upload_file_list"); // 첨부파일 리스트
+define('TB_BBS_ETC_CONTENT', "tb_bbs_etc_content"); // 게시판 기타 내용
 ?>

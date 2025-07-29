@@ -1612,6 +1612,64 @@ function writeSendit_e6() {
 
 }
 
+function writeSendit_idea() {
+	var frm = document.write_form1;
+
+	if (frm.title.value == "") {
+		alert("아이디어명을 입력해 주십시오.");
+		frm.title.focus();
+		return false;
+	}
+
+	if (frm.area.value == "") {
+		alert("지역을 선택해주세요.");
+		frm.area.focus();
+		return false;
+	}
+
+	if (frm.name.value == "") {
+		alert("성명을 입력해 주십시오.");
+		frm.name.focus();
+		return false;
+	}
+
+	if (frm.pwd.value == "") {
+		alert("비밀번호를 입력해 주십시오.");
+		form.pwd.focus();
+		return false;
+	}
+
+	if (frm.email.value == "") {
+		alert("이메일을 입력해 주십시오.");
+		frm.email.focus();
+		return false;
+	}
+
+	if (frm.telnum.value == "") {
+		alert("연락처를 입력해 주십시오.");
+		frm.telnum.focus();
+		return false;
+	}
+
+	if (frm.etc_content2.value == "") {
+		alert("주요내용을 입력해 주십시오.");
+		frm.etc_content2.focus();
+		return false;
+	}
+	
+
+	if (document.getElementById("personal_agree").checked == false) {
+		alert("개인정보 취급방침에 동의해주세요.");
+		document.getElementById("personal_agree").focus();
+		return false;
+	}
+
+	if (confirm('등록하시겠습니까?')) {
+		alert('문의사항이 접수되었습니다.');
+		frm.submit();
+	}
+}
+
 function writeSendit_e6_eng() {
 	var form = document.write_form1;
 

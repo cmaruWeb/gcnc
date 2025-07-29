@@ -221,6 +221,27 @@ if($bbs_auth_row['aClosed'] == 1){  //비공개 게시판일 경우(답글의 �
 	MyResult($query, $connect);
 }
 //echo $sql;
+
+// 기타 contents 입력
+if ($etc_content1 != "" || $etc_content2 != "" || $etc_content3 != "") {
+	for ($i=1; $i<=3; $i++) {
+		$insertTxt = "";
+		${'etc_content' . $i} = addslashes(${'etc_content' . $i});
+		if (${'etc_content' . $i} != "") {
+			$row2 = sql_fetch("SELECT idx FROM ". TB_BBS_ETC_CONTENT. " 
+				WHERE cont_key = 'etc_content$i' AND bbs_idx = $idx AND bbs_code = '$code' ");
+			$etcIdx = $row2['idx'];
+			$updateTxt = " SET cont_key = 'etc_content$i', content = '" . ${'etc_content' . $i} . "' ";
+			$sql2 = "UPDATE " . TB_BBS_ETC_CONTENT . " 
+				$updateTxt
+				WHERE idx = $etcIdx 
+			";
+			// echo $sql2 . "<br>";
+			$result2 = sql_query($sql2);
+		}
+	}
+}
+
 sql_close() or die("db종료 실패");
 
 echo("<meta http-equiv='Refresh' content='0; URL=$url?bbsData=$mvData&gubunx=$gubunx&mode=list&m2=$m2&code=$code'>");
