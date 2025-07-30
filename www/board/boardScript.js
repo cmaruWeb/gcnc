@@ -1665,7 +1665,7 @@ function writeSendit_idea() {
 	}
 
 	if (confirm('등록하시겠습니까?')) {
-		alert('문의사항이 접수되었습니다.');
+		alert('아이디어제안이 접수되었습니다.');
 		frm.submit();
 	}
 }
