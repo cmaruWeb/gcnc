@@ -6,9 +6,6 @@ $m3 = 1;
 include("../inc/top.php");
 include("../inc/sub_top.php");
 
-$code = "netzero";
-include $boardDir . "/bbs_config.inc.php";
-include $boardDir . "/_header.php";
 ?>
 
 <div class="pdinner">

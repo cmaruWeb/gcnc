@@ -4,7 +4,7 @@
 	update : 2015.04.09
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-* {margin:0;padding:0;box-sizing:border-box;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;text-size-adjust:none;-webkit-touch-callout:none; word-break:keep-all; box-sizing:border-box }
+* {margin:0;padding:0;box-sizing:border-box;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;text-size-adjust:none;-webkit-touch-callout:none;word-break:keep-all;box-sizing:border-box;letter-spacing: 0px;}
 a[href="tel"] {color:inherit !important; text-decoration:none;}
 input[type="submit"]{-webkit-appearance: none; -webkit-border-radius:0}
 html {/* overflow-x:hidden; */}
@@ -17,7 +17,7 @@ details,embed,figure,figcaption,footer,header,hgroup,menu,nav,section,summary,au
 {margin:0;padding:0;border:0;/*font:inherit;*/vertical-align:baseline;}
 body{line-height:1;/*word-wrap:break-word;word-break:break-all*/}
 table{border-collapse:collapse;border-spacing:0;/* background:#ffffff; */}
-img{max-width:100%; border:0;-webkit-tap-highlight-color:rgba(0,0,0,0); vertical-align:top;-ms-interpolation-mode:bicubic}
+img{max-width:100%;border:0;-webkit-tap-highlight-color:rgba(0,0,0,0);vertical-align:top;-ms-interpolation-mode:bicubic;height: unset;}
 strong,
 b{font-weight:600;}
 ol,ul{list-style:none}

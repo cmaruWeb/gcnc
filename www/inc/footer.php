@@ -141,6 +141,9 @@
                 <div class="dropdown-content">
                     <ul>
                         <li>
+                            <a href="http://gnen.or.kr/" target="_blank">경상남도환경재단</a>
+                        </li>
+                        <li>
                             <a href="https://me.go.kr/home/web/main.do" target="_blank">환경부</a>
                         </li>
                         <li>
@@ -266,7 +269,7 @@
             </li>
             <li>
                 <span>FAX :</span>
-                055-344-4251
+                055-322-4222
         </ul>
         <p>Copyright ⓒ
             <b>

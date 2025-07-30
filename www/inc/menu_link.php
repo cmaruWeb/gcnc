@@ -17,7 +17,7 @@
 	$mTitle[2][0][0] = "탄소중립이란"; $mLink[2][0][0] = $noSSlDomain."../carbon/definition.php";
 		$mTitle[2][1][0] = "탄소중립"; $mLink[2][1][0] = $noSSlDomain."../carbon/definition.php";
 		$mTitle[2][2][0] = "탄소중립 관련 용어 사전"; $mLink[2][2][0] = $noSSlDomain."../carbon/terms.php";
-		$mTitle[2][3][0] = "생활 속 넷제로 참여"; $mLink[2][3][0] = $noSSlDomain."../carbon/netzero.php";
+		$mTitle[2][3][0] = "생활 속 넷제로 실천"; $mLink[2][3][0] = $noSSlDomain."../carbon/netzero.php";
 		$mTitle[2][4][0] = "아이디어 제안"; $mLink[2][4][0] = $noSSlDomain."../carbon/idea.php";
 
 	$mTitle[3][0][0] = "경남의 탄소중립"; $mLink[3][0][0] = $noSSlDomain."../gyeongnam/emissions.php";
@@ -31,7 +31,7 @@
 		$mTitle[4][1][0] = "공지사항"; $mLink[4][1][0] = $noSSlDomain."../news/notice.php";
 		$mTitle[4][2][0] = "연구자료"; $mLink[4][2][0] = $noSSlDomain."../news/material.php";
 		$mTitle[4][3][0] = "교육·홍보자료"; $mLink[4][3][0] = $noSSlDomain."../news/promotion.php";
-		$mTitle[4][4][0] = "보도자료"; $mLink[4][4][0] = $noSSlDomain."../news/press.php";
+		$mTitle[4][4][0] = "행사·보도자료"; $mLink[4][4][0] = $noSSlDomain."../news/press.php";
 
 
 	$mTitle[10][0][0] = "홈페이지안내"; $mLink[10][0][0] = $noSSlDomain."../info/privacy.php";

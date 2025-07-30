@@ -1037,7 +1037,7 @@ if (USE_MAIN_BANNER) {
                     </p>
                 </div>
                 <div class="netzero-section">
-                    <h2 class="main-tlt2">생활 속 넷제로 참여</h2>
+                    <h2 class="main-tlt2">생활 속 넷제로 실천</h2>
                     <div class="netzero">
                         <div class="swiper netzero-slider">
                             <div class="swiper-wrapper">
@@ -1208,7 +1208,7 @@ if (USE_MAIN_BANNER) {
                             <a href="javascript:void(0);">연구자료</a>
                         </li>
                         <li data-tab="tab4">
-                            <a href="javascript:void(0);">보도자료</a>
+                            <a href="javascript:void(0);">행사·보도자료</a>
                         </li>
                     </ul>
 

@@ -1599,6 +1599,7 @@ nav.gnb ul li a.active:after{
   width: 100%;
   height: auto;
   display: block;
+  height: 200px !important;
 }
 .section4 .play-button {
   position: absolute;
@@ -1695,7 +1696,7 @@ nav.gnb ul li a.active:after{
     .section4 .news-slider .swiper-slide{
     padding: 35px 30px;
     height: 315px;
-    max-width: 33.3333333%;
+    /* max-width: 33.3333333%; */
 }
     .video-box .main-tlt2{
     margin-bottom: 19px;
@@ -1719,6 +1720,9 @@ nav.gnb ul li a.active:after{
         position: absolute;
     }
      .section4 .tab_wrap li:last-child:after{display:none;}
+    .section4 .video-slide-img{
+    height: 317px !important;
+}
 }
 
 

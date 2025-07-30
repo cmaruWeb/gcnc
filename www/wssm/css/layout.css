@@ -255,3 +255,10 @@ font-weight:500; }
 }
 
 
+:root {
+  --main-color: #4CAF50;
+  --point-color:#8CBF26;
+  --txt-color:#212121;
+}
+
+
