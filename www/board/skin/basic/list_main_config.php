@@ -32,20 +32,6 @@ if ((($aRead >= $OT_LEVELX) AND (!empty($OT_ID))) OR ($aRead == '5')) {
 
 
 
-// 경로설정
-$pdfPreviewDownURL = $pdfDownURL = "";
-if ($file2 != "") {
-	$pdfPreviewDownURL = "/bbsDown/" . $code . "/" . $file2;
-	$pdfDownURL = $down_page_url . "&amp;fn=2";
-}
 
-// 본문내용
-$contentTxt = $row['content'];
-$contentTxt = str_replace("&#34;","\"",$contentTxt);
-$contentTxt = str_replace("&#39;","'",$contentTxt);
-$contentTxt = str_replace("&nbsp;","",$contentTxt);
-$contentTxt = htmlspecialchars_decode($contentTxt);
-$contentTxt = strip_tags($contentTxt);
-$contentTxt = strcut_utf8($contentTxt, 100, false, '..');
 
 ?>

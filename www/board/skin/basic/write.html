@@ -1,0 +1,163 @@
+<form name="write_form1" id="write_form1" method="post" action="<?=$boardURL?>/bbs_write_ok.php"  enctype="multipart/form-data">
+<input type='hidden' name="doc_url" value="<?= $PHP_SELF ?>" />
+<input type="hidden" name="ref" value="<?=$ref?>" />
+<input type="hidden" name="re_step" value="<?=$re_step?>" />
+<input type="hidden" name="re_level" value="<?=$re_level?>" />
+<input type="hidden" name="bbsData" value="<?=$mvData?>" />
+<input type="hidden" name="code" value="<?=$code?>" />
+<input type="hidden" name="input_ip" value="<?=$_SERVER['REMOTE_ADDR']?>" />
+<input type="hidden" name="buncodxx" value="<?=$buncodxx?>" />
+<input type="hidden" name="m2" value="<?=$m2?>" />
+<input type="hidden" name="security" value="<?=$aSecurity?>" />
+<input type="hidden" name="editor" id="editor" value="<?php echo $editor?>" />
+<? if($aSecurity != "") {?>
+	<input type="hidden" name="SITE_KEY" value="<?=RECAPTCHA_V3_SITE_KEY?>" />
+<?}?>
+<? if(empty($buncodxx)){?><input type="hidden" name="gubunx" value="" /><?}?>
+<!--글쓰기 -->
+<div class="write_apply">
+	<ul class="mb">
+		<? if($OT_LEVELX == "1")	{	?>
+		<li>
+			<span class="fm_list">공지 </span>
+			<span class="fm_txt">
+				<input type="checkbox" class="to-labelauty-icon" name="top" id="top" <? if($top=="2") echo"checked"; ?> title="공지" value="2" /><label for="top">공지</label>
+			</span>
+		</li>
+		<? } ?>
+		<li>
+			<span class="fm_list">제목 <b class="redTxt">*</b></span>
+			<span class="fm_txt">
+				<label for="" class="blind">카테고리</label>
+				<input type="text" name="title" class="input_txt w100" id="title" hname="제목" value="" option="" frequired="required" title="제목 입력" />
+			</span>
+		</li>
+		<?
+		if(!empty($buncodxx)) {
+			if(strstr($buncodxx,"|")) {
+				$buncod_exp = explode("|",$buncodxx);
+				$buncod_mx = sizeof($buncod_exp);
+			} else {
+				$buncod_exp[0] = $buncodxx;
+				$buncod_mx = 1;
+			}		
+		?>	
+		<li>
+			<span class="fm_list">카테고리 <b class="redTxt">*</b></span> 
+			<span class="fm_txt">
+				<label for="" class="blind">카테고리</label>
+			<? for($j=0;$j < $buncod_mx;$j++) { $jx++; ?>
+				<input type="radio" class="rdo" name="gubunx" value="<?=$buncod_exp[$j]?>" id="gubunx<?=$j?>" <? if($buncod_exp[$j]==$gubunx) echo "checked"; ?> />
+				<label for="gubunx<?=$j?>" class="rdo_txt"><?=$buncod_exp[$j]?></label>
+			<? } ?>
+			</span>
+		</li>
+		<? } ?>
+		<li>
+			<span class="fm_list">이름 <b class="redTxt">*</b></span>
+			<span class="fm_txt">
+				<input type="text" name="name" class="input_txt w100" id="name" hname="이름" value="<?=$w_name?>" option="" frequired="required" title="이름 입력" />
+			</span>
+		</li>
+		<li>
+			<span class="fm_list">글작성 <b class="redTxt">*</b></span>
+			<span class="fm_txt">
+				<div class="editorin">
+<!-------------------------------------- 에디터 --------------------------------------->
+<? $con1 = "content";?>
+	
+	<textarea name="<?=$con1?>" id="<?=$con1?>" style="width:100%; min-width:300px; height:300px; display:none;"></textarea>
+	
+	
+	<?php if($editor == "ckeditor") { ?>
+	<!--ckeditor 전용-->
+	<div class="row">
+		<div class="document-editor__toolbar"></div>
+	</div>
+	<div class="document-editor__toolbar"></div>
+	<div class="editor-container">
+		<div id="c_content"></div> 
+	</div>
+	<!--//ckeditor 전용-->
+	<?php } ?>
+<!--에디터 설정-->
+<!--TOAST UI-->
+<?php if($editor == "toast"){?>
+	<div id="editor_toast">
+	</div>
+	<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+	<script src="https://uicdn.toast.com/editor/latest/i18n/ko-kr.js"></script>
+	<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+<?}?>
+<!--TOAST UI END-->
+<script src="https://cdn.ckeditor.com/ckeditor5/41.2.0/super-build/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/41.2.0/super-build/translations/ko.js"></script>
+<script type="text/javascript" src="/board/editorInit.js?v=<?php echo time(); ?>"></script>
+<script type="text/javascript" src="/ckeditor/upload_adapter.js?v=<?php echo time(); ?>"></script>
+<link rel="stylesheet" media="all" href="/ckeditor/css/style.css">
+<!--//에디터설정-->
+<!-------------------------------------- 에디터 --------------------------------------->
+				</div>
+			</span>
+		</li>
+		<li>
+			<span class="fm_list">첨부파일 </span>
+			<span class="fm_txt">
+			<? if(${UPload1} == "1") { ?>
+			<? for($i=1;$i<=7;$i++) { 
+				if(${'UPload'.$i} == "1") { ?>
+				<div class="filebox <? if($i!=1) echo "mt10"; ?>">
+					<input class="upload-name" value="첨부파일 선택" disabled="disabled">
+					<label for="userfile<?=$i?>" class="file_label">첨부파일</label>
+					<input type="file" name="userfile<?=$i?>" id="userfile<?=$i?>" class="upload-hidden">
+				</div>
+			<?	}
+		 	   } ?>
+			</span>
+		</li>
+		<li>
+			<span class="fm_list">관련링크</span>
+			<span class="fm_txt">
+			<label for="" class="blind">관련링크</label>
+		<? for($i=1; $i<=3; $i++){?>		
+				<input type="text" name="link<?=$i?>" class="input_txt w100" id="link<?=$i?>" hname="관련링크<?=$i?>" value="" frequired="required">	
+		<? }?>
+			</span>
+		</li>
+		<? if(empty($OT_ID)) { ?>
+		<li>
+			<span class="fm_list">비밀번호 <b class="redTxt">*</b></span> 
+			<span class="fm_txt">
+				<input type="password" name="pwd" class="input_txt" id="pwd" hname="비밀번호" value="" title="비밀번호 입력" />
+			</span>
+		</li>
+		<? } else { ?>
+		<input type="hidden" name="pwd" id="pwd" value="<?php echo create_cmid(); ?>" />
+		<? } ?>
+<? } ?>
+	</ul><!--//mb-->
+</div>
+</form>
+<div class="btn_li tac bmb">
+	<ul>
+		<li><a class="btn_link" href="#save"  onclick="writeSendit();">글쓰기</a></li>
+		<li><a class="btn_link btn_gr" href="<?=$PHP_SELF?>?code=<?=$code?>&amp;bbsData=<?=$mvData?>&amp;mode=list&amp;m2=<?=$m2?>">취소</a></li>
+	</ul>
+</div>
+<!--글쓰기 e-->
+
+<script>
+$(document).ready(function(){ 
+	var fileTarget = $('.filebox .upload-hidden'); 
+	fileTarget.on('change', function(){ // 값이 변경되면 
+		if(window.FileReader){ // modern browser 
+			var filename = $(this)[0].files[0].name; 
+		} else { // old IE 
+			var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출 
+		} 
+		// 추출한 파일명 삽입 
+		$(this).siblings('.upload-name').val(filename);
+	}); 
+});
+
+</script>

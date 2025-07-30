@@ -1,0 +1,15 @@
+			<li>
+				<?php if (!empty($OT_ID) && $OT_LEVELX <= '2')  { ?>
+				<span class="select_btn"><label for="idx<?=$idx?>" class="all-hidden">선택</label><input type="checkbox" name="<?=$idx?>" id="idx<?=$idx?>" value="Y"></span>
+				<? } ?>
+				<h5>
+					<a href="<?php echo $show_go; ?>">			
+						<?php echo $not_ico; ?>
+						<span class="title"><?php echo $title; ?></span>
+					</a>
+				</h5>
+				<div class="boardInfo">
+					<span class="name"><?php echo $name; ?></span>
+					<span class="date"><?php echo $registerDay; ?></span>
+				</div>
+			</li>
