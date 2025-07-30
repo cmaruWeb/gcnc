@@ -1,0 +1,82 @@
+<script type="text/javascript">
+function check_s_gubun(obj) {
+	var sel_idx = $(obj).data('val');
+	document.forms.bbs_search_form.gubunx.value = sel_idx;
+	document.forms.bbs_search_form.submit();
+}
+
+</script>
+
+<?
+if(!empty($buncodxx)) {
+	if(strstr($buncodxx,"|")) {
+		$buncod_exp = explode("|",$buncodxx);
+		$buncod_mx = sizeof($buncod_exp);
+	} else {
+		$buncod_exp[0] = $buncodxx;
+		$buncod_mx = 1;
+	}
+?>
+<div class="bbs_cate mb">	
+	<ul class="tabs covid_cate">
+		<li <? if($s_gubunx=="") echo "class='current'"; ?>><a href="#" onclick="check_s_gubun(this)" data-val="">전체</a></li>
+		<? for($j=0;$j < $buncod_mx;$j++) { $jx++; ?>
+		<li <? if($buncod_exp[$j]==$s_gubunx) echo "class='current'"; ?>><a href="#" onclick="check_s_gubun(this)" data-val="<?=$buncod_exp[$j]?>"><?=$buncod_exp[$j]?></a></li>
+		<? }?>		
+	</ul>
+</div>	
+<?
+}
+?>
+
+<!--검색-->
+<div class="searchTop type02">
+	<p class="list_info"><b><?=number_format($total)?></b>개의 게시물이 등록되어 있습니다</p>
+	<div class="searchBox">		
+		<form name="bbs_search_form" id="bbs_search_form" method="GET" action="<?=$PHP_SELF?>" onsubmit="return bbsSearchSendit();">
+		<input type="hidden" name="code" id="code" value="<? echo $code; ?>" />
+		<input type="hidden" name="gubunx" id="gubunx" value="<? echo $s_gubunx ?>" />
+		<input type="hidden" name="m2" id="m2" value="<? echo $m2 ?>" />
+		<select id="search" name="search" title="검색 분류 목록">
+			<option value="">전체</option>		
+			<option value="title" <? if($search=="title") echo "selected"; ?>>제목</option>	
+			<option value="content" <? if($search=="content") echo "selected"; ?>>내용</option>			
+		</select> 
+		<span>					
+		<label for="searchstring" class="all-hidden"><span>검색어 입력</span></label>
+		<input type="text" placeholder="검색어를 입력하세요" id="searchstring" name="searchstring" style="ime-mode:active;" title="검색어를 입력해주세요" value="<?=$searchstring?>">
+		<button type="submit">검색</button>
+		</span>
+		</form>
+	</div>
+</div>
+<!--검색e--> 
+
+<!--리스트-->
+<div class="boardType01">
+	<form name="bbs_form" id="bbs_form" method="post" action="<?=$boardURL?>/bbs_del.php">
+	<input type="hidden" name="Act" id="Act" value="selectDel" />
+	<input type="hidden" name="doc_url" id="doc_url" value="<? echo $PHP_SELF; ?>" />
+	<input type="hidden" name="code" id="code" value="<? echo $code; ?>" />
+	<input type="hidden" name="m2" id="m2" value="<? echo $m2 ?>" />
+	<input type="hidden" name="sw" value="copy">
+	<input type="hidden" name="chked" value="">
+
+	<? if($total==0){?>
+	<div class="tac pdbox mb">
+			게시물이 없습니다.
+	</div>
+	<? }else{?>
+
+	<ul class="board_ul">
+		<li class="title_li">
+			<span class="select_btn"><? if (!empty($OT_ID) && $OT_LEVELX <= '2')  { ?><label for="checkAll" class="all-hidden">선택</label><input type="checkbox" name=checkAll id="checkAll" onclick="chkAll()"><? } ?></span>		
+			<div class="board_h5">					
+				<span class="title">제목</span>
+			</div>
+			<div class="boardInfo">
+				<span class="name">작성자</span>
+				<span class="date">날짜</span>
+			</div>
+		</li>
+	<? }?>
