@@ -39,4 +39,13 @@ if ($file2 != "") {
 	$pdfDownURL = $down_page_url . "&amp;fn=2";
 }
 
+// 본문내용
+$contentTxt = $row['content'];
+$contentTxt = str_replace("&#34;","\"",$contentTxt);
+$contentTxt = str_replace("&#39;","'",$contentTxt);
+$contentTxt = str_replace("&nbsp;","",$contentTxt);
+$contentTxt = htmlspecialchars_decode($contentTxt);
+$contentTxt = strip_tags($contentTxt);
+$contentTxt = strcut_utf8($contentTxt, 100, false, '..');
+
 ?>
