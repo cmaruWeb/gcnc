@@ -19,7 +19,7 @@
         <div class="sub_graph">
             <div class="titbox mb">
                 <div class="tit">
-                    <p class="h_m">온실가스 총 배출량</p>
+                    <p class="h_m">경상남도 온실가스 배출량</p>
                 </div>
                 <div class="con">
                     <canvas id="ghgChart"></canvas>
@@ -110,7 +110,7 @@
                                     stack: 'stack1',
                                     order: 5
                                 }, {
-                                    label: '총배출합계',
+                                    label: '순배출합계',
                                     data: [
                                         14780.8,
                                         15588.2,
@@ -133,7 +133,7 @@
                                     order: 1,
                                     fill: false
                                 }, {
-                                    label: '순배출합계',
+                                    label: '총배출합계',
                                     data: [
                                         20267.6,
                                         20494.8,
@@ -283,18 +283,6 @@
                                     <td>
                                         <strong>총 배출 합계</strong>
                                     </td>
-                                    <td>14,780.8</td>
-                                    <td>15,588.2</td>
-                                    <td>16,100.1</td>
-                                    <td>15,691.7</td>
-                                    <td>15,570.4</td>
-                                    <td>15,298.7</td>
-                                    <td>15,078.7</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>순 배출 합계</strong>
-                                    </td>
                                     <td>20,267.6</td>
                                     <td>20,494.8</td>
                                     <td>20,767.4</td>
@@ -302,6 +290,20 @@
                                     <td>19,939.2</td>
                                     <td>19,674.3</td>
                                     <td>19,616.2</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>순 배출 합계</strong>
+                                    </td>
+
+                                    
+                                    <td>14,780.8</td>
+                                    <td>15,588.2</td>
+                                    <td>16,100.1</td>
+                                    <td>15,691.7</td>
+                                    <td>15,570.4</td>
+                                    <td>15,298.7</td>
+                                    <td>15,078.7</td>
                                 </tr>
                                 <tr>
                                     <td>

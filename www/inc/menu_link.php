@@ -15,7 +15,7 @@
 		$mTitle[1][6][0] = "경남 기초 탄소중립지원센터"; $mLink[1][6][0] = $noSSlDomain."../center/basic_status.php";
 
 	$mTitle[2][0][0] = "탄소중립이란"; $mLink[2][0][0] = $noSSlDomain."../carbon/definition.php";
-		$mTitle[2][1][0] = "탄소중립"; $mLink[2][1][0] = $noSSlDomain."../carbon/definition.php";
+		$mTitle[2][1][0] = "탄소중립 개념"; $mLink[2][1][0] = $noSSlDomain."../carbon/definition.php";
 		$mTitle[2][2][0] = "탄소중립 관련 용어 사전"; $mLink[2][2][0] = $noSSlDomain."../carbon/terms.php";
 		$mTitle[2][3][0] = "생활 속 넷제로 실천"; $mLink[2][3][0] = $noSSlDomain."../carbon/netzero.php";
 		$mTitle[2][4][0] = "아이디어 제안"; $mLink[2][4][0] = $noSSlDomain."../carbon/idea.php";
