@@ -751,7 +751,7 @@ if (USE_MAIN_BANNER) {
 
                         <!-- 팝업 -->
                         <div id="popup" class="popup">
-                            <div class="popup-header">광역</div>
+                            <div class="popup-header">경상남도</div>
                             <div class="popup-body">
                                 <div class="popup-row">
                                     <span>배출량</span><span id="emission">-</span></div>
@@ -769,7 +769,7 @@ if (USE_MAIN_BANNER) {
                             // 지역별 데이터 정의
                             const regionData = {
                                 default: {
-                                    name: "광역",
+                                    name: "경상남도",
                                     emission: 19991.33,
                                     absorption: 4106.10,
                                     total: 15885.22,
@@ -1108,8 +1108,8 @@ if (USE_MAIN_BANNER) {
                         </div>
                         <div class="netzero-info-box netzero-info-trend">
                             <a href="/carbon/definition.php">
-                                <h3 class="netzero-info-title">탄소중립 국내외 동향</h3>
-                                <p class="netzero-info-desc">추진 중인 탄소중립 정책과<br/>최신 동향을 소개</p>
+                                <h3 class="netzero-info-title">탄소중립 개념</h3>
+                                <p class="netzero-info-desc">탄소중립의 개념과<br/>필요성 및 추진전략 소개</p>
                                 <i class="ic"><img src="/img/t_ic02.png" alt=""></i>
                             </a>
                         </div>

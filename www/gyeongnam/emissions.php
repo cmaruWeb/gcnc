@@ -39,18 +39,6 @@
                             <td>
                                 <strong>총 배출 합계</strong>
                             </td>
-                            <td>14,780.8</td>
-                            <td>15,588.2</td>
-                            <td>16,100.1</td>
-                            <td>15,691.7</td>
-                            <td>15,570.4</td>
-                            <td>15,298.7</td>
-                            <td>15,078.7</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>순 배출 합계</strong>
-                            </td>
                             <td>20,267.6</td>
                             <td>20,494.8</td>
                             <td>20,767.4</td>
@@ -58,6 +46,20 @@
                             <td>19,939.2</td>
                             <td>19,674.3</td>
                             <td>19,616.2</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>순 배출 합계</strong>
+                            </td>
+
+                            
+                            <td>14,780.8</td>
+                            <td>15,588.2</td>
+                            <td>16,100.1</td>
+                            <td>15,691.7</td>
+                            <td>15,570.4</td>
+                            <td>15,298.7</td>
+                            <td>15,078.7</td>
                         </tr>
                         <tr>
                             <td>
@@ -97,7 +99,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <strong>폐기물</strong>
+                                <strong>순환경제</strong>
                             </td>
                             <td>1,361.7</td>
                             <td>1,434.2</td>
@@ -135,7 +137,7 @@
     <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,101.6</em></li>
     <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,261.1</em></li>
     <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,051.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">폐기물</b><em class="stt">1,201.8</em></li>
+    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,201.8</em></li>
     <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,537.5</em></li>
 </ul>
 
@@ -149,7 +151,7 @@
     <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,098.4</em></li>
     <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,267.7</em></li>
     <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,092.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">폐기물</b><em class="stt">1,215.5</em></li>
+    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,215.5</em></li>
     <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,375.7</em></li>
 </ul>
 
@@ -163,7 +165,7 @@
     <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,532.4</em></li>
     <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,058.9</em></li>
     <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,085.4</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">폐기물</b><em class="stt">1,262.5</em></li>
+    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,262.5</em></li>
     <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,368.8</em></li>
 </ul>
 
@@ -177,7 +179,7 @@
     <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,532.4</em></li>
     <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,141.8</em></li>
     <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,132.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">폐기물</b><em class="stt">1,235.9</em></li>
+    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,235.9</em></li>
     <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,351.2</em></li>
 </ul>
 
@@ -191,7 +193,7 @@
     <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">10,321.8</em></li>
     <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,009.5</em></li>
     <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,131.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">폐기물</b><em class="stt">1,304.4</em></li>
+    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,304.4</em></li>
     <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,667.3</em></li>
 </ul>
 
@@ -205,7 +207,7 @@
     <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,781.4</em></li>
     <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,098.4</em></li>
     <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,180.9</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">폐기물</b><em class="stt">1,434.2</em></li>
+    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,434.2</em></li>
     <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,906.6</em></li>
 </ul>
 
@@ -219,7 +221,7 @@
     <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,498.9</em></li>
     <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,189.1</em></li>
     <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,217.9</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">폐기물</b><em class="stt">1,361.7</em></li>
+    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,361.7</em></li>
     <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-5,486.8</em></li>
 </ul>
 
