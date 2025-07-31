@@ -4,7 +4,7 @@
 	update : 2015.04.09
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-* {margin:0;padding:0;box-sizing:border-box;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;text-size-adjust:none;-webkit-touch-callout:none;word-break:keep-all;box-sizing:border-box;letter-spacing: 0px;}
+* {margin:0;padding:0;box-sizing:border-box;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;text-size-adjust:none;-webkit-touch-callout:none;word-break:keep-all;box-sizing:border-box;letter-spacing: 0px;/* font-weight: 400; */}
 a[href="tel"] {color:inherit !important; text-decoration:none;}
 input[type="submit"]{-webkit-appearance: none; -webkit-border-radius:0}
 html {/* overflow-x:hidden; */}

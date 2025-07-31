@@ -808,6 +808,7 @@
     padding-bottom: 20px;
     font-size: 20px;
     margin-bottom: 20px;
+    /* font-family: Paperlogy, 'Pretendard', sans-serif, '돋움'; */
 }
 
 @media all and (min-width:768px) {
@@ -865,6 +866,7 @@
     padding-top: 50px;
     border-right: 1px solid #dedede;
     min-height: 652px;
+    font-family: 'Pretendard';
 }
     .con {
         width: 1160px;

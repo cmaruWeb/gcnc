@@ -25,7 +25,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>광역</td>
                     <td>7,627.29</td>
@@ -35,7 +35,7 @@
                     <td>7,365.47</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>광역</td>
                     <td>2,660.49</td>
@@ -45,7 +45,7 @@
                     <td>2,628.25</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>광역</td>
                     <td>720.17</td>
@@ -55,7 +55,7 @@
                     <td>612.79</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>광역</td>
                     <td>1,940.32</td>
@@ -111,7 +111,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송</td>
+                    <td class="b">수송</td>
                     <td>경남</td>
                     <td>광역</td>
                     <td>68.08</td>
@@ -121,7 +121,7 @@
                     <td>61.03</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>광역</td>
                     <td>6,762.45</td>
@@ -131,7 +131,7 @@
                     <td>6,247.82</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>광역</td>
                     <td>4,597.28</td>
@@ -141,7 +141,7 @@
                     <td>4,141.55</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>광역</td>
                     <td>2,010.86</td>
@@ -151,7 +151,7 @@
                     <td>1,938.74</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">c. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">c. 상업/공공</td>
                     <td>경남</td>
                     <td>광역</td>
                     <td>21.13</td>
@@ -161,7 +161,7 @@
                     <td>25.64</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">d. 가정</td>
+                    <td class="b" style="padding-left: 30px;">d. 가정</td>
                     <td>경남</td>
                     <td>광역</td>
                     <td>133.18</td>
@@ -214,7 +214,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>창원시</td>
                     <td>2,432.00</td>
@@ -224,7 +224,7 @@
                     <td>2,323.24</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>창원시</td>
                     <td>739.98</td>
@@ -234,7 +234,7 @@
                     <td>780.41</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>창원시</td>
                     <td>202.78</td>
@@ -244,7 +244,7 @@
                     <td>191.37</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>창원시</td>
                     <td>537.20</td>
@@ -311,7 +311,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송</td>
+                    <td class="b">수송</td>
                     <td>경남</td>
                     <td>창원시</td>
                     <td>-</td>
@@ -321,7 +321,7 @@
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>창원시</td>
                     <td>2,025.02</td>
@@ -331,7 +331,7 @@
                     <td>1,776.70</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>창원시</td>
                     <td>1,322.98</td>
@@ -341,7 +341,7 @@
                     <td>1,104.48</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>창원시</td>
                     <td>631.74</td>
@@ -394,7 +394,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>진주시</td>
                     <td>701.61</td>
@@ -404,7 +404,7 @@
                     <td>692.77</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>진주시</td>
                     <td>363.68</td>
@@ -414,7 +414,7 @@
                     <td>355.67</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>진주시</td>
                     <td>71.51</td>
@@ -424,7 +424,7 @@
                     <td>67.09</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>진주시</td>
                     <td>255.21</td>
@@ -491,7 +491,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송</td>
+                    <td class="b">수송</td>
                     <td>경남</td>
                     <td>진주시</td>
                     <td>-</td>
@@ -501,7 +501,7 @@
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>진주시</td>
                     <td>696.24</td>
@@ -511,7 +511,7 @@
                     <td>623.30</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>진주시</td>
                     <td>468.30</td>
@@ -521,7 +521,7 @@
                     <td>413.22</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>진주시</td>
                     <td>212.39</td>
@@ -531,7 +531,7 @@
                     <td>210.08</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">c. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">c. 상업/공공</td>
                     <td>경남</td>
                     <td>진주시</td>
                     <td>6.17</td>
@@ -541,7 +541,7 @@
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">d. 가정</td>
+                    <td class="b" style="padding-left: 30px;">d. 가정</td>
                     <td>경남</td>
                     <td>진주시</td>
                     <td>9.37</td>
@@ -594,7 +594,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>통영시</td>
                     <td>230.17</td>
@@ -604,7 +604,7 @@
                     <td>209.35</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>통영시</td>
                     <td>101.71</td>
@@ -614,7 +614,7 @@
                     <td>102.03</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>통영시</td>
                     <td>26.99</td>
@@ -624,7 +624,7 @@
                     <td>25.16</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>통영시</td>
                     <td>74.71</td>
@@ -701,7 +701,7 @@
                     <td>383.10</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>통영시</td>
                     <td>347.58</td>
@@ -711,7 +711,7 @@
                     <td>312.08</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>통영시</td>
                     <td>260.78</td>
@@ -721,7 +721,7 @@
                     <td>235.27</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>통영시</td>
                     <td>86.79</td>
@@ -774,7 +774,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>사천시</td>
                     <td>237.72</td>
@@ -784,7 +784,7 @@
                     <td>230.50</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>사천시</td>
                     <td>103.44</td>
@@ -794,7 +794,7 @@
                     <td>102.95</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>사천시</td>
                     <td>19.97</td>
@@ -804,7 +804,7 @@
                     <td>15.07</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>사천시</td>
                     <td>83.47</td>
@@ -871,7 +871,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>사천시</td>
                     <td>231.98</td>
@@ -881,7 +881,7 @@
                     <td>211.71</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>사천시</td>
                     <td>164.84</td>
@@ -891,7 +891,7 @@
                     <td>148.62</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>사천시</td>
                     <td>67.14</td>
@@ -944,7 +944,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>김해시</td>
                     <td>1,096.92</td>
@@ -954,7 +954,7 @@
                     <td>1,105.60</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>김해시</td>
                     <td>384.76</td>
@@ -964,7 +964,7 @@
                     <td>403.11</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>김해시</td>
                     <td>96.75</td>
@@ -974,7 +974,7 @@
                     <td>102.32</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>김해시</td>
                     <td>288.01</td>
@@ -1041,7 +1041,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송</td>
+                    <td class="b">수송</td>
                     <td>경남</td>
                     <td>김해시</td>
                     <td>2.48</td>
@@ -1051,7 +1051,7 @@
                     <td>1.98</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>김해시</td>
                     <td>1,045.09</td>
@@ -1061,7 +1061,7 @@
                     <td>985.40</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>김해시</td>
                     <td>663.49</td>
@@ -1071,7 +1071,7 @@
                     <td>600.17</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>김해시</td>
                     <td>315.46</td>
@@ -1081,7 +1081,7 @@
                     <td>317.83</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">c. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">c. 상업/공공</td>
                     <td>경남</td>
                     <td>김해시</td>
                     <td>5.21</td>
@@ -1091,7 +1091,7 @@
                     <td>7.00</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">d. 가정</td>
+                    <td class="b" style="padding-left: 30px;">d. 가정</td>
                     <td>경남</td>
                     <td>김해시</td>
                     <td>60.93</td>
@@ -1144,7 +1144,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>밀양시</td>
                     <td>289.67</td>
@@ -1154,7 +1154,7 @@
                     <td>279.76</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>밀양시</td>
                     <td>123.74</td>
@@ -1164,7 +1164,7 @@
                     <td>100.27</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>밀양시</td>
                     <td>20.39</td>
@@ -1174,7 +1174,7 @@
                     <td>13.66</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>밀양시</td>
                     <td>103.35</td>
@@ -1241,7 +1241,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송</td>
+                    <td class="b">수송</td>
                     <td>경남</td>
                     <td>밀양시</td>
                     <td>10.40</td>
@@ -1251,7 +1251,7 @@
                     <td>9.90</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>밀양시</td>
                     <td>216.95</td>
@@ -1261,7 +1261,7 @@
                     <td>202.17</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>밀양시</td>
                     <td>154.21</td>
@@ -1271,7 +1271,7 @@
                     <td>144.32</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>밀양시</td>
                     <td>62.74</td>
@@ -1324,7 +1324,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>거제시</td>
                     <td>748.99</td>
@@ -1334,7 +1334,7 @@
                     <td>587.78</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>거제시</td>
                     <td>188.08</td>
@@ -1344,7 +1344,7 @@
                     <td>163.44</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>거제시</td>
                     <td>62.82</td>
@@ -1354,7 +1354,7 @@
                     <td>47.56</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>거제시</td>
                     <td>125.25</td>
@@ -1464,7 +1464,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>양산시</td>
                     <td>690.11</td>
@@ -1474,7 +1474,7 @@
                     <td>778.98</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>양산시</td>
                     <td>193.87</td>
@@ -1484,7 +1484,7 @@
                     <td>214.14</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>양산시</td>
                     <td>70.53</td>
@@ -1494,7 +1494,7 @@
                     <td>65.28</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>양산시</td>
                     <td>123.34</td>
@@ -1561,7 +1561,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송</td>
+                    <td class="b">수송</td>
                     <td>경남</td>
                     <td>양산시</td>
                     <td>54.73</td>
@@ -1571,7 +1571,7 @@
                     <td>48.59</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>양산시</td>
                     <td>686.90</td>
@@ -1581,7 +1581,7 @@
                     <td>719.67</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>양산시</td>
                     <td>421.72</td>
@@ -1591,7 +1591,7 @@
                     <td>405.76</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>양산시</td>
                     <td>192.55</td>
@@ -1601,7 +1601,7 @@
                     <td>213.78</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">c. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">c. 상업/공공</td>
                     <td>경남</td>
                     <td>양산시</td>
                     <td>9.75</td>
@@ -1611,7 +1611,7 @@
                     <td>18.64</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">d. 가정</td>
+                    <td class="b" style="padding-left: 30px;">d. 가정</td>
                     <td>경남</td>
                     <td>양산시</td>
                     <td>62.88</td>
@@ -1664,7 +1664,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>의령군</td>
                     <td>68.95</td>
@@ -1674,7 +1674,7 @@
                     <td>67.54</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>의령군</td>
                     <td>22.54</td>
@@ -1684,7 +1684,7 @@
                     <td>21.92</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>의령군</td>
                     <td>8.33</td>
@@ -1694,7 +1694,7 @@
                     <td>4.50</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>의령군</td>
                     <td>14.22</td>
@@ -1761,7 +1761,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>의령군</td>
                     <td>57.03</td>
@@ -1771,7 +1771,7 @@
                     <td>52.10</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>의령군</td>
                     <td>42.02</td>
@@ -1781,7 +1781,7 @@
                     <td>38.84</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>의령군</td>
                     <td>15.01</td>
@@ -1834,7 +1834,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>함안군</td>
                     <td>259.51</td>
@@ -1844,7 +1844,7 @@
                     <td>258.25</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>함안군</td>
                     <td>80.29</td>
@@ -1854,7 +1854,7 @@
                     <td>72.29</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>함안군</td>
                     <td>35.97</td>
@@ -1864,7 +1864,7 @@
                     <td>29.58</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>함안군</td>
                     <td>44.31</td>
@@ -1931,7 +1931,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>함안군</td>
                     <td>169.16</td>
@@ -1941,7 +1941,7 @@
                     <td>152.05</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>함안군</td>
                     <td>128.66</td>
@@ -1951,7 +1951,7 @@
                     <td>116.77</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>함안군</td>
                     <td>40.49</td>
@@ -2004,7 +2004,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>창녕군</td>
                     <td>145.54</td>
@@ -2024,7 +2024,7 @@
                     <td>66.37</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>창녕군</td>
                     <td>42.83</td>
@@ -2034,7 +2034,7 @@
                     <td>14.45</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>창녕군</td>
                     <td>55.71</td>
@@ -2101,7 +2101,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>창녕군</td>
                     <td>139.38</td>
@@ -2111,7 +2111,7 @@
                     <td>133.35</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>창녕군</td>
                     <td>104.31</td>
@@ -2121,7 +2121,7 @@
                     <td>101.28</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>창녕군</td>
                     <td>35.07</td>
@@ -2174,7 +2174,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>고성군</td>
                     <td>114.67</td>
@@ -2184,7 +2184,7 @@
                     <td>107.28</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>고성군</td>
                     <td>48.16</td>
@@ -2194,7 +2194,7 @@
                     <td>41.33</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>고성군</td>
                     <td>14.03</td>
@@ -2204,7 +2204,7 @@
                     <td>5.78</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>고성군</td>
                     <td>34.13</td>
@@ -2271,7 +2271,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>고성군</td>
                     <td>120.69</td>
@@ -2281,7 +2281,7 @@
                     <td>172.24</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>고성군</td>
                     <td>88.64</td>
@@ -2291,7 +2291,7 @@
                     <td>144.62</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>고성군</td>
                     <td>32.05</td>
@@ -2344,7 +2344,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>남해군</td>
                     <td>83.32</td>
@@ -2364,7 +2364,7 @@
                     <td>34.34</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>남해군</td>
                     <td>9.39</td>
@@ -2374,7 +2374,7 @@
                     <td>8.90</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>남해군</td>
                     <td>21.35</td>
@@ -2441,7 +2441,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>남해군</td>
                     <td>99.97</td>
@@ -2451,7 +2451,7 @@
                     <td>86.62</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>남해군</td>
                     <td>74.92</td>
@@ -2461,7 +2461,7 @@
                     <td>65.76</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>남해군</td>
                     <td>25.05</td>
@@ -2514,7 +2514,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>하동군</td>
                     <td>107.32</td>
@@ -2524,7 +2524,7 @@
                     <td>99.79</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>하동군</td>
                     <td>44.82</td>
@@ -2534,7 +2534,7 @@
                     <td>39.37</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>하동군</td>
                     <td>8.96</td>
@@ -2544,7 +2544,7 @@
                     <td>5.60</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>하동군</td>
                     <td>35.86</td>
@@ -2611,7 +2611,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송</td>
+                    <td class="b">수송</td>
                     <td>경남</td>
                     <td>하동군</td>
                     <td>0.47</td>
@@ -2621,7 +2621,7 @@
                     <td>0.57</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>하동군</td>
                     <td>100.18</td>
@@ -2631,7 +2631,7 @@
                     <td>118.01</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>하동군</td>
                     <td>76.63</td>
@@ -2641,7 +2641,7 @@
                     <td>97.43</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>하동군</td>
                     <td>23.55</td>
@@ -2694,7 +2694,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>산청군</td>
                     <td>91.10</td>
@@ -2704,7 +2704,7 @@
                     <td>89.98</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>산청군</td>
                     <td>34.06</td>
@@ -2714,7 +2714,7 @@
                     <td>32.76</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>산청군</td>
                     <td>6.13</td>
@@ -2724,7 +2724,7 @@
                     <td>5.18</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>산청군</td>
                     <td>27.92</td>
@@ -2791,7 +2791,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>산청군</td>
                     <td>81.39</td>
@@ -2801,7 +2801,7 @@
                     <td>72.44</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>산청군</td>
                     <td>63.27</td>
@@ -2811,7 +2811,7 @@
                     <td>56.15</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>산청군</td>
                     <td>18.12</td>
@@ -2864,7 +2864,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>함양군</td>
                     <td>84.93</td>
@@ -2874,7 +2874,7 @@
                     <td>78.97</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>함양군</td>
                     <td>44.63</td>
@@ -2884,7 +2884,7 @@
                     <td>40.70</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>함양군</td>
                     <td>12.71</td>
@@ -2894,7 +2894,7 @@
                     <td>5.10</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>함양군</td>
                     <td>31.93</td>
@@ -2961,7 +2961,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>함양군</td>
                     <td>85.02</td>
@@ -2971,7 +2971,7 @@
                     <td>76.58</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>함양군</td>
                     <td>63.02</td>
@@ -2981,7 +2981,7 @@
                     <td>56.47</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>함양군</td>
                     <td>22.00</td>
@@ -3034,7 +3034,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>거창군</td>
                     <td>135.59</td>
@@ -3044,7 +3044,7 @@
                     <td>132.88</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>거창군</td>
                     <td>56.14</td>
@@ -3054,7 +3054,7 @@
                     <td>56.30</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>거창군</td>
                     <td>7.30</td>
@@ -3064,7 +3064,7 @@
                     <td>4.44</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>거창군</td>
                     <td>48.84</td>
@@ -3131,7 +3131,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>거창군</td>
                     <td>125.44</td>
@@ -3141,7 +3141,7 @@
                     <td>113.55</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>거창군</td>
                     <td>89.96</td>
@@ -3151,7 +3151,7 @@
                     <td>81.11</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>거창군</td>
                     <td>35.48</td>
@@ -3204,7 +3204,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">3. 수송(VKT기준)</td>
+                    <td class="b">수송(VKT기준)</td>
                     <td>경남</td>
                     <td>합천군</td>
                     <td>109.16</td>
@@ -3214,7 +3214,7 @@
                     <td>99.19</td>
                 </tr>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>합천군</td>
                     <td>38.27</td>
@@ -3224,7 +3224,7 @@
                     <td>35.42</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>합천군</td>
                     <td>2.78</td>
@@ -3234,7 +3234,7 @@
                     <td>1.75</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>합천군</td>
                     <td>35.49</td>
@@ -3301,7 +3301,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="b">4. 건물</td>
+                    <td class="b">건물</td>
                     <td>경남</td>
                     <td>합천군</td>
                     <td>100.32</td>
@@ -3311,7 +3311,7 @@
                     <td>92.40</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">a. 상업/공공</td>
+                    <td class="b" style="padding-left: 30px;">a. 상업/공공</td>
                     <td>경남</td>
                     <td>합천군</td>
                     <td>76.16</td>
@@ -3321,7 +3321,7 @@
                     <td>71.21</td>
                 </tr>
                 <tr>
-                    <td class="b" style="padding-left: 20px;">b. 가정</td>
+                    <td class="b" style="padding-left: 30px;">b. 가정</td>
                     <td>경남</td>
                     <td>합천군</td>
                     <td>24.16</td>
