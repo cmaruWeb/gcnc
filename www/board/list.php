@@ -54,7 +54,7 @@ if($searchstring) {
 
 //갤러리 스킨을 가진 게시판은 날짜 순으로 정렬
 $blRow = MyFetchArray("SELECT skinDir FROM tb_bbs_list WHERE code='$code'",$connect);
-if($blRow['skinDir']=="gallery"){
+if($blRow['skinDir']=="gallery" || $blRow['skinDir']=="infographic"){
 $query .= " ORDER BY  top desc, registerDay desc LIMIT $start, $listScale";
 }else{
 $query .= " ORDER BY  top desc, ref desc, re_step, re_level LIMIT $start, $listScale";
