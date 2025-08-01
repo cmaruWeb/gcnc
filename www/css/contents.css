@@ -2624,3 +2624,58 @@
 
 
 
+#sub .rightContent{font-family: 'Pretendard', sans-serif, '돋움';}
+
+.sub_box01 .tit01 {display:flex; align-items:center; justify-content:center; padding:20px 10px; text-align:center; font-weight:600; font-size:1.1em; border-radius:8px; border:1px solid var(--main-color); color:var(--main-color);}
+
+
+.net00{}
+.net00 .list{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.net00 .list li{
+    width: 100%;
+}
+.net00 .list li img{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 7%);
+    border: 5px solid #fff;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.net00 .list li b{
+    text-align: center;
+    display: block;
+}
+
+
+  @media (min-width: 768px) {
+.net00{}
+.net00 .list{
+    gap: 20px;
+}
+.net00 .list li{
+    width: calc(50% - 10px);
+}
+.net00 .list li b{}
+
+
+  }
+
+  @media (min-width: 1200px) {
+.net00{}
+.net00 .list{
+    gap: 25px;
+}
+.net00 .list li{
+    width: calc(25% - 19px);
+}
+.net00 .list li b{}
+
+
+  }

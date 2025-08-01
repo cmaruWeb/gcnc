@@ -52,7 +52,6 @@
                                 <strong>순 배출 합계</strong>
                             </td>
 
-                            
                             <td>14,780.8</td>
                             <td>15,588.2</td>
                             <td>16,100.1</td>
@@ -126,105 +125,300 @@
             </div>
         </div>
 
-        <div class="sub_plan">
+        <div class="sub_box01">
             <!-- 2022 -->
-<div class="tit01 mb20">
-    <p>2022</p>
-</div>
-<ul class="tg-list mb">
-    <li><i class="icon"><img src="/img/tg_ic01.png" alt=""></i><b class="tlt">총 배출 합계</b><em class="stt">15,078.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic02.png" alt=""></i><b class="tlt">순 배출 합계</b><em class="stt">19,616.2</em></li>
-    <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,101.6</em></li>
-    <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,261.1</em></li>
-    <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,051.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,201.8</em></li>
-    <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,537.5</em></li>
-</ul>
+            <div class="tit01 mb20">
+                <p>2022</p>
+            </div>
+            <ul class="tg-list mb">
+                <li>
+                    <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
+                    <b class="tlt">총 배출 합계</b>
+                    <em class="stt">15,078.7</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
+                    <b class="tlt">순 배출 합계</b>
+                    <em class="stt">19,616.2</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
+                    <b class="tlt">도시건물</b>
+                    <em class="stt">9,101.6</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic04.png" alt=""></i>
+                    <b class="tlt">수송/교통</b>
+                    <em class="stt">7,261.1</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic05.png" alt=""></i>
+                    <b class="tlt">농축수산</b>
+                    <em class="stt">2,051.7</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic06.png" alt=""></i>
+                    <b class="tlt">순환경제</b>
+                    <em class="stt">1,201.8</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic07.png" alt=""></i>
+                    <b class="tlt">산림녹지환경</b>
+                    <em class="stt">-4,537.5</em>
+                </li>
+            </ul>
 
-<!-- 2021 -->
-<div class="tit01 mb20">
-    <p>2021</p>
-</div>
-<ul class="tg-list mb">
-    <li><i class="icon"><img src="/img/tg_ic01.png" alt=""></i><b class="tlt">총 배출 합계</b><em class="stt">15,298.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic02.png" alt=""></i><b class="tlt">순 배출 합계</b><em class="stt">19,674.3</em></li>
-    <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,098.4</em></li>
-    <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,267.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,092.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,215.5</em></li>
-    <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,375.7</em></li>
-</ul>
+            <!-- 2021 -->
+            <div class="tit01 mb20">
+                <p>2021</p>
+            </div>
+            <ul class="tg-list mb">
+                <li>
+                    <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
+                    <b class="tlt">총 배출 합계</b>
+                    <em class="stt">15,298.7</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
+                    <b class="tlt">순 배출 합계</b>
+                    <em class="stt">19,674.3</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
+                    <b class="tlt">도시건물</b>
+                    <em class="stt">9,098.4</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic04.png" alt=""></i>
+                    <b class="tlt">수송/교통</b>
+                    <em class="stt">7,267.7</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic05.png" alt=""></i>
+                    <b class="tlt">농축수산</b>
+                    <em class="stt">2,092.7</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic06.png" alt=""></i>
+                    <b class="tlt">순환경제</b>
+                    <em class="stt">1,215.5</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic07.png" alt=""></i>
+                    <b class="tlt">산림녹지환경</b>
+                    <em class="stt">-4,375.7</em>
+                </li>
+            </ul>
 
-<!-- 2020 -->
-<div class="tit01 mb20">
-    <p>2020</p>
-</div>
-<ul class="tg-list mb">
-    <li><i class="icon"><img src="/img/tg_ic01.png" alt=""></i><b class="tlt">총 배출 합계</b><em class="stt">15,570.4</em></li>
-    <li><i class="icon"><img src="/img/tg_ic02.png" alt=""></i><b class="tlt">순 배출 합계</b><em class="stt">19,939.2</em></li>
-    <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,532.4</em></li>
-    <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,058.9</em></li>
-    <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,085.4</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,262.5</em></li>
-    <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,368.8</em></li>
-</ul>
+            <!-- 2020 -->
+            <div class="tit01 mb20">
+                <p>2020</p>
+            </div>
+            <ul class="tg-list mb">
+                <li>
+                    <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
+                    <b class="tlt">총 배출 합계</b>
+                    <em class="stt">15,570.4</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
+                    <b class="tlt">순 배출 합계</b>
+                    <em class="stt">19,939.2</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
+                    <b class="tlt">도시건물</b>
+                    <em class="stt">9,532.4</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic04.png" alt=""></i>
+                    <b class="tlt">수송/교통</b>
+                    <em class="stt">7,058.9</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic05.png" alt=""></i>
+                    <b class="tlt">농축수산</b>
+                    <em class="stt">2,085.4</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic06.png" alt=""></i>
+                    <b class="tlt">순환경제</b>
+                    <em class="stt">1,262.5</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic07.png" alt=""></i>
+                    <b class="tlt">산림녹지환경</b>
+                    <em class="stt">-4,368.8</em>
+                </li>
+            </ul>
 
-<!-- 2019 -->
-<div class="tit01 mb20">
-    <p>2019</p>
-</div>
-<ul class="tg-list mb">
-    <li><i class="icon"><img src="/img/tg_ic01.png" alt=""></i><b class="tlt">총 배출 합계</b><em class="stt">15,691.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic02.png" alt=""></i><b class="tlt">순 배출 합계</b><em class="stt">20,042.9</em></li>
-    <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,532.4</em></li>
-    <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,141.8</em></li>
-    <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,132.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,235.9</em></li>
-    <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,351.2</em></li>
-</ul>
+            <!-- 2019 -->
+            <div class="tit01 mb20">
+                <p>2019</p>
+            </div>
+            <ul class="tg-list mb">
+                <li>
+                    <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
+                    <b class="tlt">총 배출 합계</b>
+                    <em class="stt">15,691.7</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
+                    <b class="tlt">순 배출 합계</b>
+                    <em class="stt">20,042.9</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
+                    <b class="tlt">도시건물</b>
+                    <em class="stt">9,532.4</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic04.png" alt=""></i>
+                    <b class="tlt">수송/교통</b>
+                    <em class="stt">7,141.8</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic05.png" alt=""></i>
+                    <b class="tlt">농축수산</b>
+                    <em class="stt">2,132.7</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic06.png" alt=""></i>
+                    <b class="tlt">순환경제</b>
+                    <em class="stt">1,235.9</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic07.png" alt=""></i>
+                    <b class="tlt">산림녹지환경</b>
+                    <em class="stt">-4,351.2</em>
+                </li>
+            </ul>
 
-<!-- 2018 -->
-<div class="tit01 mb20">
-    <p>2018</p>
-</div>
-<ul class="tg-list mb">
-    <li><i class="icon"><img src="/img/tg_ic01.png" alt=""></i><b class="tlt">총 배출 합계</b><em class="stt">16,100.1</em></li>
-    <li><i class="icon"><img src="/img/tg_ic02.png" alt=""></i><b class="tlt">순 배출 합계</b><em class="stt">20,767.4</em></li>
-    <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">10,321.8</em></li>
-    <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,009.5</em></li>
-    <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,131.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,304.4</em></li>
-    <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,667.3</em></li>
-</ul>
+            <!-- 2018 -->
+            <div class="tit01 mb20">
+                <p>2018</p>
+            </div>
+            <ul class="tg-list mb">
+                <li>
+                    <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
+                    <b class="tlt">총 배출 합계</b>
+                    <em class="stt">16,100.1</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
+                    <b class="tlt">순 배출 합계</b>
+                    <em class="stt">20,767.4</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
+                    <b class="tlt">도시건물</b>
+                    <em class="stt">10,321.8</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic04.png" alt=""></i>
+                    <b class="tlt">수송/교통</b>
+                    <em class="stt">7,009.5</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic05.png" alt=""></i>
+                    <b class="tlt">농축수산</b>
+                    <em class="stt">2,131.7</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic06.png" alt=""></i>
+                    <b class="tlt">순환경제</b>
+                    <em class="stt">1,304.4</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic07.png" alt=""></i>
+                    <b class="tlt">산림녹지환경</b>
+                    <em class="stt">-4,667.3</em>
+                </li>
+            </ul>
 
-<!-- 2017 -->
-<div class="tit01 mb20">
-    <p>2017</p>
-</div>
-<ul class="tg-list mb">
-    <li><i class="icon"><img src="/img/tg_ic01.png" alt=""></i><b class="tlt">총 배출 합계</b><em class="stt">15,588.2</em></li>
-    <li><i class="icon"><img src="/img/tg_ic02.png" alt=""></i><b class="tlt">순 배출 합계</b><em class="stt">20,494.8</em></li>
-    <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,781.4</em></li>
-    <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,098.4</em></li>
-    <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,180.9</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,434.2</em></li>
-    <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-4,906.6</em></li>
-</ul>
+            <!-- 2017 -->
+            <div class="tit01 mb20">
+                <p>2017</p>
+            </div>
+            <ul class="tg-list mb">
+                <li>
+                    <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
+                    <b class="tlt">총 배출 합계</b>
+                    <em class="stt">15,588.2</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
+                    <b class="tlt">순 배출 합계</b>
+                    <em class="stt">20,494.8</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
+                    <b class="tlt">도시건물</b>
+                    <em class="stt">9,781.4</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic04.png" alt=""></i>
+                    <b class="tlt">수송/교통</b>
+                    <em class="stt">7,098.4</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic05.png" alt=""></i>
+                    <b class="tlt">농축수산</b>
+                    <em class="stt">2,180.9</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic06.png" alt=""></i>
+                    <b class="tlt">순환경제</b>
+                    <em class="stt">1,434.2</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic07.png" alt=""></i>
+                    <b class="tlt">산림녹지환경</b>
+                    <em class="stt">-4,906.6</em>
+                </li>
+            </ul>
 
-<!-- 2016 -->
-<div class="tit01 mb20">
-    <p>2016</p>
-</div>
-<ul class="tg-list mb">
-    <li><i class="icon"><img src="/img/tg_ic01.png" alt=""></i><b class="tlt">총 배출 합계</b><em class="stt">14,780.8</em></li>
-    <li><i class="icon"><img src="/img/tg_ic02.png" alt=""></i><b class="tlt">순 배출 합계</b><em class="stt">20,267.6</em></li>
-    <li><i class="icon"><img src="/img/tg_ic03.png" alt=""></i><b class="tlt">도시건물</b><em class="stt">9,498.9</em></li>
-    <li><i class="icon"><img src="/img/tg_ic04.png" alt=""></i><b class="tlt">수송/교통</b><em class="stt">7,189.1</em></li>
-    <li><i class="icon"><img src="/img/tg_ic05.png" alt=""></i><b class="tlt">농축수산</b><em class="stt">2,217.9</em></li>
-    <li><i class="icon"><img src="/img/tg_ic06.png" alt=""></i><b class="tlt">순환경제</b><em class="stt">1,361.7</em></li>
-    <li><i class="icon"><img src="/img/tg_ic07.png" alt=""></i><b class="tlt">산림녹지환경</b><em class="stt">-5,486.8</em></li>
-</ul>
-
+            <!-- 2016 -->
+            <div class="tit01 mb20">
+                <p>2016</p>
+            </div>
+            <ul class="tg-list mb">
+                <li>
+                    <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
+                    <b class="tlt">총 배출 합계</b>
+                    <em class="stt">14,780.8</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
+                    <b class="tlt">순 배출 합계</b>
+                    <em class="stt">20,267.6</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
+                    <b class="tlt">도시건물</b>
+                    <em class="stt">9,498.9</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic04.png" alt=""></i>
+                    <b class="tlt">수송/교통</b>
+                    <em class="stt">7,189.1</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic05.png" alt=""></i>
+                    <b class="tlt">농축수산</b>
+                    <em class="stt">2,217.9</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic06.png" alt=""></i>
+                    <b class="tlt">순환경제</b>
+                    <em class="stt">1,361.7</em>
+                </li>
+                <li>
+                    <i class="icon"><img src="/img/tg_ic07.png" alt=""></i>
+                    <b class="tlt">산림녹지환경</b>
+                    <em class="stt">-5,486.8</em>
+                </li>
+            </ul>
 
         </div>
     </div>

@@ -773,6 +773,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 19991.33,
                                     absorption: 4106.10,
                                     total: 15885.22,
+                                    color: "#ed5136",  
                                     link: "#gn"
                                 },
                                 changwon: {
@@ -780,6 +781,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 5906.70,
                                     absorption: 364.65,
                                     total: 5542.05,
+                                    color: "#f67b2d",  
                                     link: "#cw"
                                 },
                                 jinju: {
@@ -787,6 +789,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 2338.81,
                                     absorption: 283.69,
                                     total: 2055.12,
+                                    color: "#f9a841",  
                                     link: "#jj"
                                 },
                                 tongyeong: {
@@ -794,6 +797,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 1095.68,
                                     absorption: 113.53,
                                     total: 982.16,
+                                    color: "#b1d62e", 
                                     link: "#ty"
                                 },
                                 sacheon: {
@@ -801,6 +805,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 758.23,
                                     absorption: 45.51,
                                     total: 712.72,
+                                    color: "#b1d62e", 
                                     link: "#sc"
                                 },
                                 gimhae: {
@@ -808,6 +813,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 2860.79,
                                     absorption: 131.31,
                                     total: 2729.48,
+                                    color: "#f9a841",  
                                     link: "#gh"
                                 },
                                 miryang: {
@@ -815,6 +821,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 847.65,
                                     absorption: 396.43,
                                     total: 451.22,
+                                    color: "#8cbf26",  
                                     link: "#my"
                                 },
                                 geoje: {
@@ -822,6 +829,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 960.66,
                                     absorption: 117.13,
                                     total: 843.53,
+                                    color: "#b1d62e", 
                                     link: "#gj"
                                 },
                                 yangsan: {
@@ -829,6 +837,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 2163.30,
                                     absorption: 325.76,
                                     total: 1837.54,
+                                    color: "#ffe033ff",  
                                     link: "#ys"
                                 },
                                 uiryeong: {
@@ -836,6 +845,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 295.38,
                                     absorption: 218.97,
                                     total: 76.41,
+                                    color: "#4caf50", 
                                     link: "#ur"
                                 },
                                 haman: {
@@ -843,6 +853,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 681.12,
                                     absorption: 111.88,
                                     total: 569.24,
+                                    color: "#4caf50", 
                                     link: "#ha"
                                 },
                                 changnyeong: {
@@ -850,6 +861,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 590.61,
                                     absorption: 77.28,
                                     total: 513.33,
+                                    color: "#b1d62e",  
                                     link: "#cn"
                                 },
                                 goseong: {
@@ -857,6 +869,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 510.67,
                                     absorption: 265.00,
                                     total: 245.67,
+                                    color: "#8cbf26",  
                                     link: "#gs"
                                 },
                                 namhae: {
@@ -864,6 +877,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 303.53,
                                     absorption: 145.48,
                                     total: 158.05,
+                                    color: "#8cbf26",  
                                     link: "#nh"
                                 },
                                 hadong: {
@@ -871,6 +885,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 459.73,
                                     absorption: 339.55,
                                     total: 120.18,
+                                    color: "#8cbf26",  
                                     link: "#hd"
                                 },
                                 sancheong: {
@@ -878,6 +893,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 332.82,
                                     absorption: 247.71,
                                     total: 85.11,
+                                    color: "#4caf50", 
                                     link: "#cc"
                                 },
                                 hamyang: {
@@ -885,6 +901,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 326.06,
                                     absorption: 125.59,
                                     total: 200.47,
+                                    color: "#8cbf26",  
                                     link: "#hy"
                                 },
                                 geochang: {
@@ -892,6 +909,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 501.62,
                                     absorption: 364.58,
                                     total: 137.04,
+                                    color: "#8cbf26",  
                                     link: "#gc"
                                 },
                                 hapcheon: {
@@ -899,6 +917,7 @@ if (USE_MAIN_BANNER) {
                                     emission: 479.76,
                                     absorption: 431.07,
                                     total: 48.69,
+                                    color: "#4caf50", 
                                     link: "#hc"
                                 }
                             };
@@ -927,6 +946,7 @@ if (USE_MAIN_BANNER) {
                                     .total
                                     .toLocaleString();
                                 detailLink.href = data.link;
+                                total.style.color      = data.color;
                             }
 
                             // 초기 팝업 설정
