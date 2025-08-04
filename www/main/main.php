@@ -1057,7 +1057,7 @@ if (USE_MAIN_BANNER) {
                     </p>
                 </div>
                 <div class="netzero-section">
-                    <h2 class="main-tlt2">생활 속 넷제로 실천</h2>
+                    <h2 class="main-tlt2">슬기로운 탄소중립 생활</h2>
                     <div class="netzero">
                         <div class="swiper netzero-slider">
                             <div class="swiper-wrapper">

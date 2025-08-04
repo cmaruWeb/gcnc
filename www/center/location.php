@@ -15,22 +15,35 @@
         <div class="subtop">
             <h3><?=$mTitle[$m1][$m2][0]?></h3>
         </div>
-		
+
         <div class="sub_map">
             <div class="info01 mb">
-                <p><span class="label">주소</span><span class="txt">경상남도 김해시 전하동 515-3<br><em>2025년 9월 이후 사무실 이사 예정 (이사 예정지 : 경상남도 김해시 진영로265번길 330 화포천습지보전관리센터)</em></span></p>
-                <p><span class="label">전화</span><span class="txt">055-344-4200</span></p>
-                <p><span class="label">팩스</span><span class="txt">055-322-4222</span></p>
+                <p>
+                    <span class="label">주소</span><span class="txt">경남 김해시 진영읍 진영로265번길 330(화포천습지과학관)</span></p>
+                <p>
+                    <span class="label">전화</span><span class="txt">055-344-4200</span></p>
+                <p>
+                    <span class="label">팩스</span><span class="txt">055-322-4222</span></p>
             </div>
 
-            <div id="daumRoughmapContainer1752814423148" class="root_daum_roughmap root_daum_roughmap_landing mapwrap"></div>
-            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div
+                id="daumRoughmapContainer1754289243217"
+                class="root_daum_roughmap root_daum_roughmap_landing mapwrap"></div>
+
+            <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
+            <script
+                charset="UTF-8"
+                class="daum_roughmap_loader_script"
+                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+            <!-- 3. 실행 스크립트 -->
             <script charset="UTF-8">
-                new daum.roughmap.Lander({
-                    "timestamp" : "1752814423148",
-                    "key" : "5tnzqp4vcvu",
-                    "mapHeight" : "360"
-                }).render();
+                new daum
+                    .roughmap
+                    .Lander({"timestamp": "1754289243217", "key": "6eunfyvb3yp", "mapHeight": "360"})
+                    .render();
             </script>
         </div>
 
