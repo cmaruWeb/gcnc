@@ -6,6 +6,8 @@
 .col02 {color:var(--point-color) !important;}
 .col03 {color:#7b7990 !important;}
 .col04 {color:#b00000 !important;}
+.box01 {padding:20px; border-radius:8px; border:1px solid #e0e0e0;}
+.box02 {padding:20px; border-radius:8px; border:1px solid var(--main-color);}
 
 #sub .subtab {display:flex; margin:0 0 40px; text-align:center; border-bottom:1px solid #e0e0e0;}
 #sub .subtab a {flex:1; display:flex; align-items:center; justify-content:center; font-weight:700; padding:1em 0.5em; color:#aaa; position:relative;}
@@ -78,12 +80,11 @@
 
 
 /*탄소중립지원센터 - 센터소개*/
-.sub_overview .info01 {display:flex; flex-wrap:wrap; gap:20px 2%;}
+/*.sub_overview .info01 {display:flex; flex-wrap:wrap; gap:20px 2%;}
 .sub_overview .info01 li {width:100%; background:#f8f8f8; border:1px solid #e0e0e0; border-radius:8px; padding:20px;}
 .sub_overview .info01 li img {display:block; width:min(20%, 50px); margin:0 0 0 auto;}
 .sub_overview .info01 li h5 {font-weight:600; font-size:1.1em; margin:0 0 10px;}
-.sub_overview .info01 li p {/*word-break:break-all;*/}
-.sub_overview .info02 {display:flex; flex-wrap:wrap; gap:20px 2%;}
+.sub_overview .info02 {display:flex; flex-wrap:wrap; gap:20pxx 2%;}
 .sub_overview .info02 li {width:100%;}
 .sub_overview .info02 li h5 {background:var(--main-color); color:#fff; padding:10px; border-radius:8px; font-weight:600; display:flex; align-items:center; gap:10px; font-size:1.1em; margin:0 0 10px;}
 .sub_overview .info02 li h5 em {display:flex; align-items:center; justify-content:center; width:30px; height:30px; background:#fff; color:var(--main-color); font-size:0.8em; border-radius:100%; flex-shrink:0;}
@@ -99,7 +100,48 @@
   .sub_overview .info01 li {width:unset; flex:1; flex-shrink:0;}
   .sub_overview .info01 li img {margin:0 0 20px 0;}
   .sub_overview .info02 li {width:unset; width:49%;}
+}*/
+
+.sub_overview .info01 {padding:20px; border-radius:8px; background:#f8f8f8; border:1px solid #e0e0e0; text-align:center;}
+.sub_overview .info01 h5 {font-weight:700; font-size:1.25em;}
+.sub_overview .info01 p {font-size:0.8em; opacity:0.8;}
+.sub_overview .chart {margin:auto; width:min(100%, 720px); position:relative;}
+.sub_overview .chart:before {content:''; display:inline-block; width:1px; height:calc(100% - min(15vw, 75px)); background:#e0e0e0; position:absolute; left:50%; top:min(15vw, 75px); z-index:-1;}
+.sub_overview .chart ul {display:flex; align-items:center; position:relative;}
+.sub_overview .chart .dep01 {justify-content:space-between;}
+.sub_overview .chart .dep01:before {content:''; display:inline-block; width:100%; height:1px; background:#e0e0e0; position:absolute; left:0; top:50%; z-index:-1;}
+.sub_overview .chart .dep01 li img {width:min(30vw, 150px); height:min(30vw, 150px); border-radius:100%; border:5px solid #7b7990; display:block; margin:0 auto;}
+.sub_overview .chart .dep02 {justify-content:flex-end;}
+.sub_overview .chart .dep02:before {content:''; display:inline-block; width:50%; height:1px; background:#e0e0e0; position:absolute; left:50%; top:50%; z-index:-1;}
+.sub_overview .chart .dep02 li p {background:#7b7990; color:#fff; padding:10px 20px; border-radius:8px; font-weight:500; width:min(30vw, 150px); text-align:center; margin:0 auto;}
+.sub_overview .chart .dep03 li {padding:20px; border-radius:500px; background:#fff; border:5px solid #e0e0e0; text-align:center; width:100%;}
+.sub_overview .chart .dep03 li img {width:min(60%, 240px);}
+.sub_overview .chart .dep03 li p {margin:10px 0 0; font-weight:600; color:#7b7990;}
+.sub_overview .chart .dep04 li {text-align:center; width:100%;}
+.sub_overview .chart .dep04 li img {width:min(80%, 400px);}
+.sub_overview .chart .dep04 li .txt {display:flex; align-items:center; justify-content:center; gap:10px 1em; padding:20px; border-radius:500px; background:var(--main-color); background:linear-gradient(90deg, var(--main-color) 0%, var(--point-color) 100%); color:#fff; text-align:center; width:100%; font-weight:600;}
+.sub_overview .chart .dep04 li .txt em {background:#fff; color:var(--main-color); padding:0 1em; border-radius:100px;}
+.sub_overview .info02 {display:flex; flex-wrap:wrap; gap:20px 2%;}
+.sub_overview .info02 li {width:100%; background:#f8f8f8; border:1px solid #e0e0e0; border-radius:8px; padding:20px; display:flex; align-items:center; justify-content:space-between; flex-direction:row-reverse;}
+.sub_overview .info02 li img {display:block; width:min(20%, 50px); margin:0 0 0 auto;}
+.sub_overview .info02 li p {font-weight:600;}
+
+@media all and (min-width:768px) {
+  .sub_overview .info01 h5 {font-size:1.5em;}
+  .sub_overview .info01 p {font-size:0.9em;}
+  .sub_overview .chart .dep04 li .txt em {font-size:1.1em;}
+  .sub_overview .chart .dep04 li .txt p {font-size:1.25em;}
 }
+
+@media all and (min-width:1200px) {
+  .sub_overview {padding:0 50px 0 0;}
+  .sub_overview .info01 h5 {font-size:1.75em;}
+  .sub_overview .chart .dep04 li .txt p {font-size:1.5em;}
+  .sub_overview .info02 li {width:unset; flex:1; flex-shrink:0; flex-wrap:wrap; flex-direction:row;}
+  .sub_overview .info02 li img {margin:0 auto 20px 0;}
+  .sub_overview .info02 li p {width:100%;}
+}
+
 
 /*탄소중립지원센터 - 조직도*/
 /*.sub_org .chart_ex ul {display:flex; justify-content:center; text-align:center; gap:0 2%; position:relative;}
