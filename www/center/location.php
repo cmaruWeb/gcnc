@@ -21,7 +21,7 @@
                 <p>
                     <span class="label">주소</span><span class="txt">경남 김해시 진영읍 진영로265번길 330(화포천습지과학관)</span></p>
                 <p>
-                    <span class="label">전화</span><span class="txt">055-344-4200</span></p>
+                    <span class="label">전화</span><span class="txt">055-344-4251</span></p>
                 <p>
                     <span class="label">팩스</span><span class="txt">055-322-4222</span></p>
             </div>

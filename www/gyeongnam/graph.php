@@ -296,7 +296,6 @@
                                         <strong>순 배출 합계</strong>
                                     </td>
 
-                                    
                                     <td>14,780.8</td>
                                     <td>15,588.2</td>
                                     <td>16,100.1</td>
@@ -378,90 +377,141 @@
                     <p class="h_m">경남의 평균 기온변화</p>
                 </div>
                 <div class="con">
-                    <canvas id="tempChart"></canvas>
+                    <canvas id="tempRangeChart"></canvas>
                     <script>
-                        const tempCtx = document
-                            .getElementById('tempChart')
+                        const ctxRange = document
+                            .getElementById('tempRangeChart')
                             .getContext('2d');
 
-                        const tempData = {
-                            labels: [
-                                '2015년',
-                                '2016년',
-                                '2017년',
-                                '2018년',
-                                '2019년',
-                                '2020년',
-                                '2021년',
-                                '2022년',
-                                '2023년',
-                                '2024년'
-                            ],
+                        // ✅ 2015~2024 데이터
+                        const years = [
+                            2015,
+                            2016,
+                            2017,
+                            2018,
+                            2019,
+                            2020,
+                            2021,
+                            2022,
+                            2023,
+                            2024
+                        ];
+                        const avgTemp = [
+                            14.1,
+                            14.4,
+                            14.4,
+                            13.8,
+                            14.6,
+                            14.1,
+                            14.4,
+                            14.4,
+                            14.8,
+                            15.5
+                        ];
+                        const minTemp = [
+                            9.4,
+                            9.8,
+                            8.8,
+                            8.8,
+                            9.8,
+                            7.7,
+                            10.0,
+                            9.5,
+                            10.5,
+                            11.2
+                        ];
+                        const maxTemp = [
+                            19.7,
+                            19.7,
+                            20.0,
+                            19.6,
+                            20.2,
+                            19.5,
+                            20.0,
+                            19.7,
+                            20.3,
+                            20.8
+                        ];
+
+                        const dataRange = {
+                            labels: years,
                             datasets: [
                                 {
-                                    label: '경남',
-                                    data: [
-                                        14.0,
-                                        14.4,
-                                        14.1,
-                                        13.9,
-                                        14.4,
-                                        14.1,
-                                        14.5,
-                                        14.3,
-                                        14.8,
-                                        15.6
-                                    ],
-                                    borderColor: '#ed5136',
-                                    backgroundColor: '#ed5136',
-                                    tension: 0,
-                                    borderWidth: 3,
-                                    pointRadius: 5,
-                                    pointBorderColor: '#ed5136',
-                                    pointBackgroundColor: '#ed5136',
-                                    fill: false
+                                    label: '평균최저기온(°C)',
+                                    data: minTemp,
+                                    borderColor: 'transparent',
+                                    backgroundColor: 'rgba(255,182,72,0.4)', // 🔹 노란빛 영역
+                                    pointBackgroundColor: 'orange',
+                                    pointBorderColor: 'orange',
+                                    pointRadius: 3,
+                                borderWidth: 3,
+                                    fill: '+1',
+                                    order: 3
+                                }, {
+                                    label: '평균최고기온(°C)',
+                                    data: maxTemp,
+                                    borderColor: 'transparent',
+                                    backgroundColor: 'rgba(255,182,72,0.4)',
+                                    pointBackgroundColor: 'orange',
+                                    pointBorderColor: 'orange',
+                                    pointRadius: 3,
+                                borderWidth: 3,
+                                    fill: '-1',
+                                    order: 2
+                                }, {
+                                    label: '평균기온(°C)',
+                                    data: avgTemp,
+                                    borderColor: '#272d96',
+                                    backgroundColor: '#272d96',
+                                    tension: 0.3,
+                                    pointRadius: 4,
+                                    pointBackgroundColor: '#272d96',
+                                    pointBorderColor: '#fff',
+                                borderWidth: 3,
+                                    pointBorderWidth: 2,
+                                    fill: false,
+                                    order: 1 // ✅ 항상 맨 위
                                 }
                             ]
                         };
 
-                        const tempConfig = {
+                        const configRange = {
                             type: 'line',
-                            data: tempData,
+                            data: dataRange,
                             options: {
                                 responsive: true,
                                 plugins: {
                                     legend: {
-                                        display: false,
-                                        position: 'top',
-                                        labels: {
-                                            color: '#333'
-                                        }
-                                    },
-                                    //title: {  display: true,  text: '경상남도 연평균 기온 추이 (단위: ℃)' },
-                                    tooltip: {
-                                        callbacks: {
-                                            label: function (context) {
-                                                return `경남: ${context.parsed.y} ℃`;
-                                            }
+                                        position: 'bottom',
+                                    labels: {
+                                        usePointStyle: true,
+                                        pointStyle: 'circle',
+                                        font: {
+                                            weight: 'bold'
                                         }
                                     }
+                                    },
+                                    tooltip: {
+                                        mode: 'index',
+                                        intersect: false
+                                    }
                                 },
-
                                 scales: {
                                     y: {
-                                        suggestedMin: 12,
-                                        suggestedMax: 16,
-                                        // title: {   display: true,   text: '기온 (℃)' }
-                                    },
-                                    x: {
-                                        //title: {  display: true,  text: '연도' }
+                                        min: 0,
+                                        max: 25,
+                                        title: {
+                                            display: true,
+                                            text: '온도(°C)'
+                                        }
                                     }
                                 }
                             }
                         };
 
-                        new Chart(tempCtx, tempConfig);
+                        new Chart(ctxRange, configRange);
                     </script>
+
                 </div>
             </div>
 
@@ -550,13 +600,13 @@
                                     13.6,
                                     35.6
                                 ],
-                                borderColor: '#1f77b4',
-                                backgroundColor: '#1f77b4',
+                                borderColor: '#dd1010ff',
+                                backgroundColor: '#dd1010ff',
                                 borderWidth: 3,
                                 tension: 0,
                                 pointRadius: 5,
-                                pointBackgroundColor: '#1f77b4',
-                                pointBorderColor: '#1f77b4',
+                                pointBackgroundColor: '#dd1010ff',
+                                pointBorderColor: '#dd1010ff',
                                 pointBorderWidth: 2,
                                 yAxisID: 'y1',
                                 fill: false
@@ -583,30 +633,6 @@
                                 pointBorderColor: '#ed6a3b',
                                 pointBorderWidth: 2,
                                 yAxisID: 'y1',
-                                fill: false
-                            }, {
-                                label: '평균 최고기온(℃)',
-                                data: [
-                                    19.7,
-                                    19.9,
-                                    20.0,
-                                    19.6,
-                                    20.2,
-                                    19.5,
-                                    20.0,
-                                    19.9,
-                                    20.3,
-                                    20.8
-                                ],
-                                borderColor: '#888888',
-                                backgroundColor: '#888888',
-                                borderWidth: 3,
-                                tension: 0,
-                                pointRadius: 4,
-                                pointBackgroundColor: '#888888',
-                                pointBorderColor: '#888888',
-                                pointBorderWidth: 2,
-                                yAxisID: 'y2',
                                 fill: false
                             }
                         ]

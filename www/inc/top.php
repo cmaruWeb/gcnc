@@ -16,13 +16,13 @@ include $boardDir."/function.php";
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="경상남도탄소중립지원센터">
-  <meta name="description" content="경상남도 탄소중립지원센터, 넷제로, 탄소중립, 넷제로경남, 환경복지, 2050 Net-Zero 경남" />
-  <meta name="keywords" content="경상남도 탄소중립지원센터, 넷제로, 탄소중립, 넷제로경남, 환경복지, 2050 Net-Zero 경남" />
+  <meta name="description" content="경상남도 탄소중립지원센터, 경남탄소중립지원센터 넷제로, 탄소중립, 넷제로경남, 환경복지, 2050 Net-Zero 경남" />
+  <meta name="keywords" content="경상남도 탄소중립지원센터, 경남탄소중립지원센터 넷제로, 탄소중립, 넷제로경남, 환경복지, 2050 Net-Zero 경남" />
 
   <meta property="og:type" content="website">
   <meta property="og:image" content="../img/sns_img.jpg">
   <meta property="og:title" content="경상남도탄소중립지원센터">
-  <meta property="og:description" content="경상남도 탄소중립지원센터, 넷제로, 탄소중립, 넷제로경남, 환경복지, 2050 Net-Zero 경남">
+  <meta property="og:description" content="경상남도 탄소중립지원센터, 경남탄소중립지원센터 넷제로, 탄소중립, 넷제로경남, 환경복지, 2050 Net-Zero 경남">
   <meta property="og:url" content="http://gnnetzero.or.kr/">
 
   <link rel="canonical" href="http://gnnetzero.or.kr/">

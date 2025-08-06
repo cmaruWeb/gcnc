@@ -309,5 +309,5 @@
 	#d_lnb li .sub dd a {display:block;padding: 15px 30px;font-size:18px;font-weight:400;font-size:0.95em;color:#666;border-bottom: 1px solid #dedede;}
 	#d_lnb li .sub dd:last-child a{border-bottom:0px;}
 	#d_lnb li .sub dd a:hover {font-weight:600}
-
+#d_lnb li .sub .tlt-box{display:none;}
 }
