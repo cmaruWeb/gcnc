@@ -19,13 +19,13 @@ if(!empty($buncodxx)) {
 	}
 ?>
 <div class="bbs_cate mb">	
-	<ul class="tabs">
+	<ul class="tabs covid_cate">
 		<li <? if($s_gubunx=="") echo "class='current'"; ?>><a href="#" onclick="check_s_gubun(this)" data-val="">전체</a></li>
 		<? for($j=0;$j < $buncod_mx;$j++) { $jx++; ?>
 		<li <? if($buncod_exp[$j]==$s_gubunx) echo "class='current'"; ?>><a href="#" onclick="check_s_gubun(this)" data-val="<?=$buncod_exp[$j]?>"><?=$buncod_exp[$j]?></a></li>
 		<? }?>		
 	</ul>
-</div>	
+</div>
 <?
 }
 ?>
