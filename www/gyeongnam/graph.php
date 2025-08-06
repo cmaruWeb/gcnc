@@ -123,7 +123,7 @@
                                     type: 'line',
                                     borderColor: '#4d5172ff',
                                     backgroundColor: 'rgba(51, 102, 204, 0.1)',
-                                    borderWidth: 3,
+                                    borderWidth: 2,
                                     pointRadius: 6,
                                     pointBackgroundColor: '#4d5172ff',
                                     pointBorderColor: '#ffffff',
@@ -146,7 +146,7 @@
                                     type: 'line',
                                     borderColor: '#d32f2f',
                                     backgroundColor: 'rgba(255, 102, 0, 0.1)',
-                                    borderWidth: 3,
+                                    borderWidth: 2,
                                     pointRadius: 6,
                                     pointBackgroundColor: '#d32f2f',
                                     pointBorderColor: '#ffffff',
@@ -444,7 +444,7 @@
                                     pointBackgroundColor: 'orange',
                                     pointBorderColor: 'orange',
                                     pointRadius: 3,
-                                borderWidth: 3,
+                                borderWidth: 2,
                                     fill: '+1',
                                     order: 3
                                 }, {
@@ -455,7 +455,7 @@
                                     pointBackgroundColor: 'orange',
                                     pointBorderColor: 'orange',
                                     pointRadius: 3,
-                                borderWidth: 3,
+                                borderWidth: 2,
                                     fill: '-1',
                                     order: 2
                                 }, {
@@ -467,7 +467,7 @@
                                     pointRadius: 4,
                                     pointBackgroundColor: '#272d96',
                                     pointBorderColor: '#fff',
-                                borderWidth: 3,
+                                borderWidth: 2,
                                     pointBorderWidth: 2,
                                     fill: false,
                                     order: 1 // ✅ 항상 맨 위
@@ -521,11 +521,11 @@
             heatwaveData = { labels: [ '2015', '2016', '2017', '2018', '2019', '2020',
             '2021', '2022', '2023', '2024' ], datasets: [ { label: '폭염일수', data: [ 5.5,
             13.8, 14.2, 19.5, 12.3, 8.6, 7.5, 16.7, 10.5, 32 ], borderColor: '#ed5136',
-            backgroundColor: '#ed5136', borderWidth: 3, tension: 0, pointRadius: 5,
+            backgroundColor: '#ed5136', borderWidth: 2, tension: 0, pointRadius: 5,
             pointBackgroundColor: '#ed5136', pointBorderColor: '#ed5136', yAxisID: 'y1',
             fill: false }, { label: '평균 최고기온(℃)', data: [ 19.7, 19.9, 20.0, 19.6, 20.2,
             19.5, 20.0, 19.9, 20.3, 20.8 ], borderColor: '#888888', backgroundColor:
-            '#888888', borderWidth: 3, tension: 0, pointRadius: 5, pointBackgroundColor:
+            '#888888', borderWidth: 2, tension: 0, pointRadius: 5, pointBackgroundColor:
             '#888888', pointBorderColor: '#888888', yAxisID: 'y2', fill: false } ] }; const
             heatwaveConfig = { type: 'line', data: heatwaveData, options: { responsive:
             true, plugins: { legend: { position: 'bottom', labels: { padding: 15,
@@ -542,10 +542,10 @@
             '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'
             ], datasets: [ { label: '열대야일수', data: [ 5.5, 13.8, 14.2, 19.5, 12.3, 8.6, 7.5,
             16.7, 10.5, 32 ], borderColor: '#ed5136', backgroundColor: '#ed5136',
-            borderWidth: 3, tension: 0, pointRadius: 5, pointBackgroundColor: '#ed5136',
+            borderWidth: 2, tension: 0, pointRadius: 5, pointBackgroundColor: '#ed5136',
             pointBorderColor: '#ed5136', yAxisID: 'y1', fill: false }, { label: '평균
             최고기온(℃)', data: [ 19.7, 19.9, 20.0, 19.6, 20.2, 19.5, 20.0, 19.9, 20.3, 20.8 ],
-            borderColor: '#888888', backgroundColor: '#888888', borderWidth: 3, tension: 0,
+            borderColor: '#888888', backgroundColor: '#888888', borderWidth: 2, tension: 0,
             pointRadius: 5, pointBackgroundColor: '#888888', pointBorderColor: '#888888',
             yAxisID: 'y2', fill: false } ] }; const heatConfig = { type: 'line', data:
             heatData, options: { responsive: true, plugins: { legend: { position: 'bottom',
@@ -602,7 +602,7 @@
                                 ],
                                 borderColor: '#dd1010ff',
                                 backgroundColor: '#dd1010ff',
-                                borderWidth: 3,
+                                borderWidth: 2,
                                 tension: 0,
                                 pointRadius: 5,
                                 pointBackgroundColor: '#dd1010ff',
@@ -626,7 +626,7 @@
                                 ],
                                 borderColor: '#ed6a3b',
                                 backgroundColor: '#ed6a3b',
-                                borderWidth: 3,
+                                borderWidth: 2,
                                 tension: 0,
                                 pointRadius: 5,
                                 pointBackgroundColor: '#ed6a3b',
