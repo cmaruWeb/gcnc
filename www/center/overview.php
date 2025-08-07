@@ -30,7 +30,7 @@
                     <li><p>운영위원회</p></li>
                 </ul>
                 <ul class="dep03 mb20">
-                    <li><img src="../img/logo.png"><p>(재)경상남도환경재단(지정기관)</p></li>
+                    <li><img src="../img/logo.png"><p>지정기관: (재)경상남도환경재단<br>지정기간: 2024년 7월 3일 ~ 2029년 12월 31일</p></li>
                 </ul>
                 <ul class="dep04">
                     <li><img src="../img/center/overview_i0201.jpg"><div class="txt"><em>비전</em><p>2050 탄소중립, Net zero 경남</p></div></li>
@@ -39,8 +39,8 @@
             <div class="titbox bmb">
                 <div class="tit"><p class="h_m">설립근거</p></div>
                 <div class="con">
-                    <ul class="box01 dot_li">
-                        <li>기후위기 대응을 위한 탄소중립·녹색성장 기본법 제68조(탄소중립지원센터의 설립),</li>
+                    <ul class="info02">
+                        <li>기후위기 대응을 위한 탄소중립·녹색성장 기본법 제68조(탄소중립지원센터의 설립)</li>
                         <li>경상남도 기후위기 대응을 위한 탄소중립·녹색성장 기본 조례 제16조(탄소중립지원센터의 설립·지정·운영 등)</li>
                     </ul>
                 </div>
@@ -48,7 +48,7 @@
             <div class="titbox">
                 <div class="tit"><p class="h_m">운영목표</p></div>
                 <div class="con">
-                    <ul class="info02">
+                    <ul class="info03">
                         <li><img src="../img/center/overview_ic0101.png"><p>경상남도 탄소중립 정책연구</p></li>
                         <li><img src="../img/center/overview_ic0102.png"><p>도정 탄소중립 업무 지원</p></li>
                         <li><img src="../img/center/overview_ic0103.png"><p>도정 탄소중립 인식 제고 교육 및 홍보</p></li>
