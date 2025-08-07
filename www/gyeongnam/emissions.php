@@ -18,6 +18,7 @@
 
         <div class="sub_emis bmb">
             <div class="scroll-box">
+                        <span class="right-sub mb10">단위 : 천 tCO₂eq</span>
                 <table class="tab01 type01 tac">
                     <thead>
                         <tr>
@@ -125,21 +126,22 @@
             </div>
         </div>
 
-        <div class="sub_box01">
+        <div class="sub_box01 pdr50">
             <!-- 2022 -->
             <div class="tit01 mb20">
                 <p>2022</p>
             </div>
+                        <span class="right-sub mb10">단위 : 천 tCO₂eq</span>
             <ul class="tg-list mb">
                 <li>
                     <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
                     <b class="tlt">총 배출 합계</b>
-                    <em class="stt">15,078.7</em>
+                    <em class="stt">19,616.2</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
                     <b class="tlt">순 배출 합계</b>
-                    <em class="stt">19,616.2</em>
+                    <em class="stt">15,078.7</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
@@ -172,16 +174,17 @@
             <div class="tit01 mb20">
                 <p>2021</p>
             </div>
+                        <span class="right-sub mb10">단위 : 천 tCO₂eq</span>
             <ul class="tg-list mb">
                 <li>
                     <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
                     <b class="tlt">총 배출 합계</b>
-                    <em class="stt">15,298.7</em>
+                    <em class="stt">19,674.3</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
                     <b class="tlt">순 배출 합계</b>
-                    <em class="stt">19,674.3</em>
+                    <em class="stt">15,298.7</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
@@ -214,16 +217,17 @@
             <div class="tit01 mb20">
                 <p>2020</p>
             </div>
+                        <span class="right-sub mb10">단위 : 천 tCO₂eq</span>
             <ul class="tg-list mb">
                 <li>
                     <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
                     <b class="tlt">총 배출 합계</b>
-                    <em class="stt">15,570.4</em>
+                    <em class="stt">19,939.2</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
                     <b class="tlt">순 배출 합계</b>
-                    <em class="stt">19,939.2</em>
+                    <em class="stt">15,570.4</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
@@ -256,16 +260,17 @@
             <div class="tit01 mb20">
                 <p>2019</p>
             </div>
+                        <span class="right-sub mb10">단위 : 천 tCO₂eq</span>
             <ul class="tg-list mb">
                 <li>
                     <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
                     <b class="tlt">총 배출 합계</b>
-                    <em class="stt">15,691.7</em>
+                    <em class="stt">20,042.9</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
                     <b class="tlt">순 배출 합계</b>
-                    <em class="stt">20,042.9</em>
+                    <em class="stt">15,691.7</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
@@ -298,16 +303,17 @@
             <div class="tit01 mb20">
                 <p>2018</p>
             </div>
+                        <span class="right-sub mb10">단위 : 천 tCO₂eq</span>
             <ul class="tg-list mb">
                 <li>
                     <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
                     <b class="tlt">총 배출 합계</b>
-                    <em class="stt">16,100.1</em>
+                    <em class="stt">20,767.4</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
                     <b class="tlt">순 배출 합계</b>
-                    <em class="stt">20,767.4</em>
+                    <em class="stt">16,100.1</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
@@ -340,16 +346,17 @@
             <div class="tit01 mb20">
                 <p>2017</p>
             </div>
+                        <span class="right-sub mb10">단위 : 천 tCO₂eq</span>
             <ul class="tg-list mb">
                 <li>
                     <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
                     <b class="tlt">총 배출 합계</b>
-                    <em class="stt">15,588.2</em>
+                    <em class="stt">20,494.8</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
                     <b class="tlt">순 배출 합계</b>
-                    <em class="stt">20,494.8</em>
+                    <em class="stt">15,588.2</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>
@@ -382,16 +389,17 @@
             <div class="tit01 mb20">
                 <p>2016</p>
             </div>
+                        <span class="right-sub mb10">단위 : 천 tCO₂eq</span>
             <ul class="tg-list mb">
                 <li>
                     <i class="icon"><img src="/img/tg_ic01.png" alt=""></i>
                     <b class="tlt">총 배출 합계</b>
-                    <em class="stt">14,780.8</em>
+                    <em class="stt">20,267.6</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic02.png" alt=""></i>
                     <b class="tlt">순 배출 합계</b>
-                    <em class="stt">20,267.6</em>
+                    <em class="stt">14,780.8</em>
                 </li>
                 <li>
                     <i class="icon"><img src="/img/tg_ic03.png" alt=""></i>

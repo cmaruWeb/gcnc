@@ -1063,51 +1063,44 @@ if (USE_MAIN_BANNER) {
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/zero_img01.png" alt="1회용 컵 대신 다회용 컵 사용하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">1회용 컵 대신  
-다회용 컵 사용하기</p>
+                                        <img src="/img/z06.png" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">텀블러 사용 시간 늘리기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/zero_img02.png" alt="불필요한 조명기구 소등하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">불필요한 조명기구 소등하기</p>
+                                        <img src="/img/z02.png" class="netzero-slide-img"/>
+                                        <p class="netzero-slide-text">전기밥솥 보온기능 사용 줄이기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/zero_img03.png" alt="난방온도 2℃ 낮추고, 냉방온도 2℃ 높이기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">냉방온도 2℃ 높이기</p>
+                                        <img src="/img/z11.png">
+                                        <p class="netzero-slide-text">저탄소 인증 농축산물 이용하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/zero_img04.png" alt="승강기 격층 운행하고 계단이용하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">승강기 격층 운행하고 계단이용하기</p>
+                                       <img src="/img/z15.png">
+                                        <p class="netzero-slide-text">개인용 자동차 대신<br> 대중교통 이용하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/zero_img05.png" alt="저탄소·친환경 인증 농축수산물 구매하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">저탄소·친환경 인증 농축수산물 구매하기</p>
+                                        <img src="/img/z18.png">
+                                        <p class="netzero-slide-text">가까운 거리는 걷거나<br> 자전거 이용하기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/zero_img06.png" alt="가까운 거리는 걷거나 자전거 이용하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">가까운 거리는 걷거나 자전거 이용하기</p>
+                                        <img src="/img/z21.png">
+                                        <p class="netzero-slide-text">장바구니 이용하고<br> 비닐 사용 줄이기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide netzero-slide">
                                     <a href="/carbon/netzero.php">
-                                        <img src="/img/zero_img07.png" alt="무공해차 구매하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">무공해차 구매하기</p>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide netzero-slide">
-                                    <a href="/carbon/netzero.php">
-                                        <img src="/img/zero_img08.png" alt="재활용을 위한  분리배출 실천하기" class="netzero-slide-img"/>
-                                        <p class="netzero-slide-text">재활용을 위한  분리배출 실천하기</p>
+                                        <img src="/img/z24.png">
+                                        <p class="netzero-slide-text">음식 포장 시 1회용품 줄이기</p>
                                     </a>
                                 </div>
                             </div>

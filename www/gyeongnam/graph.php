@@ -262,6 +262,7 @@
                 <div class="tit"></div>
                 <div class="con">
                     <div class="scroll-box bg">
+                        <span class="right-sub mb10">단위 : 천 tCO₂eq</span>
                         <table class="tab01 type01 tac small">
                             <thead>
                                 <tr>
@@ -443,8 +444,8 @@
                                     backgroundColor: 'rgba(255,182,72,0.4)', // 🔹 노란빛 영역
                                     pointBackgroundColor: 'orange',
                                     pointBorderColor: 'orange',
-                                    pointRadius: 3,
-                                borderWidth: 2,
+                                    pointRadius: 4,
+                                    borderWidth: 2,
                                     fill: '+1',
                                     order: 3
                                 }, {
@@ -452,22 +453,22 @@
                                     data: maxTemp,
                                     borderColor: 'transparent',
                                     backgroundColor: 'rgba(255,182,72,0.4)',
-                                    pointBackgroundColor: 'orange',
-                                    pointBorderColor: 'orange',
-                                    pointRadius: 3,
-                                borderWidth: 2,
+                                    pointBackgroundColor: '#ff5100ff',
+                                    pointBorderColor: '#ff5100ff',
+                                    pointRadius: 4,
+                                    borderWidth: 2,
                                     fill: '-1',
                                     order: 2
                                 }, {
                                     label: '평균기온(°C)',
                                     data: avgTemp,
-                                    borderColor: '#272d96',
-                                    backgroundColor: '#272d96',
-                                    tension: 0.3,
-                                    pointRadius: 4,
-                                    pointBackgroundColor: '#272d96',
+                                    borderColor: '#cc4b81ff',
+                                    backgroundColor: '#cc4b81ff',
+                                    tension: 0,
+                                    pointRadius: 5,
+                                    pointBackgroundColor: '#cc4b81ff',
                                     pointBorderColor: '#fff',
-                                borderWidth: 2,
+                                    borderWidth: 3,
                                     pointBorderWidth: 2,
                                     fill: false,
                                     order: 1 // ✅ 항상 맨 위
