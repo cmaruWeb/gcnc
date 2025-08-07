@@ -59,13 +59,15 @@
 
 
 /*탄소중립지원센터 - 인사말*/
-.sub_grt .info01 {display:flex; flex-wrap:wrap; gap:40px 5%;}
-.sub_grt .info01 .img,
+.sub_grt .info01 {display:flex; flex-wrap:wrap; align-items:flex-start; gap:40px 10%;}
+.sub_grt .info01 .img {width:min(40%, 120px); margin:0 0 0 auto;}
+.sub_grt .info01 .img {text-align:right; position:relative;}
+.sub_grt .info01 .img:after {content:''; display:inline-block; width:100%; height:100%; border-radius:8px; background:var(--main-color); background:linear-gradient(90deg, var(--main-color) 0%, var(--point-color) 100%); opacity:0.4; position:absolute; right:10px; top:10px; z-index:-1;}
+.sub_grt .info01 .img img {width:100%; border-radius:8px;}
 .sub_grt .info01 .txt {width:100%;}
-.sub_grt .info01 .img {text-align:right;}
-.sub_grt .info01 .img img {width:min(40%, 180px); border-radius:8px;}
-.sub_grt .info01 .txt .head {text-align:right;}
-.sub_grt .info01 .txt .head b {letter-spacing:0.3em; margin-left:1em;}
+.sub_grt .info01 .txt .point {box-shadow:0 -0.7em 0 #d3ecd4 inset; font-weight:500;}
+.sub_grt .info01 .txt .head {text-align:right; font-size:1.1em; display:flex; align-items:flex-end; justify-content:flex-end; gap:0 1em;}
+.sub_grt .info01 .txt .head b {letter-spacing:0.25em;}
 
 @media all and (min-width:768px) {
 }
@@ -73,9 +75,9 @@
 @media all and (min-width:1200px) {
   .sub_grt {padding:0 50px 0 0;}
   .sub_grt .info01 {flex-direction:row-reverse;}
-  .sub_grt .info01 .img {width:25%;}
-  .sub_grt .info01 .txt {width:70%;}
-  .sub_grt .info01 .img img {width:100%;}
+  .sub_grt .info01 .img {width:15%;}
+  .sub_grt .info01 .txt {width:75%;}
+  .sub_grt .info01 .txt .head {font-size:1.35em;}
 }
 
 
@@ -84,13 +86,13 @@
 .sub_overview .info01 li {width:100%; background:#f8f8f8; border:1px solid #e0e0e0; border-radius:8px; padding:20px;}
 .sub_overview .info01 li img {display:block; width:min(20%, 50px); margin:0 0 0 auto;}
 .sub_overview .info01 li h5 {font-weight:600; font-size:1.1em; margin:0 0 10px;}
-.sub_overview .info02 {display:flex; flex-wrap:wrap; gap:20pxx 2%;}
-.sub_overview .info02 li {width:100%;}
-.sub_overview .info02 li h5 {background:var(--main-color); color:#fff; padding:10px; border-radius:8px; font-weight:600; display:flex; align-items:center; gap:10px; font-size:1.1em; margin:0 0 10px;}
-.sub_overview .info02 li h5 em {display:flex; align-items:center; justify-content:center; width:30px; height:30px; background:#fff; color:var(--main-color); font-size:0.8em; border-radius:100%; flex-shrink:0;}
-.sub_overview .info02 li dl {border:1px solid #e0e0e0; padding:20px; border-radius:8px;}
-.sub_overview .info02 li dl dt {font-weight:600;}
-.sub_overview .info02 li dl dd:not(:last-of-type) {border-bottom:1px solid #e0e0e0; padding:0 0 20px; margin:0 0 20px;}
+.sub_overview .info03 {display:flex; flex-wrap:wrap; gap:20pxx 2%;}
+.sub_overview .info03 li {width:100%;}
+.sub_overview .info03 li h5 {background:var(--main-color); color:#fff; padding:10px; border-radius:8px; font-weight:600; display:flex; align-items:center; gap:10px; font-size:1.1em; margin:0 0 10px;}
+.sub_overview .info03 li h5 em {display:flex; align-items:center; justify-content:center; width:30px; height:30px; background:#fff; color:var(--main-color); font-size:0.8em; border-radius:100%; flex-shrink:0;}
+.sub_overview .info03 li dl {border:1px solid #e0e0e0; padding:20px; border-radius:8px;}
+.sub_overview .info03 li dl dt {font-weight:600;}
+.sub_overview .info03 li dl dd:not(:last-of-type) {border-bottom:1px solid #e0e0e0; padding:0 0 20px; margin:0 0 20px;}
 
 @media all and (min-width:768px) {
 }
@@ -99,47 +101,53 @@
   .sub_overview {padding:0 50px 0 0;}
   .sub_overview .info01 li {width:unset; flex:1; flex-shrink:0;}
   .sub_overview .info01 li img {margin:0 0 20px 0;}
-  .sub_overview .info02 li {width:unset; width:49%;}
+  .sub_overview .info03 li {width:unset; width:49%;}
 }*/
 
 .sub_overview .info01 {padding:20px; border-radius:8px; background:#f8f8f8; border:1px solid #e0e0e0; text-align:center;}
 .sub_overview .info01 h5 {font-weight:700; font-size:1.25em;}
 .sub_overview .info01 p {font-size:0.8em; opacity:0.8;}
-.sub_overview .chart {margin:auto; width:min(100%, 720px); position:relative;}
-.sub_overview .chart:before {content:''; display:inline-block; width:1px; height:calc(100% - min(15vw, 75px)); background:#e0e0e0; position:absolute; left:50%; top:min(15vw, 75px); z-index:-1;}
+.sub_overview .chart {margin:auto; width:100%; position:relative;}
+.sub_overview .chart:before {content:''; display:inline-block; width:1px; height:calc(100% - min(20vw, 150px)); background:#e0e0e0; position:absolute; left:50%; top:min(20vw, 150px); z-index:-1;}
 .sub_overview .chart ul {display:flex; align-items:center; position:relative;}
 .sub_overview .chart .dep01 {justify-content:space-between;}
 .sub_overview .chart .dep01:before {content:''; display:inline-block; width:100%; height:1px; background:#e0e0e0; position:absolute; left:0; top:50%; z-index:-1;}
-.sub_overview .chart .dep01 li img {width:min(30vw, 150px); height:min(30vw, 150px); border-radius:100%; border:5px solid #7b7990; display:block; margin:0 auto;}
+.sub_overview .chart .dep01 li img {width:min(40vw, 300px); height:min(40vw, 300px); border-radius:100%; border:5px solid #7b7990; display:block; margin:0 auto;}
 .sub_overview .chart .dep02 {justify-content:flex-end;}
 .sub_overview .chart .dep02:before {content:''; display:inline-block; width:50%; height:1px; background:#e0e0e0; position:absolute; left:50%; top:50%; z-index:-1;}
-.sub_overview .chart .dep02 li p {background:#7b7990; color:#fff; padding:10px 20px; border-radius:8px; font-weight:500; width:min(30vw, 150px); text-align:center; margin:0 auto;}
+.sub_overview .chart .dep02 li p {background:#7b7990; color:#fff; padding:10px 20px; border-radius:8px; font-weight:500; width:min(40vw, 300px); text-align:center; margin:0 auto;}
 .sub_overview .chart .dep03 li {padding:20px; border-radius:500px; background:#fff; border:5px solid #e0e0e0; text-align:center; width:100%;}
-.sub_overview .chart .dep03 li img {width:min(60%, 240px);}
+.sub_overview .chart .dep03 li img {width:min(80%, 400px);}
 .sub_overview .chart .dep03 li p {margin:10px 0 0; font-weight:600; color:#7b7990;}
 .sub_overview .chart .dep04 li {text-align:center; width:100%;}
-.sub_overview .chart .dep04 li img {width:min(80%, 400px);}
+.sub_overview .chart .dep04 li img {width:min(100%, 520px);}
 .sub_overview .chart .dep04 li .txt {display:flex; align-items:center; justify-content:center; gap:10px 1em; padding:20px; border-radius:500px; background:var(--main-color); background:linear-gradient(90deg, var(--main-color) 0%, var(--point-color) 100%); color:#fff; text-align:center; width:100%; font-weight:600;}
 .sub_overview .chart .dep04 li .txt em {background:#fff; color:var(--main-color); padding:0 1em; border-radius:100px;}
-.sub_overview .info02 {display:flex; flex-wrap:wrap; gap:20px 2%;}
-.sub_overview .info02 li {width:100%; background:#f8f8f8; border:1px solid #e0e0e0; border-radius:8px; padding:20px; display:flex; align-items:center; justify-content:space-between; flex-direction:row-reverse;}
-.sub_overview .info02 li img {display:block; width:min(20%, 50px); margin:0 0 0 auto;}
-.sub_overview .info02 li p {font-weight:600;}
+.sub_overview .info02 li {padding:20px; border:1px solid #e0e0e0; border-radius:8px; font-size:1.1em; font-weight:600; display:flex; gap:0 0.5em;}
+.sub_overview .info02 li:not(:last-of-type) {margin:0 0 20px;}
+.sub_overview .info02 li:before {content:'check_circle'; font-family:var(--ic); color:var(--main-color);}
+.sub_overview .info03 {display:flex; flex-wrap:wrap; gap:20px 2%;}
+.sub_overview .info03 li {width:100%; background:#f8f8f8; border:1px solid #e0e0e0; border-radius:8px; padding:20px; display:flex; align-items:center; justify-content:space-between; flex-direction:row-reverse;}
+.sub_overview .info03 li img {display:block; width:min(20%, 50px); margin:0 0 0 auto;}
+.sub_overview .info03 li p {font-weight:600; font-size:1.1em;}
 
 @media all and (min-width:768px) {
-  .sub_overview .info01 h5 {font-size:1.5em;}
+  .sub_overview .info01 h5 {font-size:1.75em;}
   .sub_overview .info01 p {font-size:0.9em;}
+  .sub_overview .chart .dep02 li p {font-size:1.25em; padding:20px;}
+  .sub_overview .chart .dep03 li p {font-size:1.25em;}
   .sub_overview .chart .dep04 li .txt em {font-size:1.1em;}
   .sub_overview .chart .dep04 li .txt p {font-size:1.25em;}
 }
 
 @media all and (min-width:1200px) {
   .sub_overview {padding:0 50px 0 0;}
-  .sub_overview .info01 h5 {font-size:1.75em;}
-  .sub_overview .chart .dep04 li .txt p {font-size:1.5em;}
-  .sub_overview .info02 li {width:unset; flex:1; flex-shrink:0; flex-wrap:wrap; flex-direction:row;}
-  .sub_overview .info02 li img {margin:0 auto 20px 0;}
-  .sub_overview .info02 li p {width:100%;}
+  .sub_overview .info01 h5 {font-size:2em;}
+  .sub_overview .chart .dep04 li .txt p {font-size:1.75em;}
+  .sub_overview .info02 li {font-size:1.25em;}
+  .sub_overview .info03 li {width:unset; flex:1; flex-shrink:0; display:block;}
+  .sub_overview .info03 li img {margin:0 auto 20px 0;}
+  .sub_overview .info03 li p {width:100%; font-size:1.25em; margin:0 0 auto;}
 }
 
 
@@ -285,19 +293,22 @@
 
 
 /*탄소중립지원센터 - 기초 탄소중립지원센터 소개 및 현황*/
-.sub_basic {}
 .sub_basic .info01 {display:flex; align-items:center; flex-wrap:wrap; border:1px solid #e0e0e0; border-radius:8px; overflow:hidden;}
 .sub_basic .info01 .info,
 .sub_basic .info01 > .map {width:100%;}
 .sub_basic .info01 .info {padding:30px 20px;}
 .sub_basic .info01 .info h3 {margin:0 0 20px; display:flex; align-items:center; gap:0.5em;}
-.sub_basic .info01 .info h3 a {display:flex; align-items:center; justify-content:center; width:1.6em; height:1.6em; border-radius:100%; background:#9b99aa; color:#fff; margin-left:auto;}
+.sub_basic .info01 .info h3 .logo {width:min(280px, calc(100% - 80px));}
+.sub_basic .info01 .info h3 a {display:flex; align-items:center; justify-content:center; width:2em; height:2em; border-radius:100%; background:#9b99aa; color:#fff; margin-left:auto;}
 .sub_basic .info01 .info h3 a:after {content:'home'; font-family:var(--ic);}
 .sub_basic .info01 .info p {display:flex; gap:0.5em;}
 .sub_basic .info01 .info p:not(:last-of-type) {margin:0 0 10px;}
 .sub_basic .info01 .info p:before {font-family:var(--ic); display:flex; align-items:center; justify-content:center; width:1.5em; height:1.5em; border-radius:8px; background:var(--main-color); background:linear-gradient(90deg, var(--main-color) 0%, var(--point-color) 100%); color:#fff; flex-shrink:0;}
-.sub_basic .info01 .info p:nth-of-type(1):before {content:'location_on';}
-.sub_basic .info01 .info p:nth-of-type(2):before {content:'call';}
+.sub_basic .info01 .info p:nth-of-type(1):before {content:'corporate_fare';}
+.sub_basic .info01 .info p:nth-of-type(2):before {content:'calendar_today';}
+.sub_basic .info01 .info p:nth-of-type(3):before {content:'location_on';}
+.sub_basic .info01 .info p:nth-of-type(4):before {content:'call';}
+.sub_basic .info01 .info p em {font-weight:600; width:4em; flex-shrink:0;}
 .sub_basic .mapwrap {width:100%; border-top:1px solid #e0e0e0;}
 .sub_basic .mapwrap .cont {display:none;}
 .sub_basic .mapwrap .map_border {display:none;}
@@ -312,8 +323,7 @@
   .sub_basic .info01 .info,
   .sub_basic .info01 > .map {width:50%;}
   .sub_basic .info01 .info {padding:40px;}
-  .sub_basic .info01 .info h3 {margin:0 0 40px;}
-  .sub_basic .info01 .info h3 a {margin-left:unset;}
+  .sub_basic .info01 .info h3 a {margin-left:unset; width:2.5em; height:2.5em;}
   .sub_basic .mapwrap {border-top:0; border-left:1px solid #e0e0e0;}
 }
 
@@ -384,7 +394,73 @@
 
 
 /*경남의 탄소중립 - 탄소중립·녹색성장 기본계획*/
-.sub_plan .tit01 {display:flex; align-items:center; justify-content:center; padding:20px 10px; text-align:center; font-weight:600; font-size:1.1em; border-radius:8px; border:1px solid var(--main-color); color:var(--main-color);}
+.sub_plan .info01 dl {display:flex; flex-wrap:wrap; align-items:center; gap:20px;}
+.sub_plan .info01 dt,
+.sub_plan .info01 dd {width:100%;}
+.sub_plan .info01 .t01 {background:var(--main-color); background:linear-gradient(90deg, var(--main-color) 0%, var(--point-color) 100%); color:#fff; border-radius:8px; padding:20px; text-align:center; font-size:1.25em; font-weight:600;}
+.sub_plan .info01 .t02 {border:1px solid #e0e0e0; background:#f8f8f8; border-radius:8px; padding:20px; text-align:center;}
+.sub_plan .info01 .t02 h5 {font-size:1.25em; font-weight:600; margin:0 0 10px;}
+.sub_plan .info01 .t02 p {font-weight:500; display:flex; align-items:center; justify-content:center; gap:0 0.2em;}
+.sub_plan .info01 .t02 p .year {padding:0 0.5em; border-radius:4px; background:#7b7990; color:#fff;}
+.sub_plan .info01 .t02 p .year:last-of-type {background:var(--main-color);}
+.sub_plan .info01 .t02 p .arr:after {content:'arrow_circle_right'; font-family:var(--ic); color:#a5a4b4; font-size:1.5em;}
+.sub_plan .info01 .li01 {display:flex; gap:0 5px; text-align:center;}
+.sub_plan .info01 .li01 li {width:calc(20% - 4px); display:flex; align-items:center; justify-content:center; flex-wrap:wrap; border-radius:8px; padding:20px 10px; flex-shrink:0; overflow:hidden; border:1px solid #e0e0e0; border-top:3px solid var(--point-color);}
+.sub_plan .info01 .li01 li:nth-child(2) {border-top-color:#f28f40;}
+.sub_plan .info01 .li01 li:nth-child(3) {border-top-color:#33813b;}
+.sub_plan .info01 .li01 li:nth-child(4) {border-top-color:#1eaff2;}
+.sub_plan .info01 .li01 li:nth-child(5) {border-top-color:#7b7990;}
+.sub_plan .info01 .li01 li > * {width:100%;}
+.sub_plan .info01 .li01 li img {margin:0 auto 10px; width:min(60%, 40px);}
+.sub_plan .info01 .li01 li p {font-weight:600; word-break:break-all; margin:0 0 5px;}
+.sub_plan .info01 .li01 li h5 {word-break:break-all;}
+.sub_plan .info01 .li01 li:nth-child(1) h5 {color:var(--point-color);}
+.sub_plan .info01 .li01 li:nth-child(2) h5 {color:#f28f40;}
+.sub_plan .info01 .li01 li:nth-child(3) h5 {color:#33813b;}
+.sub_plan .info01 .li01 li:nth-child(4) h5 {color:#1eaff2;}
+.sub_plan .info01 .li01 li:nth-child(5) h5 {color:#7b7990; font-weight:600;}
+.sub_plan .info01 .li01 li:not(:nth-child(5)) h5 {font-size:1.1em; font-weight:700;}
+.sub_plan .info01 .li02 {display:flex; gap:10px 5px; text-align:center;}
+.sub_plan .info01 .li02 li {width:calc(20% - 4px); display:flex; align-items:center; justify-content:center; border-radius:8px; font-weight:500;}
+.sub_plan .info01 .li02 li:nth-child(1) {background:#8CBF2630;}
+.sub_plan .info01 .li02 li:nth-child(2) {background:#f28f4030;}
+.sub_plan .info01 .li02 li:nth-child(3) {background:#33813b30;}
+.sub_plan .info01 .li02 li:nth-child(4) {background:#1eaff230;}
+.sub_plan .info01 .li02 li:nth-child(5) {background:#7b799030;}
+.sub_plan .info01 .li02 li p {padding:20px 10px; word-break:break-all;}
+.sub_plan .info02 {display:flex; flex-wrap:wrap; gap:20px 2%;}
+.sub_plan .info02 .item {width:100%; padding:20px; border:1px solid #e0e0e0; border-radius:8px;}
+.sub_plan .info02 .item h3 {background:var(--main-color); /*background:linear-gradient(90deg, var(--main-color) 0%, var(--point-color) 100%);*/ color:#fff; font-weight:600; padding:10px; border-radius:8px; font-size:1.1em;}
+.sub_plan .info02 .item:nth-child(1) h3 {background:var(--point-color);}
+.sub_plan .info02 .item:nth-child(2) h3 {background:#f28f40;}
+.sub_plan .info02 .item:nth-child(3) h3 {background:#33813b;}
+.sub_plan .info02 .item:nth-child(4) h3 {background:#1eaff2;}
+.sub_plan .info02 .item:nth-child(5) h3 {background:#7b7990; font-weight:600;}
+.sub_plan .info02 .item h4 {padding:10px; font-weight:600; border-bottom:1px solid #e0e0e0;}
+.sub_plan .info02 .item h5 {font-weight:600; margin:20px 10px 10px;}
+.sub_plan .info02 .item ul {padding:20px 10px; border-radius:8px; background:#f8f8f8;}
+.sub_plan .info02 .item li {display:flex; align-items:flex-start; gap:0 0.5em;}
+.sub_plan .info02 .item li:before {content:'·';}
+
+@media all and (min-width:768px) {
+  .sub_plan .info02 .item {width:49%;}
+}
+
+@media all and (min-width:1200px) {
+  .sub_plan {padding:0 50px 0 0;}
+  .sub_plan .info01 dt {width:150px;}
+  .sub_plan .info01 dd {width:calc(100% - 170px);}
+  .sub_plan .info01 .t01 {font-size:1.5em;}
+  .sub_plan .info01 .t02 h5 {font-size:1.5em;}
+  .sub_plan .info01 .li01 li {align-items:flex-start;}
+  .sub_plan .info01 .li01 li p {font-size:1.1em;}
+  .sub_plan .info01 .li01 li:not(:nth-child(5)) h5 {font-size:1.5em;}
+  .sub_plan .info01 .li02 li p {word-break:keep-all;}
+  .sub_plan .info02 .item {width:32%;}
+  .sub_plan .info02 .item h3 {font-size:1.25em;}
+}
+
+/*.sub_plan .tit01 {display:flex; align-items:center; justify-content:center; padding:20px 10px; text-align:center; font-weight:600; font-size:1.1em; border-radius:8px; border:1px solid var(--main-color); color:var(--main-color);}
 .sub_plan .info01 {display:flex; flex-wrap:wrap; gap:20px 2%;}
 .sub_plan .info01 li {width:100%; border:1px solid #e0e0e0; background:#f8f8f8; padding:10px; border-radius:8px; text-align:center;}
 .sub_plan .info01 li img {margin:0 0 10px; width:min(40%, 40px);}
@@ -407,7 +483,7 @@
   .sub_plan {padding:0 50px 0 0;}
   .sub_plan .tit01 {font-size:1.35em;}
   .sub_plan .info01 li {width:unset; flex:1; flex-shrink:0;}
-}
+}*/
 
 
 /*경남의 탄소중립 - 기후위기 적응대책*/
