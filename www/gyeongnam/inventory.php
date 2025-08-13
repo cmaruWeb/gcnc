@@ -81,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="titbox bmb">
+            <div class="titbox">
                 <div class="tit"><p class="h_m">온실가스감축인지예산 분석</p></div>
                 <div class="con">
                     <p class="h_s fwb col01 mb20">2025년도 온실가스감축인지예산 분석결과</p>
