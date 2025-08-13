@@ -35,6 +35,9 @@
 #sub .h_l {font-weight:700; font-size:1.75em;}
 #sub .h_m {font-weight:600; font-size:1.25em;}
 #sub .h_s {font-weight:600; font-size:1.1em;}
+#sub .btnbox {display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap;}
+#sub .btnbox a {background:var(--main-color); color:#fff; padding:0.4em 0.6em; border-radius:4px;}
+#sub .btnbox a[download]:after {content:'download'; font-family:var(--ic); vertical-align:bottom;}
 
 @media all and (min-width:768px) {
   #sub .subtab {margin:0 0 60px;}
@@ -82,40 +85,18 @@
 
 
 /*탄소중립지원센터 - 센터소개*/
-/*.sub_overview .info01 {display:flex; flex-wrap:wrap; gap:20px 2%;}
-.sub_overview .info01 li {width:100%; background:#f8f8f8; border:1px solid #e0e0e0; border-radius:8px; padding:20px;}
-.sub_overview .info01 li img {display:block; width:min(20%, 50px); margin:0 0 0 auto;}
-.sub_overview .info01 li h5 {font-weight:600; font-size:1.1em; margin:0 0 10px;}
-.sub_overview .info03 {display:flex; flex-wrap:wrap; gap:20pxx 2%;}
-.sub_overview .info03 li {width:100%;}
-.sub_overview .info03 li h5 {background:var(--main-color); color:#fff; padding:10px; border-radius:8px; font-weight:600; display:flex; align-items:center; gap:10px; font-size:1.1em; margin:0 0 10px;}
-.sub_overview .info03 li h5 em {display:flex; align-items:center; justify-content:center; width:30px; height:30px; background:#fff; color:var(--main-color); font-size:0.8em; border-radius:100%; flex-shrink:0;}
-.sub_overview .info03 li dl {border:1px solid #e0e0e0; padding:20px; border-radius:8px;}
-.sub_overview .info03 li dl dt {font-weight:600;}
-.sub_overview .info03 li dl dd:not(:last-of-type) {border-bottom:1px solid #e0e0e0; padding:0 0 20px; margin:0 0 20px;}
-
-@media all and (min-width:768px) {
-}
-
-@media all and (min-width:1200px) {
-  .sub_overview {padding:0 50px 0 0;}
-  .sub_overview .info01 li {width:unset; flex:1; flex-shrink:0;}
-  .sub_overview .info01 li img {margin:0 0 20px 0;}
-  .sub_overview .info03 li {width:unset; width:49%;}
-}*/
-
 .sub_overview .info01 {padding:20px; border-radius:8px; background:#f8f8f8; border:1px solid #e0e0e0; text-align:center;}
 .sub_overview .info01 h5 {font-weight:700; font-size:1.25em;}
 .sub_overview .info01 p {font-size:0.8em; opacity:0.8;}
 .sub_overview .chart {margin:auto; width:100%; position:relative;}
-.sub_overview .chart:before {content:''; display:inline-block; width:1px; height:calc(100% - min(20vw, 150px)); background:#e0e0e0; position:absolute; left:50%; top:min(20vw, 150px); z-index:-1;}
+.sub_overview .chart:before {content:''; display:inline-block; width:1px; height:calc(100% - min(20vw, 130px)); background:#e0e0e0; position:absolute; left:50%; top:min(20vw, 130px); z-index:-1;}
 .sub_overview .chart ul {display:flex; align-items:center; position:relative;}
 .sub_overview .chart .dep01 {justify-content:space-between;}
 .sub_overview .chart .dep01:before {content:''; display:inline-block; width:100%; height:1px; background:#e0e0e0; position:absolute; left:0; top:50%; z-index:-1;}
-.sub_overview .chart .dep01 li img {width:min(40vw, 300px); height:min(40vw, 300px); border-radius:100%; border:5px solid #7b7990; display:block; margin:0 auto;}
+.sub_overview .chart .dep01 li img {width:min(40vw, 260px); height:min(40vw, 260px); border-radius:100%; border:5px solid #7b7990; display:block; margin:0 auto;}
 .sub_overview .chart .dep02 {justify-content:flex-end;}
 .sub_overview .chart .dep02:before {content:''; display:inline-block; width:50%; height:1px; background:#e0e0e0; position:absolute; left:50%; top:50%; z-index:-1;}
-.sub_overview .chart .dep02 li p {background:#7b7990; color:#fff; padding:10px 20px; border-radius:8px; font-weight:500; width:min(40vw, 300px); text-align:center; margin:0 auto;}
+.sub_overview .chart .dep02 li p {background:#7b7990; color:#fff; padding:10px 20px; border-radius:8px; font-weight:500; width:min(40vw, 260px); text-align:center; margin:0 auto;}
 .sub_overview .chart .dep03 li {padding:20px; border-radius:500px; background:#fff; border:5px solid #e0e0e0; text-align:center; width:100%;}
 .sub_overview .chart .dep03 li img {width:min(80%, 400px);}
 .sub_overview .chart .dep03 li p {margin:10px 0 0; font-weight:600; color:#7b7990;}
@@ -152,56 +133,6 @@
 
 
 /*탄소중립지원센터 - 조직도*/
-/*.sub_org .chart_ex ul {display:flex; justify-content:center; text-align:center; gap:0 2%; position:relative;}
-.sub_org .chart_ex ul:not(:last-child) {margin:0 0 var(--orgline);}
-.sub_org .chart_ex ul li {position:relative;}
-.sub_org .chart_ex ul.dep01 li {width:49%;}
-.sub_org .chart_ex ul.dep02 li {flex:1; padding:var(--orgline) 0 0;}
-.sub_org .chart_ex ul.dep02 li.type01 {display:flex; flex-wrap:wrap;}
-.sub_org .chart_ex ul.dep02 li.type02 {height:fit-content;}
-.sub_org .chart_ex ul li > p {font-weight:600; width:100%; padding:10px; border-radius:8px; word-break:break-all;}
-.sub_org .chart_ex ul.dep01 li > p {background:var(--point-color); color:#fff;}
-.sub_org .chart_ex ul.dep02 li > p {background:#7b7990; color:#fff;}
-.sub_org .chart_ex ul.dep02 li.type01 > p {margin:auto 0 0;}
-.sub_org .chart_ex ul.dep02 li.point > p {background:var(--main-color);}
-.sub_org .chart_ex ul li dl {width:100%; margin:20px 0 auto; display:flex; flex-wrap:wrap; background:#f8f8f8; border:1px solid #e0e0e0; border-radius:8px; position:relative;}
-.sub_org .chart_ex ul li dl dd {width:100%; overflow:hidden; padding:10px;}
-.sub_org .chart_ex ul li dl dd:not(:last-of-type) {border-bottom:1px solid #e0e0e0;}
-.sub_org .chart_ex ul li dl dd p {word-break:break-all;}
-
-@media all and (min-width:768px) {
-  .sub_org .chart_ex ul {gap:20px;}
-  .sub_org .chart_ex ul.dep01 li {width:30%;}
-  .sub_org .chart_ex ul.dep02 li {flex:unset;}
-  .sub_org .chart_ex ul.dep02 li.type01 {width:calc(20% - 30px);}
-  .sub_org .chart_ex ul.dep02 li.type02 {width:30%;}
-  .sub_org .chart_ex ul li > p {padding:20px 10px; font-size:1.1em;}
-}
-
-@media all and (min-width:1200px) {
-  .sub_org {padding:0 50px 0 0;}
-}
-
-@media all and (min-width:1600px) {
-  .sub_org .chart_ex ul li dl {flex-wrap:nowrap;}
-  .sub_org .chart_ex ul li dl dd {width:unset; flex:1; padding:20px 10px;}
-  .sub_org .chart_ex ul li dl dd:not(:last-of-type) {border-right:1px solid #e0e0e0; border-bottom:0;}
-}
-
-:root {--orgline:40px;}
-.sub_org .chart_ex ul.dep01:after {content:''; display:inline-block; width:1px; height:var(--orgline); background:#e0e0e0; position:absolute; left:50%; top:100%;}
-.sub_org .chart_ex ul.dep02:before {content:''; display:inline-block; width:76.5%; height:1px; background:#e0e0e0; position:absolute; left:11.75%; top:0;}
-.sub_org .chart_ex ul.dep02 li:before {content:''; display:inline-block; width:1px; height:100%; background:#e0e0e0; position:absolute; left:50%; top:0; z-index:-1;}
-
-@media all and (min-width:768px) {
-  :root {--orgline:60px;}
-  .sub_org .chart_ex ul.dep02:before {width:calc(80% + 30px); left:calc(10% - 15px)}
-}
-
-@media all and (min-width:1800px) {
-  .sub_org .chart_ex ul li dl:after {content:''; display:inline-block; width:20px; height:1px; background:#e0e0e0; position:absolute; left:100%; top:50%;}
-}*/
-
 .sub_org .chart ul {display:flex; justify-content:center; text-align:center; gap:0 2%; position:relative;}
 .sub_org .chart ul:not(:last-child) {margin:0 0 var(--orgline);}
 .sub_org .chart ul li {position:relative;}
@@ -533,8 +464,15 @@
 .sub_inven .info02 .item .detail p:not(:last-child) {margin:0 0 10px;}
 .sub_inven .info02 .item ul {padding:20px; display:flex; flex-wrap:wrap; gap:10px 0;}
 .sub_inven .info02 .item ul li {border:1px solid #e0e0e0; background:#f8f8f8; border-radius:8px; padding:10px; width:100%;}
+.sub_inven .info03 ul {display:flex; flex-wrap:wrap; gap:20px 2%;}
+.sub_inven .info03 ul li {width:49%; text-align:center;; border:1px solid #e0e0e0; border-radius:8px; position:relative;}
+.sub_inven .info03 ul li:not(:last-child):after {content:'keyboard_arrow_right'; font-family:var(--ic); display:flex; align-items:center; justify-content:center; width:20px; height:20px; border-radius:100%; background:var(--point-color); color:#fff; position:absolute; right:-10px; top:calc(50% - 10px);}
+.sub_inven .info03 ul li h4 {background:var(--main-color); color:#fff; font-weight:600; padding:10px; margin:0 0 10px; display:flex; align-items:center; justify-content:center; border-radius:8px 8px 0 0;}
+.sub_inven .info03 ul li h5 {font-weight:500; margin:0 0 10px;}
+.sub_inven .info03 ul li p {font-weight:500; color:#7b7990; border-top:1px solid #e0e0e0; padding:10px 0;}
 
 @media all and (min-width:768px) {
+  .sub_inven .info03 ul li {width:32%;}
 }
 
 @media all and (min-width:1200px) {
@@ -542,6 +480,9 @@
   .sub_inven .info02 .item {width:49%;}
   .sub_inven .info02 .item .tit .t01 {font-size:1.25em;}
   .sub_inven .info02 .item .tit .t02 {text-align:left;}
+  .sub_inven .info03 ul li {width:18.4%;}
+  .sub_inven .info03 ul li:not(:last-child):after {top:90px;}
+  .sub_inven .info03 ul li h4 {height:100px;}
 }
 
 
