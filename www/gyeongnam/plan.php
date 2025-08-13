@@ -29,11 +29,11 @@
                     <dt><p class="h_m">부문별 목표</p></dt>
                     <dd>
                         <ul class="li01">
-                            <li><div><img src="../img/gyeongnam/plan_ic0201.png"><p>도시건물</p><h5>26.5%</h5></div></li>
-                            <li><div><img src="../img/gyeongnam/plan_ic0202.png"><p>수송교통</p><h5>19.3%</h5></div></li>
-                            <li><div><img src="../img/gyeongnam/plan_ic0203.png"><p>농축수산</p><h5>10.4%</h5></div></li>
-                            <li><div><img src="../img/gyeongnam/plan_ic0204.png"><p>순환경제</p><h5>27.6%</h5></div></li>
-                            <li><div><img src="../img/gyeongnam/plan_ic0205.png"><p>산림녹지환경</p><h5>3,756.9 천톤 <span class="pEnter"></span>CO₂eq 감축</h5></div></li>
+                            <li><div><img src="../img/gn/plan_ic0201.png"><p>도시건물</p><h5>26.5%</h5></div></li>
+                            <li><div><img src="../img/gn/plan_ic0202.png"><p>수송교통</p><h5>19.3%</h5></div></li>
+                            <li><div><img src="../img/gn/plan_ic0203.png"><p>농축수산</p><h5>10.4%</h5></div></li>
+                            <li><div><img src="../img/gn/plan_ic0204.png"><p>순환경제</p><h5>27.6%</h5></div></li>
+                            <li><div><img src="../img/gn/plan_ic0205.png"><p>산림녹지환경</p><h5>3,756.9 천톤 <span class="pEnter"></span>CO₂eq 감축</h5></div></li>
                         </ul>
                     </dd>
                     <dt><p class="h_m">부문별 비전</p></dt>
