@@ -22,7 +22,7 @@
                     <h3><img src="../img/center/basic_i01.jpg?v=0731" class="logo"><!--<em class="h_m"><span class="col01">창원시</span> 탄소중립지원센터</em>--> <a href="https://www.cwip.or.kr/" target="_blank"></a></h3>
                     <p><em>지정기관</em>(재)창원산업진흥원</p>
                     <p><em>지정기간</em>2023년 1월 2일 ~ 2026년 12월 31일</p>
-                    <p><em>위ㅤㅤ치</em>(51395) 창원시 의창구 창원대로18번길 46(팔용동) 경남창원과학기술진흥원 6층 (617호~)</p>
+                    <p><em>위ㅤㅤ치</em>(51395) 창원시 의창구 창원대로18번길 46(팔용동) 경남창원과학기술진흥원 7층 714호</p>
                     <p><em>대표전화</em>055-716-8414</p>
                 </div>
                 <div class="map">
@@ -47,18 +47,18 @@
                     <p><em>대표전화</em>055-772-3556</p>
                 </div>
                 <div class="map">
-                    <div id="daumRoughmapContainer1753103745451" class="root_daum_roughmap root_daum_roughmap_landing mapwrap"></div>
+                    <div id="daumRoughmapContainer1755737576143" class="root_daum_roughmap root_daum_roughmap_landing mapwrap"></div>
                     <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
                     <script charset="UTF-8">
                         new daum.roughmap.Lander({
-                            "timestamp" : "1753103745451",
-                            "key" : "5naf2sxp9yd",
+                            "timestamp" : "1755737576143",
+                            "key" : "7d3g67tsh8h",
                             "mapHeight" : "360"
                         }).render();
                     </script>
                 </div>
             </div>
-            
+
             <div class="info01 bmb">
                 <div class="info">
                     <h3><img src="../img/center/basic_i03.jpg?v=0731" class="logo"><!--<em class="h_m"><span class="col01">김해시</span> 탄소중립지원센터</em>--> <a href="https://ghri.re.kr/" target="_blank"></a></h3>
