@@ -40,7 +40,7 @@
             
             <div class="info01 bmb">
                 <div class="info">
-                    <h3><img src="../img/center/basic_i02.jpg?v=0731" class="logo"><!--<em class="h_m"><span class="col01">진주시</span> 탄소중립지원센터</em>--> <a href="https://www.gnu.ac.kr/jinjunetzero/main.do" target="_blank"></a></h3>
+                    <h3><img src="../img/center/basic_i02.jpg?v=0821" class="logo"><!--<em class="h_m"><span class="col01">진주시</span> 탄소중립지원센터</em>--> <a href="https://www.gnu.ac.kr/jinjunetzero/main.do" target="_blank"></a></h3>
                     <p><em>지정기관</em>경상국립대학교 산학협력단</p>
                     <p><em>지정기간</em>2024년 2월 1일 ~ 2027년 12월 31일</p>
                     <p><em>위ㅤㅤ치</em>(52725) 경상남도 진주시 동진로 33 경상국립대학교 칠암캠퍼스 대학본부(15동) 107호</p>
