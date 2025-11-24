@@ -165,6 +165,9 @@ if($_FILES['userfile1']['size'] > 0) {
 		$fileName = $_FILES['userfile1']['name'];
 		$fileName =  str_replace(' ', '_', $fileName);
 
+		$up_fileName = addslashes($up_fileName);
+		$fileName = addslashes($fileName);
+
 		$s_day = date(Ymd); 
 		//중복방지를 위해서
 		$check = create_cmid();
@@ -192,6 +195,9 @@ for($i=2; $i<=7; $i++) {
 		${'up_fileName'.$i} = upload($_FILES['userfile'.$i], 1024*1024*50, $file_dir);
 		${'fileName'.$i} = $_FILES['userfile'.$i]['name'];
 		${'fileName'.$i} =  str_replace(' ', '_', ${'fileName'.$i});
+
+		${'up_fileName' . $i} = addslashes(${'up_fileName' . $i});
+		${'fileName' . $i} = addslashes(${'fileName' . $i});
 
 	}
 }
