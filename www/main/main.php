@@ -1013,13 +1013,8 @@ if (USE_MAIN_BANNER) {
                             <div class="swiper popup-slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="#" class="cont">
-                                            <img src="/img/temp.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="cont">
-                                            <img src="/img/temp.png" alt="">
+                                        <a href="http://gnnetzero.or.kr/news/promotion.php" class="cont">
+                                            <img src="/img/pop250902.png" alt="">
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
